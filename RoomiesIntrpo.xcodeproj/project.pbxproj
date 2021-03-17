@@ -13,6 +13,7 @@
 		3F7448FE260156800084189F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7448FC260156800084189F /* Main.storyboard */; };
 		3F744900260156830084189F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7448FF260156830084189F /* Assets.xcassets */; };
 		3F744903260156830084189F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F744901260156830084189F /* LaunchScreen.storyboard */; };
+		3F74491026016F600084189F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74490F26016F600084189F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3F7448FF260156830084189F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F744902260156830084189F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F744904260156830084189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F74490F26016F600084189F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				3F7448F8260156800084189F /* SceneDelegate.swift */,
 				3F7448FA260156800084189F /* ViewController.swift */,
 				3F7448FC260156800084189F /* Main.storyboard */,
+				3F74490F26016F600084189F /* LoginViewController.swift */,
 				3F7448FF260156830084189F /* Assets.xcassets */,
 				3F744901260156830084189F /* LaunchScreen.storyboard */,
 				3F744904260156830084189F /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F74491026016F600084189F /* LoginViewController.swift in Sources */,
 				3F7448FB260156800084189F /* ViewController.swift in Sources */,
 				3F7448F7260156800084189F /* AppDelegate.swift in Sources */,
 				3F7448F9260156800084189F /* SceneDelegate.swift in Sources */,
