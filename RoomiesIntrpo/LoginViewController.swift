@@ -12,14 +12,28 @@ class LoginViewController: UIViewController {
     
     var school:String = ""
     
+    
+    @IBOutlet weak var profileBrowseView: UIImageView!
+    
+var imageNames = ["profile", "secondprofile", "3rdprofile"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         schoolLabel?.text = ("There are ??% of people at " + school + " that have those same answers ")
+        
+        let timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true){
+            timer in
+            self.profileBrowseView.image = UIImage(named: self.imageNames.randomElement()!)
+        }
+        timer.fire()
         // Do any additional setup after loading the view.
     }
-    @IBOutlet weak var schoolLabel: UILabel!
     
+   
+    @IBOutlet weak var schoolLabel: UILabel!
 
+   
     /*
     // MARK: - Navigation
 
