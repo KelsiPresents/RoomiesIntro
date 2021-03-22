@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("hello")
         textField?.text = answer
        
         // Do any additional setup after loading the view.
