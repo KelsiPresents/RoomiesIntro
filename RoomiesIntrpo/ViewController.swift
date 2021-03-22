@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textField?.text = answer
+        majorTextField?.text = answer
        
         // Do any additional setup after loading the view.
         print("\(key)")
@@ -21,83 +21,80 @@ class ViewController: UIViewController {
     var key = ""
     var answer:String = ""
     
-   
-    
-    @IBAction func yesForQuestionOne(_ sender: Any){
-        key.append("a")
-        print("\(key)")
-    }
-    
-    @IBAction func noForQuestionOne(_ sender: Any) {
-        key.append("b")
-        print("\(key)")
+    @IBOutlet weak var femaleButton: UIButton!
+    @IBAction func femaleButton(_ sender: Any) {
+        femaleButton.backgroundColor = UIColor.gray
     }
     
     
-    @IBAction func dependsForQuestionOne(_ sender: Any) {
-        key.append("c")
-        print("\(key)")
+    @IBOutlet weak var maleButton: UIButton!
+    
+    @IBAction func MaleButton(_ sender: Any) {
+        maleButton.backgroundColor = UIColor.gray
     }
     
     
-    @IBAction func beforeEightPM(_ sender: Any) {
-        key.append("1")
-        print("\(key)")
+    
+    @IBOutlet weak var nonBinaryButton: UIButton!
+    
+    @IBAction func nonBinaryButton(_ sender: Any) {
+        nonBinaryButton.backgroundColor = UIColor.gray
     }
     
     
-    @IBAction func eightToTen(_ sender: Any) {
-        key.append("2")
-        print("\(key)")
-    }
-    @IBAction func tenToMidnight(_ sender: Any) {
-        key.append("3")
-        print("\(key)")
+    
+    @IBOutlet weak var otherButton: UIButton!
+    
+    @IBAction func otherButton(_ sender: Any) {
+        otherButton.backgroundColor = UIColor.gray
     }
     
-    @IBAction func afterMidnight(_ sender: Any) {
-        key.append("4")
-        print("\(key)")
+    
+    
+    
+    @IBOutlet weak var femaleRoomate: UIButton!
+    @IBAction func femaleRoomate(_ sender: Any) {
+        femaleRoomate.backgroundColor = UIColor.gray
     }
     
-    @IBAction func yesForQuestionThree(_ sender: Any) {
-        key.append("a")
-        print("\(key)")
-    }
-    @IBAction func dependsForQuestionThree(_ sender: Any) {
-        key.append("c")
-        print("\(key)")
+    
+    
+    @IBOutlet weak var maleRoomate: UIButton!
+    @IBAction func maleRoomate(_ sender: Any) {
+        maleRoomate.backgroundColor = UIColor.gray
     }
     
-    @IBAction func noForQuestionThree(_ sender: Any) {
-        key.append("b")
-        print("\(key)")
-    }
-    @IBAction func yesForQuestionFour(_ sender: Any) {
-        key.append("a")
-        print("\(key)")
+    
+    
+    
+    @IBOutlet weak var nonBinaryRoomate: UIButton!
+    @IBAction func nonBinaryRoomate(_ sender: Any) {
+        nonBinaryRoomate.backgroundColor = UIColor.gray
     }
     
-    @IBAction func dependsForQuestionFour(_ sender: Any) {
-        key.append("c")
-        print("\(key)")
+    
+    
+    
+    @IBOutlet weak var noPreferenceRoomate: UIButton!
+    @IBAction func noPreferenceRoomate(_ sender: Any) {
+        noPreferenceRoomate.backgroundColor = UIColor.gray
     }
     
-    @IBAction func noForQuestionFour(_ sender: Any) {
-        key.append("b")
-        print("\(key)")
-    }
+    
     
     @IBOutlet weak var textField: UITextField!
     
      
+    @IBOutlet weak var majorTextField: UITextField!
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         
         if segue.destination is LoginViewController {
             
             let vc = segue.destination as? LoginViewController
-            vc?.school = (textField?.text)!
+            vc?.school = (majorTextField?.text)!
+            vc?.name = (textField?.text)!
             
         }
         

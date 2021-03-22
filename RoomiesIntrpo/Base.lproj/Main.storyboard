@@ -16,65 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you an early morning person?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycX-Hv-xWH">
-                                <rect key="frame" x="89" y="216" width="255" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycX-Hv-xWH">
+                                <rect key="frame" x="183" y="237" width="57" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6so-by-c13">
-                                <rect key="frame" x="128" y="266" width="30" height="30"/>
+                                <rect key="frame" x="58" y="266" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Yes"/>
+                                <state key="normal" title="Female"/>
                                 <connections>
-                                    <action selector="yesForQuestionOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qQt-Gw-X2l"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gZ-a4-6rA">
-                                <rect key="frame" x="128" y="579" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Yes"/>
-                                <connections>
-                                    <action selector="yesForQuestionThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4NM-Dx-gol"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPN-BQ-nSp">
-                                <rect key="frame" x="128" y="747" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Yes"/>
-                                <connections>
-                                    <action selector="yesForQuestionFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wp8-De-9JB"/>
-                                    <segue destination="N7p-1N-wum" kind="show" id="4zc-0U-261"/>
+                                    <action selector="femaleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rlU-9f-PPj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7Y-2J-uNt">
-                                <rect key="frame" x="262" y="266" width="30" height="30"/>
+                                <rect key="frame" x="226" y="266" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="No"/>
+                                <state key="normal" title="Non-Binary"/>
                                 <connections>
-                                    <action selector="noForQuestionOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yka-ay-RMq"/>
+                                    <action selector="nonBinaryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDH-uT-to3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjd-iL-Ic5">
-                                <rect key="frame" x="262" y="579" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukg-Lg-5lC">
+                                <rect key="frame" x="336" y="266" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="No"/>
+                                <state key="normal" title="Other"/>
                                 <connections>
-                                    <action selector="noForQuestionThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yiG-OM-XLN"/>
+                                    <action selector="otherButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GzD-An-Gx2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8I-um-6jx">
-                                <rect key="frame" x="274" y="747" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="No"/>
-                                <connections>
-                                    <action selector="noForQuestionFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ru7-oO-gCd"/>
-                                    <segue destination="N7p-1N-wum" kind="show" id="uuz-0I-xsi"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What time to you go to sleep?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwo-i8-tq3">
-                                <rect key="frame" x="103" y="332" width="227" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What gender do you perfer as a roomate?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwo-i8-tq3">
+                                <rect key="frame" x="53" y="332" width="317" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -83,101 +57,99 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnT-vI-irl">
                                 <rect key="frame" x="96" y="361" width="242" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Before 8:00PM"/>
+                                <state key="normal" title="Female"/>
                                 <connections>
-                                    <action selector="beforeEightPM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ftn-2c-IJ7"/>
-                                    <action selector="dependsForQuestionOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ok1-IW-rko"/>
+                                    <action selector="femaleRoomate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DH6-Zn-JNF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOp-qx-me3">
-                                <rect key="frame" x="161" y="399" width="112" height="30"/>
+                                <rect key="frame" x="201" y="433" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="8:00 - 10:00 PM"/>
+                                <state key="normal" title="Male"/>
                                 <connections>
-                                    <action selector="eightToTen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="odX-qP-xYY"/>
+                                    <action selector="maleRoomate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aet-Eq-Ipx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6E-Cq-9Z5">
-                                <rect key="frame" x="156" y="433" width="117" height="30"/>
+                                <rect key="frame" x="173" y="508" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" 10PM - Midnight"/>
+                                <state key="normal" title="Non-binary"/>
                                 <connections>
-                                    <action selector="tenToMidnight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QyN-O1-HUl"/>
+                                    <action selector="nonBinaryRoomate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="48y-Nd-FZr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czh-in-uX8">
-                                <rect key="frame" x="167" y="471" width="98" height="30"/>
+                                <rect key="frame" x="162" y="592" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="After Midnight"/>
+                                <state key="normal" title="No preference"/>
                                 <connections>
-                                    <action selector="afterMidnight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o3K-5o-Pfm"/>
+                                    <action selector="noPreferenceRoomate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pSg-gE-SGb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you care if your room is clean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96n-pm-ham">
-                                <rect key="frame" x="98" y="536" width="249" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you mind if your roomate has friends over late?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPr-X7-wQt">
-                                <rect key="frame" x="32" y="674" width="382" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your intended Major?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96n-pm-ham">
+                                <rect key="frame" x="107" y="679" width="222" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIY-4l-SW4">
-                                <rect key="frame" x="176" y="266" width="62" height="30"/>
+                                <rect key="frame" x="156" y="266" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Depends"/>
+                                <state key="normal" title="Male"/>
                                 <connections>
-                                    <action selector="dependsForQuestionOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ybI-iY-ktf"/>
+                                    <action selector="MaleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RtB-04-aVX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZY-Ot-s9V">
-                                <rect key="frame" x="183" y="579" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Depends"/>
-                                <connections>
-                                    <action selector="dependsForQuestionThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Bd-EO-Nfv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAC-eU-1Lx">
-                                <rect key="frame" x="185" y="747" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Depends"/>
-                                <connections>
-                                    <action selector="dependsForQuestionFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sWn-Sk-nt9"/>
-                                    <segue destination="N7p-1N-wum" kind="show" id="qmR-ug-kE3"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What college are you going to?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMI-k5-2yI">
-                                <rect key="frame" x="109" y="136" width="235" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMI-k5-2yI">
+                                <rect key="frame" x="183" y="166" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type college here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-Bg-dH7">
-                                <rect key="frame" x="109" y="165" width="221" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-Bg-dH7">
+                                <rect key="frame" x="107" y="195" width="221" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type college here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qA2-WX-iHw">
+                                <rect key="frame" x="107" y="732" width="221" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please fill out the following survey!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hW-xN-5bO">
-                                <rect key="frame" x="92" y="88" width="262" height="21"/>
+                                <rect key="frame" x="85" y="113" width="262" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNn-x9-JH6">
+                                <rect key="frame" x="187" y="814" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <segue destination="N7p-1N-wum" kind="show" id="Yak-d5-pau"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="New User" largeTitleDisplayMode="always" id="rpS-cA-UBd"/>
                     <connections>
+                        <outlet property="femaleButton" destination="6so-by-c13" id="Ezv-hD-dPO"/>
+                        <outlet property="femaleRoomate" destination="pnT-vI-irl" id="haN-t3-f9f"/>
+                        <outlet property="majorTextField" destination="qA2-WX-iHw" id="q3g-gR-nQt"/>
+                        <outlet property="maleButton" destination="wIY-4l-SW4" id="RKL-i7-HOd"/>
+                        <outlet property="maleRoomate" destination="EOp-qx-me3" id="acm-TJ-eIn"/>
+                        <outlet property="noPreferenceRoomate" destination="Czh-in-uX8" id="GoG-cG-mPT"/>
+                        <outlet property="nonBinaryButton" destination="C7Y-2J-uNt" id="Fbt-Vg-mmA"/>
+                        <outlet property="nonBinaryRoomate" destination="U6E-Cq-9Z5" id="BXi-s7-k4J"/>
+                        <outlet property="otherButton" destination="ukg-Lg-5lC" id="mw6-8j-ua9"/>
                         <outlet property="textField" destination="3Dw-Bg-dH7" id="JTB-j2-qhG"/>
                     </connections>
                 </viewController>
@@ -249,9 +221,6 @@
             <point key="canvasLocation" x="18.840579710144929" y="77.678571428571431"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="qmR-ug-kE3"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

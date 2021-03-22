@@ -11,6 +11,7 @@ class LoginViewController: UIViewController {
 
     
     var school:String = ""
+    var name: String = ""
     
     
     @IBOutlet weak var profileBrowseView: UIImageView!
@@ -20,7 +21,7 @@ var imageNames = ["profile", "secondprofile", "3rdprofile"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        schoolLabel?.text = ("There are ??% of people at " + school + " that have those same answers ")
+        schoolLabel?.text = (name + ", There are ??% planning to major in " + school + " that are looking for roomates too!")
         
         let timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true){
             timer in
