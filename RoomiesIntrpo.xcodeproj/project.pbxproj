@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F64AD36260BC0FB00DA583A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD35260BC0FB00DA583A /* SignUpViewController.swift */; };
+		3F64AD39260BC12100DA583A /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD38260BC12100DA583A /* BioViewController.swift */; };
+		3F64AD3C260BC14100DA583A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD3B260BC14100DA583A /* ProfileViewController.swift */; };
 		3F7448F7260156800084189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7448F6260156800084189F /* AppDelegate.swift */; };
 		3F7448F9260156800084189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7448F8260156800084189F /* SceneDelegate.swift */; };
 		3F7448FB260156800084189F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7448FA260156800084189F /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F64AD35260BC0FB00DA583A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3F64AD38260BC12100DA583A /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		3F64AD3B260BC14100DA583A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3F7448F3260156800084189F /* RoomiesIntrpo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomiesIntrpo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7448F6260156800084189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7448F8260156800084189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,9 @@
 				3F7448F8260156800084189F /* SceneDelegate.swift */,
 				3F7448FA260156800084189F /* ViewController.swift */,
 				3F7448FC260156800084189F /* Main.storyboard */,
+				3F64AD3B260BC14100DA583A /* ProfileViewController.swift */,
+				3F64AD38260BC12100DA583A /* BioViewController.swift */,
+				3F64AD35260BC0FB00DA583A /* SignUpViewController.swift */,
 				3F74490F26016F600084189F /* LoginViewController.swift */,
 				3F7448FF260156830084189F /* Assets.xcassets */,
 				3F744901260156830084189F /* LaunchScreen.storyboard */,
@@ -144,6 +153,9 @@
 				3F7448FB260156800084189F /* ViewController.swift in Sources */,
 				3F7448F7260156800084189F /* AppDelegate.swift in Sources */,
 				3F7448F9260156800084189F /* SceneDelegate.swift in Sources */,
+				3F64AD3C260BC14100DA583A /* ProfileViewController.swift in Sources */,
+				3F64AD36260BC0FB00DA583A /* SignUpViewController.swift in Sources */,
+				3F64AD39260BC12100DA583A /* BioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
