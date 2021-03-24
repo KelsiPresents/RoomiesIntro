@@ -7,28 +7,37 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    internal func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int ) -> String?{
+            return pickerData[row]
+        }
+    
 
+    @IBOutlet weak var genderPickerView: UIPickerView!
+    
+    var pickerData:[String] = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.genderPickerView.delegate = self
+        self.genderPickerView.dataSource = self
+        
+        pickerData = ["Female","Male","Non-binary","other"]
     }
     
-    @IBOutlet weak var fullNameTextField: UITextField?
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        
-//        if segue.destination is BioViewController {
-//
-//            let vc = segue.destination as? BioViewController
-//            vc?.fullName = (fullNameTextField?.text)!
-//
-            
-        
-        
-        
-    }
+  
     
     
     /*
