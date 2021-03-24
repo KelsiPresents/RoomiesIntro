@@ -202,6 +202,30 @@
             </objects>
             <point key="canvasLocation" x="1760.8695652173915" y="77.678571428571431"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ePK-2Q-GDL">
+            <objects>
+                <viewController id="ZTz-2J-s7W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="722-ts-der">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gde-LW-Veh">
+                                <rect key="frame" x="186" y="95" width="70" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TJ5-ZU-ggL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96V-Y5-D1K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515.9420289855075" y="76.339285714285708"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="qyB-9Z-BhG">
             <objects>
