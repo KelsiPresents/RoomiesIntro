@@ -80,11 +80,45 @@ class ViewController: UIViewController {
         noPreferenceRoomate.backgroundColor = UIColor.gray
     }
     
+    @IBOutlet weak var bradleyButton: UIButton!
+    
+  
+    @IBOutlet weak var iitButton: UIButton!
+    
+    @IBOutlet weak var northEasternButton: UIButton!
+    
+    @IBAction func dropDownMenu(_ sender: Any) {
+        bradleyButton.isHidden = false
+        michButton.isHidden = false
+        iitButton.isHidden = false
+        northEasternButton.isHidden = false
+    }
+    
+    @IBOutlet weak var michButton: UIButton!
+    var college:String = ""
+    
+    @IBAction func michGray(_ sender: Any) {
+        michButton.backgroundColor = UIColor.gray
+         college = "the University of Michigan"
+    }
+    @IBAction func iitGray(_ sender: Any) {
+        iitButton.backgroundColor = UIColor.gray
+        college = "the Illinois Institute of Technology"
+    }
+    @IBAction func bradleyGray(_ sender: Any) {
+        bradleyButton.backgroundColor = UIColor.gray
+        college = "Bradley University"
+    }
+    @IBAction func northEasternGray(_ sender: Any) {
+        northEasternButton.backgroundColor = UIColor.gray
+        college = "Northeastern University"
+    }
     
     
     @IBOutlet weak var textField: UITextField!
     
      
+    
     @IBOutlet weak var majorTextField: UITextField!
     
     
@@ -95,6 +129,7 @@ class ViewController: UIViewController {
             let vc = segue.destination as? LoginViewController
             vc?.school = (majorTextField?.text)!
             vc?.name = (textField?.text)!
+            vc?.college = (college)
             
         }
         
