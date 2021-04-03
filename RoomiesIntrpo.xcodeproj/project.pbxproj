@@ -12,6 +12,9 @@
 		3F64AD3C260BC14100DA583A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD3B260BC14100DA583A /* ProfileViewController.swift */; };
 		3F64AD47260D509800DA583A /* QuestionaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD46260D509800DA583A /* QuestionaireViewController.swift */; };
 		3F64AD4A260D5B0900DA583A /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD49260D5B0900DA583A /* ScrollViewController.swift */; };
+		3F64AD6E2618C14000DA583A /* MiniQ1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD6D2618C14000DA583A /* MiniQ1ViewController.swift */; };
+		3F64AD712618C14D00DA583A /* MiniQ2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD702618C14D00DA583A /* MiniQ2ViewController.swift */; };
+		3F64AD742618C15D00DA583A /* MiniQ3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD732618C15D00DA583A /* MiniQ3ViewController.swift */; };
 		3F7448F7260156800084189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7448F6260156800084189F /* AppDelegate.swift */; };
 		3F7448F9260156800084189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7448F8260156800084189F /* SceneDelegate.swift */; };
 		3F7448FB260156800084189F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7448FA260156800084189F /* ViewController.swift */; };
@@ -27,6 +30,9 @@
 		3F64AD3B260BC14100DA583A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3F64AD46260D509800DA583A /* QuestionaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionaireViewController.swift; sourceTree = "<group>"; };
 		3F64AD49260D5B0900DA583A /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		3F64AD6D2618C14000DA583A /* MiniQ1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniQ1ViewController.swift; sourceTree = "<group>"; };
+		3F64AD702618C14D00DA583A /* MiniQ2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniQ2ViewController.swift; sourceTree = "<group>"; };
+		3F64AD732618C15D00DA583A /* MiniQ3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniQ3ViewController.swift; sourceTree = "<group>"; };
 		3F7448F3260156800084189F /* RoomiesIntrpo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomiesIntrpo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7448F6260156800084189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7448F8260156800084189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +78,9 @@
 				3F7448F8260156800084189F /* SceneDelegate.swift */,
 				3F7448FA260156800084189F /* ViewController.swift */,
 				3F7448FC260156800084189F /* Main.storyboard */,
+				3F64AD6D2618C14000DA583A /* MiniQ1ViewController.swift */,
+				3F64AD702618C14D00DA583A /* MiniQ2ViewController.swift */,
+				3F64AD732618C15D00DA583A /* MiniQ3ViewController.swift */,
 				3F64AD49260D5B0900DA583A /* ScrollViewController.swift */,
 				3F64AD46260D509800DA583A /* QuestionaireViewController.swift */,
 				3F64AD3B260BC14100DA583A /* ProfileViewController.swift */,
@@ -156,12 +165,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F74491026016F600084189F /* LoginViewController.swift in Sources */,
+				3F64AD6E2618C14000DA583A /* MiniQ1ViewController.swift in Sources */,
 				3F7448FB260156800084189F /* ViewController.swift in Sources */,
 				3F7448F7260156800084189F /* AppDelegate.swift in Sources */,
 				3F7448F9260156800084189F /* SceneDelegate.swift in Sources */,
 				3F64AD4A260D5B0900DA583A /* ScrollViewController.swift in Sources */,
 				3F64AD3C260BC14100DA583A /* ProfileViewController.swift in Sources */,
 				3F64AD36260BC0FB00DA583A /* SignUpViewController.swift in Sources */,
+				3F64AD712618C14D00DA583A /* MiniQ2ViewController.swift in Sources */,
+				3F64AD742618C15D00DA583A /* MiniQ3ViewController.swift in Sources */,
 				3F64AD47260D509800DA583A /* QuestionaireViewController.swift in Sources */,
 				3F64AD39260BC12100DA583A /* BioViewController.swift in Sources */,
 			);

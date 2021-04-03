@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="859" y="76"/>
         </scene>
-        <!--View Controller-->
+        <!--MiniQ1 View Controller-->
         <scene sceneID="4NJ-uo-nTt">
             <objects>
-                <viewController id="jkc-SM-MO4" sceneMemberID="viewController">
+                <viewController id="jkc-SM-MO4" customClass="MiniQ1ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ghq-dd-Ana">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="1350.7246376811595" y="746.65178571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--MiniQ2 View Controller-->
         <scene sceneID="OsF-E1-Jsj">
             <objects>
-                <viewController id="CF7-cJ-YAk" sceneMemberID="viewController">
+                <viewController id="CF7-cJ-YAk" customClass="MiniQ2ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HYi-Zv-fRR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,10 +307,10 @@
             </objects>
             <point key="canvasLocation" x="2234" y="758"/>
         </scene>
-        <!--View Controller-->
+        <!--MiniQ3 View Controller-->
         <scene sceneID="q8o-H3-EKj">
             <objects>
-                <viewController id="X39-6i-Dhs" sceneMemberID="viewController">
+                <viewController id="X39-6i-Dhs" customClass="MiniQ3ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zNg-h0-rBK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
