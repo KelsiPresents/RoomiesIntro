@@ -178,17 +178,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkb-0o-Ks2">
-                                <rect key="frame" x="20" y="242" width="128" height="30"/>
+                                <rect key="frame" x="67" y="242" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Stung by 100 bees"/>
+                                <state key="normal" title="Time"/>
                                 <connections>
                                     <action selector="femaleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vOk-5J-9mk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H63-tJ-web">
-                                <rect key="frame" x="252" y="242" width="117" height="30"/>
+                                <rect key="frame" x="287" y="242" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Bitten by a snake"/>
+                                <state key="normal" title="Money"/>
                                 <connections>
                                     <action selector="nonBinaryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xn0-VB-zBn"/>
                                 </connections>
@@ -204,10 +204,10 @@
                                     <segue destination="CF7-cJ-YAk" kind="show" id="rfe-Zw-BEg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Would you rather be stung by 100 bees or bitten by a snake?" textAlignment="natural" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyP-c1-SDF">
-                                <rect key="frame" x="10" y="145" width="394" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Would you rather have unlimited time or money?" textAlignment="natural" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyP-c1-SDF">
+                                <rect key="frame" x="0.0" y="144" width="414" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -237,12 +237,15 @@
                                 </state>
                                 <connections>
                                     <action selector="dropDownMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6lr-Fh-QpP"/>
+                                    <action selector="dropDownMenu:" destination="CF7-cJ-YAk" eventType="touchUpInside" id="zuK-OG-aDb"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJa-uk-FMV">
                                 <rect key="frame" x="192" y="176" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Red"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
                                 <connections>
                                     <action selector="bradleyGray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bqz-gP-ddg"/>
                                 </connections>
@@ -250,7 +253,9 @@
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6y-Lj-GD1">
                                 <rect key="frame" x="182" y="214" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Orange"/>
+                                <state key="normal" title="Orange">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="iitGray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRY-9m-dVM"/>
                                 </connections>
@@ -258,7 +263,9 @@
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZA-lP-ZZf">
                                 <rect key="frame" x="185" y="252" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Yellow"/>
+                                <state key="normal" title="Yellow">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
                                 <connections>
                                     <action selector="northEasternGray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Fp-Ia-aRg"/>
                                 </connections>
@@ -266,10 +273,9 @@
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hep-G1-HFa">
                                 <rect key="frame" x="187" y="290" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Green"/>
-                                <connections>
-                                    <action selector="michGray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POF-zt-MWM"/>
-                                </connections>
+                                <state key="normal" title="Green">
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                </state>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3E-ep-abo">
                                 <rect key="frame" x="195" y="328" width="31" height="30"/>
@@ -279,12 +285,16 @@
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esx-CU-tmZ">
                                 <rect key="frame" x="186" y="366" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Purple"/>
+                                <state key="normal" title="Purple">
+                                    <color key="titleColor" systemColor="systemPurpleColor"/>
+                                </state>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idd-6V-Spi">
                                 <rect key="frame" x="195" y="404" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pink"/>
+                                <state key="normal" title="Pink">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqE-vr-1Z2">
                                 <rect key="frame" x="192" y="699" width="32" height="30"/>
@@ -297,15 +307,28 @@
                                     <segue destination="X39-6i-Dhs" kind="show" id="MlQ-R6-Chh"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="551749-200" translatesAutoresizingMaskIntoConstraints="NO" id="0i5-Kk-MLl">
+                                <rect key="frame" x="268" y="127" width="21" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7VT-C9-lvh"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="VXU-xt-yc0"/>
+                    <connections>
+                        <outlet property="blueButton" destination="C3E-ep-abo" id="Nrb-Sl-Z98"/>
+                        <outlet property="greenButton" destination="Hep-G1-HFa" id="nBS-Ll-3XT"/>
+                        <outlet property="orangeButton" destination="F6y-Lj-GD1" id="K5J-zv-gzp"/>
+                        <outlet property="pinkButton" destination="Idd-6V-Spi" id="d3r-qh-MgU"/>
+                        <outlet property="purpleButton" destination="esx-CU-tmZ" id="T0m-hI-Bbc"/>
+                        <outlet property="redButton" destination="DJa-uk-FMV" id="tDZ-0b-rID"/>
+                        <outlet property="yellowButton" destination="NZA-lP-ZZf" id="qF9-ke-Pfm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tp-Yo-ACH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2234" y="758"/>
+            <point key="canvasLocation" x="2233.3333333333335" y="757.36607142857144"/>
         </scene>
         <!--MiniQ3 View Controller-->
         <scene sceneID="q8o-H3-EKj">
@@ -339,9 +362,12 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eIz-Hy-3Uw"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="0i4-Ck-CgK"/>
+                    <connections>
+                        <outlet property="spongebobPickerView" destination="Ayp-MK-AMa" id="b7P-2s-5Vt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nol-vL-rll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1266,6 +1292,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="3rdprofile" width="960" height="720"/>
+        <image name="551749-200" width="200" height="200"/>
         <image name="Abriel" width="960" height="720"/>
         <image name="Amirah3" width="960" height="720"/>
         <image name="Giselle2" width="960" height="720"/>
@@ -1274,8 +1301,23 @@
         <image name="Screen Shot 2021-03-25 at 7.53.59 PM" width="1200" height="1455"/>
         <image name="Screen Shot 2021-03-25 at 8.20.07 PM" width="788" height="1446"/>
         <image name="icon" width="450" height="450"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

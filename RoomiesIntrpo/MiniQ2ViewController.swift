@@ -15,6 +15,32 @@ class MiniQ2ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var redButton: UIButton!
+    
+  
+    @IBOutlet weak var orangeButton: UIButton!
+    
+    @IBOutlet weak var yellowButton: UIButton!
+  
+    
+    @IBAction func dropDownMenu(_ sender: Any) {
+        blueButton.isHidden = false
+        purpleButton.isHidden = false
+        pinkButton.isHidden = false
+        redButton.isHidden = false
+        orangeButton.isHidden = false
+        yellowButton.isHidden = false
+        greenButton.isHidden = false
+    }
+    
+    @IBOutlet weak var greenButton: UIButton!
+    
+    @IBOutlet weak var blueButton: UIButton!
+    
+    
+    @IBOutlet weak var purpleButton: UIButton!
+    
+    @IBOutlet weak var pinkButton: UIButton!
 
     /*
     // MARK: - Navigation
