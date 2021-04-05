@@ -124,12 +124,12 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         
-        if segue.destination is LoginViewController {
+        if segue.destination is MiniQ1ViewController {
             
-            let vc = segue.destination as? LoginViewController
-            vc?.school = (majorTextField?.text)!
+            let vc = segue.destination as? MiniQ1ViewController
+            
             vc?.name = (textField?.text)!
-            vc?.college = (college)
+            
             
         }
         

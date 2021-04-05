@@ -10,9 +10,9 @@ import UIKit
 class LoginViewController: UIViewController {
 
     
-    var school:String = ""
+    var personality:String = ""
     var name: String = ""
-    var college:String = ""
+    
     
     
     @IBOutlet weak var profileBrowseView: UIImageView!
@@ -22,8 +22,10 @@ var imageNames = ["profile", "secondprofile", "3rdprofile"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        schoolLabel?.text = (name + ", 25% of people on Lumi Lumi are going to " + college + " , and majoring in " + school + ", and they are looking  for roomates too!")
+        schoolLabel?.text = (name + ", you are a " + personality.lowercased() + " person and below are some more " + personality.lowercased() + " people, who are looking  for roomates too!")
         schoolLabel.font = UIFont.systemFont(ofSize: 30.0)
+        
+        headerLabel?.text = ("You are ... " + personality)
         
         let timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true){
             timer in
@@ -32,6 +34,8 @@ var imageNames = ["profile", "secondprofile", "3rdprofile"]
         timer.fire()
         // Do any additional setup after loading the view.
     }
+    
+    @IBOutlet weak var headerLabel: UILabel!
     
    
     @IBOutlet weak var schoolLabel: UILabel!
