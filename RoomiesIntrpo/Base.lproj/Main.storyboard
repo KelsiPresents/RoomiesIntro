@@ -332,6 +332,16 @@
                                 <rect key="frame" x="268" y="127" width="21" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eu6-Bd-nzJ">
+                                <rect key="frame" x="189" y="442" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Other">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="otherButton:" destination="CF7-cJ-YAk" eventType="touchUpInside" id="d6j-Hr-k72"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7VT-C9-lvh"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -341,6 +351,7 @@
                         <outlet property="blueButton" destination="C3E-ep-abo" id="Nrb-Sl-Z98"/>
                         <outlet property="greenButton" destination="Hep-G1-HFa" id="nBS-Ll-3XT"/>
                         <outlet property="orangeButton" destination="F6y-Lj-GD1" id="K5J-zv-gzp"/>
+                        <outlet property="otherButton" destination="Eu6-Bd-nzJ" id="jan-om-ysH"/>
                         <outlet property="pinkButton" destination="Idd-6V-Spi" id="d3r-qh-MgU"/>
                         <outlet property="purpleButton" destination="esx-CU-tmZ" id="T0m-hI-Bbc"/>
                         <outlet property="redButton" destination="DJa-uk-FMV" id="tDZ-0b-rID"/>

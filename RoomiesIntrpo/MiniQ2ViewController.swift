@@ -34,6 +34,7 @@ class MiniQ2ViewController: UIViewController {
         orangeButton.isHidden = false
         yellowButton.isHidden = false
         greenButton.isHidden = false
+        otherButton.isHidden = false
         print(result)
     }
     
@@ -47,6 +48,7 @@ class MiniQ2ViewController: UIViewController {
     @IBOutlet weak var pinkButton: UIButton!
     
     
+    @IBOutlet weak var otherButton: UIButton!
     
     
 
@@ -79,7 +81,10 @@ class MiniQ2ViewController: UIViewController {
         pinkButton.backgroundColor = UIColor.gray
         result.append("0")
     }
-
+    @IBAction func otherButton(_ sender: Any) {
+        otherButton.backgroundColor = UIColor.gray
+        result.append("1")
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         

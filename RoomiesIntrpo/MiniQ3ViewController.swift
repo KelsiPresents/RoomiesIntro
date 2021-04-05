@@ -272,6 +272,30 @@ class MiniQ3ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             finalResults = "Creative"
             
         }
+        else if final == "00Never Watched" {
+            finalResults = "Goal-Oriented"
+            
+        }
+        else if final == "01Never Watched" {
+            finalResults = "Goal-Oriented"
+            
+        }
+        else if final == "02Never Watched" {
+            finalResults = "Goal-Oriented"
+            
+        }
+        else if final == "10Never Watched" {
+            finalResults = "Creative"
+            
+        }
+        else if final == "11Never Watched" {
+            finalResults = "Creative"
+            
+        }
+        else if final == "12Never Watched" {
+            finalResults = "Creative"
+            
+        }
     }
     
     
@@ -290,7 +314,7 @@ class MiniQ3ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         self.spongebobPickerView.delegate = self
         self.spongebobPickerView.dataSource = self
         
-        pickerData = ["Spongebob","Patrick","Squidward","Mr.Krabs","Sandy","Plankton","Pearl","Gary","Karen","Other"]
+        pickerData = ["Spongebob","Patrick","Squidward","Mr.Krabs","Sandy","Plankton","Pearl","Gary","Karen","Other","Never Watched"]
     }
     
     
