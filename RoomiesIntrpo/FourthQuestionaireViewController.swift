@@ -1,13 +1,13 @@
 //
-//  QuestionaireViewController.swift
+//  FourthQuestionaireViewController.swift
 //  RoomiesIntrpo
 //
-//  Created by ECC Student on 3/25/21.
+//  Created by ECC Student on 4/6/21.
 //
 
 import UIKit
 
-class QuestionaireViewController: UIViewController {
+class FourthQuestionaireViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,8 +107,7 @@ class QuestionaireViewController: UIViewController {
     
     
     
-    
-    
+
     /*
     // MARK: - Navigation
 

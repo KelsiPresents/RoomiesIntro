@@ -22,7 +22,7 @@ var imageNames = ["profile", "secondprofile", "3rdprofile"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        schoolLabel?.text = (name + ", you are a " + personality.lowercased() + " person and below are some more " + personality.lowercased() + " people, who are looking  for roomates too!")
+        schoolLabel?.text = (name + ", you are a " + personality.lowercased() + " person and below are some more " + personality.lowercased() + " people,  looking  for roomates too!")
         schoolLabel.font = UIFont.systemFont(ofSize: 30.0)
         
         headerLabel?.text = ("You are ... " + personality)
