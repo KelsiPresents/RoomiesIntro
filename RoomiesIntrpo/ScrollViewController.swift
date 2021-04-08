@@ -4,22 +4,44 @@
 //
 //  Created by ECC Student on 3/25/21.
 //
-
+import iCarousel
 import UIKit
 
-class ScrollViewController: UIViewController, UIScrollViewDelegate {
+
+class ScrollViewController: UIViewController, iCarouselDataSource {
+    func numberOfItems(in carousel: iCarousel) -> Int {
+        return 3
+    }
     
+    func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width/1.4, height: 300))
+//        view.backgroundColor = .red
+        
+        let imageView = UIImageView(frame: view.bounds)
+        view.addSubview(imageView)
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage (named: "finishedProfile\(index + 1)")
+        return view
+    }
+    
+     
+    let myCarousel: iCarousel = {
+        let view = iCarousel()
+        view.type = .coverFlow
+        
+        return view
+    }()
     // Connect a UIImageView to the outlet below
-    @IBOutlet weak var BrowseView: UIImageView!
-    
-var imageNames = ["Smaug", "Spyro", "Trogdor"]
-    var i=Int()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.addSubview(myCarousel)
+        myCarousel.dataSource = self
+        myCarousel.frame = CGRect(x: 0, y: 200, width: view.frame.size.width, height: 400)
        
         // Do any additional setup after loading the view.
     }
+    
+    
 }

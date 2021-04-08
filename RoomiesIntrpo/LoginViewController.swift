@@ -4,11 +4,34 @@
 //
 //  Created by ECC Student on 3/16/21.
 //
-
+import iCarousel
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,  iCarouselDataSource {
 
+    
+    func numberOfItems(in carousel: iCarousel) -> Int {
+        return 3
+    }
+    
+    func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width/1.4, height: 300))
+//        view.backgroundColor = .red
+        
+        let imageView = UIImageView(frame: view.bounds)
+        view.addSubview(imageView)
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage (named: "profile\(index + 1)")
+        return view
+    }
+    
+    let myCarousel: iCarousel = {
+        let view = iCarousel()
+        view.type = .coverFlow
+        
+        return view
+    }()
+    
     
     var personality:String = ""
     var name: String = ""
@@ -20,6 +43,14 @@ class LoginViewController: UIViewController {
 var imageNames = ["profile", "secondprofile", "3rdprofile"]
     
     
+    
+    @IBOutlet weak var headerLabel: UILabel!
+    
+   
+    @IBOutlet weak var schoolLabel: UILabel!
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         schoolLabel?.text = (name + ", you are a " + personality.lowercased() + " person and below are some more " + personality.lowercased() + " people,  looking  for roomates too!")
@@ -27,18 +58,14 @@ var imageNames = ["profile", "secondprofile", "3rdprofile"]
         
         headerLabel?.text = ("You are ... " + personality)
         
-        let timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true){
-            timer in
-            self.profileBrowseView.image = UIImage(named: self.imageNames.randomElement()!)
-        }
-        timer.fire()
+        view.addSubview(myCarousel)
+        myCarousel.dataSource = self
+        myCarousel.frame = CGRect(x: 0, y: 200, width: view.frame.size.width, height: 400)
+       
         // Do any additional setup after loading the view.
     }
-    
-    @IBOutlet weak var headerLabel: UILabel!
-    
-   
-    @IBOutlet weak var schoolLabel: UILabel!
+        // Do any additional setup after loading the view.
+    }
 
    
     /*
@@ -51,4 +78,4 @@ var imageNames = ["profile", "secondprofile", "3rdprofile"]
     }
     */
 
-}
+
