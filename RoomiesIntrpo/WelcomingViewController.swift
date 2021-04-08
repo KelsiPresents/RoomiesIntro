@@ -1,14 +1,13 @@
 //
-//  ScrollViewController.swift
+//  WelcomingViewController.swift
 //  RoomiesIntrpo
 //
-//  Created by ECC Student on 3/25/21.
+//  Created by ECC Student on 4/8/21.
 //
 import iCarousel
 import UIKit
 
-
-class ScrollViewController: UIViewController, iCarouselDataSource {
+class WelcomingViewController: UIViewController , iCarouselDataSource {
     func numberOfItems(in carousel: iCarousel) -> Int {
         return 3
     }
@@ -20,7 +19,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
         let imageView = UIImageView(frame: view.bounds)
         view.addSubview(imageView)
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage (named: "finishedProfile\(index + 1)")
+        imageView.image = UIImage (named: "intro\(index + 1)")
         return view
     }
     
@@ -38,10 +37,11 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
         super.viewDidLoad()
         view.addSubview(myCarousel)
         myCarousel.dataSource = self
-        myCarousel.frame = CGRect(x: 0, y: 200, width: view.frame.size.width, height: 400)
+        myCarousel.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 400)
        
         // Do any additional setup after loading the view.
     }
     
   
 }
+
