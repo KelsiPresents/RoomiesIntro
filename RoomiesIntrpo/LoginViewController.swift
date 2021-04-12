@@ -27,7 +27,7 @@ class LoginViewController: UIViewController,  iCarouselDataSource {
     
     let myCarousel: iCarousel = {
         let view = iCarousel()
-        view.type = .coverFlow
+        view.type = .rotary
         
         return view
     }()
@@ -61,6 +61,7 @@ var imageNames = ["profile", "secondprofile", "3rdprofile"]
         view.addSubview(myCarousel)
         myCarousel.dataSource = self
         myCarousel.frame = CGRect(x: 0, y: 200, width: view.frame.size.width, height: 400)
+        myCarousel.autoscroll = 0.4
        
         // Do any additional setup after loading the view.
     }
