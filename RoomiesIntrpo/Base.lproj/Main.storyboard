@@ -8,28 +8,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Welcoming View Controller-->
+        <!--Welcoming Page-->
         <scene sceneID="1cs-SP-JS0">
             <objects>
-                <viewController id="0qn-cf-r7Q" customClass="WelcomingViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0qn-cf-r7Q" customClass="WelcomingPage" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Whw-Yn-SEj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha2-kd-Rxz">
+                                <rect key="frame" x="67" y="662" width="72" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82483166460000001" green="0.5423052907" blue="0.48625630139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="0qn-cf-r7Q" eventType="touchUpInside" id="hYd-kh-Trg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyu-zp-UWm">
+                                <rect key="frame" x="201" y="662" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Lumi Lumi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOD-U7-01D">
+                                <rect key="frame" x="92" y="140" width="244" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2021-03-25 at 3.23.55 PM" highlightedImage="3rdprofile" translatesAutoresizingMaskIntoConstraints="NO" id="QHu-DB-4fF">
                                 <rect key="frame" x="0.0" y="238" width="414" height="329"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7l-39-HFc">
-                                <rect key="frame" x="133" y="656" width="148" height="48"/>
+                                <rect key="frame" x="267" y="662" width="127" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Get Started">
+                                <state key="normal" title="New User">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Elz-ue-6NM"/>
+                                    <segue destination="l1N-Ke-2IE" kind="show" id="dfL-4g-D2q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,6 +67,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zyj-ZM-zO9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-739.13043478260875" y="77.678571428571431"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cnA-tJ-EMY">
+            <objects>
+                <viewController id="l1N-Ke-2IE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ouk-Dn-NED">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjz-i4-304">
+                                <rect key="frame" x="164" y="329" width="96" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82483166460000001" green="0.5423052907" blue="0.48625630139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Browse">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="0SP-eB-zKt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unv-xp-VHK">
+                                <rect key="frame" x="199" y="406" width="26" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSq-G1-fag">
+                                <rect key="frame" x="161" y="450" width="103" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZTz-2J-s7W" kind="show" id="Uld-qv-BjS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZhI-Jx-bQU"/>
+                        <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0bu-nG-hJW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxH-HN-usl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="76"/>
         </scene>
         <!--New User-->
         <scene sceneID="tne-QT-ifu">
@@ -885,6 +960,32 @@
                     <view key="view" contentMode="scaleToFill" id="sJH-ih-kuv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k71-3w-tJu">
+                                <rect key="frame" x="92" y="88" width="230" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Giselle2"/>
+                                <connections>
+                                    <segue destination="6co-SA-Sqz" kind="show" id="hfA-CA-VpX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1E-el-9a9">
+                                <rect key="frame" x="92" y="621" width="230" height="241"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Amirah3"/>
+                                <connections>
+                                    <segue destination="KOV-Ym-nKS" kind="show" id="oFn-AQ-9SN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdY-Hw-uYk">
+                                <rect key="frame" x="88" y="321" width="238" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Abriel"/>
+                                <connections>
+                                    <segue destination="KY7-ZO-lDT" kind="show" id="abY-iT-vQY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QC7-yh-B7F"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
@@ -1493,10 +1594,16 @@
             <point key="canvasLocation" x="-1699" y="78"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ow2-Tr-XPy"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="3rdprofile" width="960" height="720"/>
         <image name="551749-200" width="200" height="200"/>
+        <image name="Abriel" width="960" height="720"/>
+        <image name="Amirah3" width="960" height="720"/>
         <image name="Circle" width="600" height="596"/>
+        <image name="Giselle2" width="960" height="720"/>
         <image name="Screen Shot 2021-03-25 at 3.23.55 PM" width="646" height="342"/>
         <image name="Screen Shot 2021-03-25 at 7.44.36 PM 1" width="1199" height="1386"/>
         <image name="Screen Shot 2021-03-25 at 7.53.59 PM" width="1200" height="1455"/>
