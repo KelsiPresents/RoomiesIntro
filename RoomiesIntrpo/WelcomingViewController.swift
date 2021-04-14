@@ -26,7 +26,7 @@ class WelcomingViewController: UIViewController , iCarouselDataSource {
      
     let myCarousel: iCarousel = {
         let view = iCarousel()
-        view.type = .coverFlow
+        view.type = .rotary
         
         return view
     }()
@@ -38,6 +38,7 @@ class WelcomingViewController: UIViewController , iCarouselDataSource {
         view.addSubview(myCarousel)
         myCarousel.dataSource = self
         myCarousel.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 400)
+        myCarousel.autoscroll = -0.2
        
         // Do any additional setup after loading the view.
     }

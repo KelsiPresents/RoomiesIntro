@@ -13,6 +13,7 @@ class ProfileViewController: UIViewController {
     var fill3:String = ""
     var fill4:String = ""
     var fill5:String = ""
+    var insta:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = "\(fill)"
@@ -35,6 +36,14 @@ class ProfileViewController: UIViewController {
     
     
     @IBOutlet weak var bioLabel: UILabel!
+    
+    
+    @IBAction func instagramPressed(_ sender: Any) {
+        
+        if let url = NSURL(string: "https://www.instagram.com/" + insta+"/"){
+            UIApplication.shared.openURL(url as URL)
+    }
+    }
     /*
     // MARK: - Navigation
 

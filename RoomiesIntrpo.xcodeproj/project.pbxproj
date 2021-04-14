@@ -18,7 +18,7 @@
 		3F6DF19E261CDE13003A6281 /* SecondQuestionaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DF19D261CDE13003A6281 /* SecondQuestionaireViewController.swift */; };
 		3F6DF1A1261CDE32003A6281 /* ThirdQuestionaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DF1A0261CDE32003A6281 /* ThirdQuestionaireViewController.swift */; };
 		3F6DF1A4261CDE46003A6281 /* FourthQuestionaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DF1A3261CDE46003A6281 /* FourthQuestionaireViewController.swift */; };
-		3F6DF1AD261F809D003A6281 /* WelcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DF1AC261F809D003A6281 /* WelcomingViewController.swift */; };
+		3F6DF1B7262643A4003A6281 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F6DF1B6262643A4003A6281 /* GoogleService-Info-2.plist */; };
 		3F7448F7260156800084189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7448F6260156800084189F /* AppDelegate.swift */; };
 		3F7448F9260156800084189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7448F8260156800084189F /* SceneDelegate.swift */; };
 		3F7448FB260156800084189F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7448FA260156800084189F /* ViewController.swift */; };
@@ -26,6 +26,8 @@
 		3F744900260156830084189F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7448FF260156830084189F /* Assets.xcassets */; };
 		3F744903260156830084189F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F744901260156830084189F /* LaunchScreen.storyboard */; };
 		3F74491026016F600084189F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74490F26016F600084189F /* LoginViewController.swift */; };
+		3FB2618D26264765004A1553 /* WelcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2618C26264765004A1553 /* WelcomingViewController.swift */; };
+		3FB26190262663DD004A1553 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2618F262663DD004A1553 /* UserViewController.swift */; };
 		7D51A309397347128EF55BAF /* Pods_RoomiesIntrpo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62C82503D6F7085F55630AC /* Pods_RoomiesIntrpo.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +43,7 @@
 		3F6DF19D261CDE13003A6281 /* SecondQuestionaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionaireViewController.swift; sourceTree = "<group>"; };
 		3F6DF1A0261CDE32003A6281 /* ThirdQuestionaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdQuestionaireViewController.swift; sourceTree = "<group>"; };
 		3F6DF1A3261CDE46003A6281 /* FourthQuestionaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthQuestionaireViewController.swift; sourceTree = "<group>"; };
-		3F6DF1AC261F809D003A6281 /* WelcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomingViewController.swift; sourceTree = "<group>"; };
+		3F6DF1B6262643A4003A6281 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		3F7448F3260156800084189F /* RoomiesIntrpo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomiesIntrpo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7448F6260156800084189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7448F8260156800084189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		3F744902260156830084189F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F744904260156830084189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F74490F26016F600084189F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FB2618C26264765004A1553 /* WelcomingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomingViewController.swift; sourceTree = "<group>"; };
+		3FB2618F262663DD004A1553 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		443C36FFF5A2787E8AEF0CF7 /* Pods-RoomiesIntrpo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomiesIntrpo.debug.xcconfig"; path = "Target Support Files/Pods-RoomiesIntrpo/Pods-RoomiesIntrpo.debug.xcconfig"; sourceTree = "<group>"; };
 		554188E46DD5925EDF41D08D /* Pods-RoomiesIntrpo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomiesIntrpo.release.xcconfig"; path = "Target Support Files/Pods-RoomiesIntrpo/Pods-RoomiesIntrpo.release.xcconfig"; sourceTree = "<group>"; };
 		B62C82503D6F7085F55630AC /* Pods_RoomiesIntrpo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoomiesIntrpo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,9 +105,10 @@
 				3F7448F8260156800084189F /* SceneDelegate.swift */,
 				3F7448FA260156800084189F /* ViewController.swift */,
 				3F7448FC260156800084189F /* Main.storyboard */,
-				3F6DF1AC261F809D003A6281 /* WelcomingViewController.swift */,
+				3FB2618F262663DD004A1553 /* UserViewController.swift */,
 				3F6DF19D261CDE13003A6281 /* SecondQuestionaireViewController.swift */,
 				3F6DF1A0261CDE32003A6281 /* ThirdQuestionaireViewController.swift */,
+				3FB2618C26264765004A1553 /* WelcomingViewController.swift */,
 				3F6DF1A3261CDE46003A6281 /* FourthQuestionaireViewController.swift */,
 				3F64AD6D2618C14000DA583A /* MiniQ1ViewController.swift */,
 				3F64AD702618C14D00DA583A /* MiniQ2ViewController.swift */,
@@ -116,6 +121,7 @@
 				3F74490F26016F600084189F /* LoginViewController.swift */,
 				3F7448FF260156830084189F /* Assets.xcassets */,
 				3F744901260156830084189F /* LaunchScreen.storyboard */,
+				3F6DF1B6262643A4003A6281 /* GoogleService-Info-2.plist */,
 				3F744904260156830084189F /* Info.plist */,
 			);
 			path = RoomiesIntrpo;
@@ -191,6 +197,7 @@
 			files = (
 				3F744903260156830084189F /* LaunchScreen.storyboard in Resources */,
 				3F744900260156830084189F /* Assets.xcassets in Resources */,
+				3F6DF1B7262643A4003A6281 /* GoogleService-Info-2.plist in Resources */,
 				3F7448FE260156800084189F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +256,7 @@
 				3F7448FB260156800084189F /* ViewController.swift in Sources */,
 				3F7448F7260156800084189F /* AppDelegate.swift in Sources */,
 				3F7448F9260156800084189F /* SceneDelegate.swift in Sources */,
+				3FB26190262663DD004A1553 /* UserViewController.swift in Sources */,
 				3F64AD4A260D5B0900DA583A /* ScrollViewController.swift in Sources */,
 				3F64AD3C260BC14100DA583A /* ProfileViewController.swift in Sources */,
 				3F64AD36260BC0FB00DA583A /* SignUpViewController.swift in Sources */,
@@ -256,7 +264,7 @@
 				3F6DF1A4261CDE46003A6281 /* FourthQuestionaireViewController.swift in Sources */,
 				3F6DF1A1261CDE32003A6281 /* ThirdQuestionaireViewController.swift in Sources */,
 				3F64AD742618C15D00DA583A /* MiniQ3ViewController.swift in Sources */,
-				3F6DF1AD261F809D003A6281 /* WelcomingViewController.swift in Sources */,
+				3FB2618D26264765004A1553 /* WelcomingViewController.swift in Sources */,
 				3F64AD47260D509800DA583A /* QuestionaireViewController.swift in Sources */,
 				3F64AD39260BC12100DA583A /* BioViewController.swift in Sources */,
 				3F6DF19E261CDE13003A6281 /* SecondQuestionaireViewController.swift in Sources */,

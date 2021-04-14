@@ -30,6 +30,9 @@ class BioViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     
+    @IBOutlet weak var instaTextField: UITextField!
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         
         if segue.destination is ProfileViewController {
@@ -40,6 +43,7 @@ class BioViewController: UIViewController {
             pc?.fill3 = (gradeTextField.text!)
             pc?.fill4 = (majorTextField.text!)
             pc?.fill5 = (bioTextField.text!)
+            pc?.insta = (instaTextField.text!)
             
             
         }
