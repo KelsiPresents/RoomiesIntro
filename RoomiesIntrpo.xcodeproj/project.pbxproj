@@ -27,6 +27,7 @@
 		3F744903260156830084189F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F744901260156830084189F /* LaunchScreen.storyboard */; };
 		3F74491026016F600084189F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74490F26016F600084189F /* LoginViewController.swift */; };
 		3FB2618D26264765004A1553 /* WelcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2618C26264765004A1553 /* WelcomingViewController.swift */; };
+		3FB26190262663DD004A1553 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2618F262663DD004A1553 /* UserViewController.swift */; };
 		7D51A309397347128EF55BAF /* Pods_RoomiesIntrpo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62C82503D6F7085F55630AC /* Pods_RoomiesIntrpo.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		3F744904260156830084189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F74490F26016F600084189F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FB2618C26264765004A1553 /* WelcomingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomingViewController.swift; sourceTree = "<group>"; };
+		3FB2618F262663DD004A1553 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		443C36FFF5A2787E8AEF0CF7 /* Pods-RoomiesIntrpo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomiesIntrpo.debug.xcconfig"; path = "Target Support Files/Pods-RoomiesIntrpo/Pods-RoomiesIntrpo.debug.xcconfig"; sourceTree = "<group>"; };
 		554188E46DD5925EDF41D08D /* Pods-RoomiesIntrpo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomiesIntrpo.release.xcconfig"; path = "Target Support Files/Pods-RoomiesIntrpo/Pods-RoomiesIntrpo.release.xcconfig"; sourceTree = "<group>"; };
 		B62C82503D6F7085F55630AC /* Pods_RoomiesIntrpo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoomiesIntrpo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 				3F7448F8260156800084189F /* SceneDelegate.swift */,
 				3F7448FA260156800084189F /* ViewController.swift */,
 				3F7448FC260156800084189F /* Main.storyboard */,
+				3FB2618F262663DD004A1553 /* UserViewController.swift */,
 				3F6DF19D261CDE13003A6281 /* SecondQuestionaireViewController.swift */,
 				3F6DF1A0261CDE32003A6281 /* ThirdQuestionaireViewController.swift */,
 				3FB2618C26264765004A1553 /* WelcomingViewController.swift */,
@@ -253,6 +256,7 @@
 				3F7448FB260156800084189F /* ViewController.swift in Sources */,
 				3F7448F7260156800084189F /* AppDelegate.swift in Sources */,
 				3F7448F9260156800084189F /* SceneDelegate.swift in Sources */,
+				3FB26190262663DD004A1553 /* UserViewController.swift in Sources */,
 				3F64AD4A260D5B0900DA583A /* ScrollViewController.swift in Sources */,
 				3F64AD3C260BC14100DA583A /* ProfileViewController.swift in Sources */,
 				3F64AD36260BC0FB00DA583A /* SignUpViewController.swift in Sources */,

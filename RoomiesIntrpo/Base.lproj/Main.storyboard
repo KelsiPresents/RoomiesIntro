@@ -580,20 +580,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3E-ai-u4f">
-                                <rect key="frame" x="5" y="474" width="97" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Social Media">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BY0-mg-dGE">
                                 <rect key="frame" x="135" y="474" width="144" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3E-ai-u4f">
+                                <rect key="frame" x="20" y="475" width="109" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Instagram    @">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UkW-7g-weq"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -603,6 +603,7 @@
                         <outlet property="ageTextField" destination="FHe-XP-GAr" id="DYJ-QV-vHk"/>
                         <outlet property="bioTextField" destination="64T-nZ-qbF" id="DBJ-e2-sqz"/>
                         <outlet property="gradeTextField" destination="ciM-6a-Wi5" id="1nc-eF-Z0w"/>
+                        <outlet property="instaTextField" destination="BY0-mg-dGE" id="sBl-cJ-w6k"/>
                         <outlet property="majorTextField" destination="CQe-vC-dKB" id="cdZ-20-Zpf"/>
                         <outlet property="nameTextField" destination="tgi-xt-Jnv" id="hn9-4L-jST"/>
                     </connections>
@@ -701,6 +702,14 @@
                                 </state>
                                 <connections>
                                     <segue destination="91p-6S-oFV" kind="show" id="RSV-ek-ade"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qy5-M9-RHz">
+                                <rect key="frame" x="60" y="665" width="71" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="insta"/>
+                                <connections>
+                                    <action selector="instagramPressed:" destination="GAq-hu-le6" eventType="touchUpInside" id="xIe-PL-pUh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -896,6 +905,32 @@
                     <view key="view" contentMode="scaleToFill" id="sJH-ih-kuv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snA-ZJ-Gcu">
+                                <rect key="frame" x="62" y="578" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Giselle"/>
+                                <connections>
+                                    <segue destination="6co-SA-Sqz" kind="show" id="1M3-W9-bSY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfF-Go-bX8">
+                                <rect key="frame" x="187" y="578" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Abriel"/>
+                                <connections>
+                                    <segue destination="KY7-ZO-lDT" kind="show" id="6yu-EH-1hW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1z-aa-PRS">
+                                <rect key="frame" x="317" y="578" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Amirah"/>
+                                <connections>
+                                    <segue destination="KOV-Ym-nKS" kind="show" id="872-Pp-cjZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QC7-yh-B7F"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
@@ -1280,10 +1315,10 @@
             </objects>
             <point key="canvasLocation" x="5821.739130434783" y="853.79464285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--User View Controller-->
         <scene sceneID="Xw6-a8-sxD">
             <objects>
-                <viewController id="KOV-Ym-nKS" sceneMemberID="viewController">
+                <viewController id="KOV-Ym-nKS" customClass="UserViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MuP-7X-AEi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1372,6 +1407,9 @@
                                 <rect key="frame" x="93" y="781" width="71" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="insta"/>
+                                <connections>
+                                    <action selector="GoogleButtonWithSender:" destination="KOV-Ym-nKS" eventType="touchUpInside" id="h8u-Ia-XLJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixo-8B-aa8">
                                 <rect key="frame" x="245" y="776" width="75" height="69"/>
