@@ -304,11 +304,13 @@ PODS:
   - nanopb/decode (2.30907.0)
   - nanopb/encode (2.30907.0)
   - PromisesObjC (1.2.12)
+  - Shuffle-iOS (0.5.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - iCarousel
+  - Shuffle-iOS
 
 SPEC REPOS:
   trunk:
@@ -328,6 +330,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - Shuffle-iOS
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -346,7 +349,8 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  Shuffle-iOS: ff33658fb1e5eebd6a4724c156473e63754be9cb
 
-PODFILE CHECKSUM: 09fe2a9b5ba7153e7a68d84f9199838d2a4dfd38
+PODFILE CHECKSUM: 4c12a12951aa268c5773f454231175c77ef28721
 
 COCOAPODS: 1.10.1
