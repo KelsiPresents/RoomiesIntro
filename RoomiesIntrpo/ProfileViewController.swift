@@ -14,6 +14,7 @@ class ProfileViewController: UIViewController {
     var fill4:String = ""
     var fill5:String = ""
     var insta:String = ""
+    var image:UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = "\(fill)"
@@ -21,10 +22,14 @@ class ProfileViewController: UIViewController {
         gradeLabel.text = "\(fill3)"
         majorLabel.text = "\(fill4)"
         bioLabel.text = "\(fill5)"
+        if let image = image {
+            imageView.image = image
+        }
         // Do any additional setup after loading the view.
     }
     
    
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
     
