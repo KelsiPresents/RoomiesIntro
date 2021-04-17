@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BioViewController: UIViewController {
+class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICollectionViewDelegate, UINavigationControllerDelegate {
 
     var fullName:String = ""
     
@@ -21,6 +21,7 @@ class BioViewController: UIViewController {
     
     @IBOutlet weak var ageTextField: UITextField!
     
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var gradeTextField: UITextField!
     
@@ -44,22 +45,28 @@ class BioViewController: UIViewController {
             pc?.fill4 = (majorTextField.text!)
             pc?.fill5 = (bioTextField.text!)
             pc?.insta = (instaTextField.text!)
+            pc?.image = imageView.image
             
             
         }
         
         
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let image = info[.editedImage] as? UIImage else { return}
+        imageView.image = image
+        dismiss(animated: true)
     }
-    */
+    
+    @IBAction func onProfileImageTapped(_ sender: UITapGestureRecognizer) {
+        print("I was tapped")
+        let picker = UIImagePickerController()
+            picker.allowsEditing = true
+            picker.delegate = self
+            present(picker, animated: true)
+    }
+    
+    
+    
 
 }
