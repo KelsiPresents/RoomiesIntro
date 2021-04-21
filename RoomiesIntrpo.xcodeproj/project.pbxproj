@@ -18,18 +18,17 @@
 		3F6DF19E261CDE13003A6281 /* SecondQuestionaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DF19D261CDE13003A6281 /* SecondQuestionaireViewController.swift */; };
 		3F6DF1A1261CDE32003A6281 /* ThirdQuestionaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DF1A0261CDE32003A6281 /* ThirdQuestionaireViewController.swift */; };
 		3F6DF1A4261CDE46003A6281 /* FourthQuestionaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DF1A3261CDE46003A6281 /* FourthQuestionaireViewController.swift */; };
+		3F6DF1B7262643A4003A6281 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F6DF1B6262643A4003A6281 /* GoogleService-Info-2.plist */; };
 		3F7448F7260156800084189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7448F6260156800084189F /* AppDelegate.swift */; };
 		3F7448F9260156800084189F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7448F8260156800084189F /* SceneDelegate.swift */; };
 		3F7448FB260156800084189F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7448FA260156800084189F /* ViewController.swift */; };
 		3F7448FE260156800084189F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7448FC260156800084189F /* Main.storyboard */; };
+		3F744900260156830084189F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7448FF260156830084189F /* Assets.xcassets */; };
 		3F744903260156830084189F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F744901260156830084189F /* LaunchScreen.storyboard */; };
 		3F74491026016F600084189F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74490F26016F600084189F /* LoginViewController.swift */; };
-		3FB0B566262E7A8300DBCFE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB0B565262E7A8300DBCFE5 /* Assets.xcassets */; };
 		3FB2618D26264765004A1553 /* WelcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2618C26264765004A1553 /* WelcomingViewController.swift */; };
 		3FB26190262663DD004A1553 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2618F262663DD004A1553 /* UserViewController.swift */; };
 		7D51A309397347128EF55BAF /* Pods_RoomiesIntrpo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62C82503D6F7085F55630AC /* Pods_RoomiesIntrpo.framework */; };
-		848E42C0262E45B200F3218E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848E42BF262E45B200F3218E /* GoogleService-Info.plist */; };
-		84DA6972262E0A4E00F0F136 /* TinderSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA6971262E0A4E00F0F136 /* TinderSwipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,21 +43,20 @@
 		3F6DF19D261CDE13003A6281 /* SecondQuestionaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionaireViewController.swift; sourceTree = "<group>"; };
 		3F6DF1A0261CDE32003A6281 /* ThirdQuestionaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdQuestionaireViewController.swift; sourceTree = "<group>"; };
 		3F6DF1A3261CDE46003A6281 /* FourthQuestionaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthQuestionaireViewController.swift; sourceTree = "<group>"; };
+		3F6DF1B6262643A4003A6281 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		3F7448F3260156800084189F /* RoomiesIntrpo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomiesIntrpo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7448F6260156800084189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7448F8260156800084189F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3F7448FA260156800084189F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F7448FD260156800084189F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F7448FF260156830084189F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F744902260156830084189F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F744904260156830084189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F74490F26016F600084189F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3FB0B565262E7A8300DBCFE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB2618C26264765004A1553 /* WelcomingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomingViewController.swift; sourceTree = "<group>"; };
 		3FB2618F262663DD004A1553 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		443C36FFF5A2787E8AEF0CF7 /* Pods-RoomiesIntrpo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomiesIntrpo.debug.xcconfig"; path = "Target Support Files/Pods-RoomiesIntrpo/Pods-RoomiesIntrpo.debug.xcconfig"; sourceTree = "<group>"; };
 		554188E46DD5925EDF41D08D /* Pods-RoomiesIntrpo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomiesIntrpo.release.xcconfig"; path = "Target Support Files/Pods-RoomiesIntrpo/Pods-RoomiesIntrpo.release.xcconfig"; sourceTree = "<group>"; };
-		848E42BF262E45B200F3218E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		84DA6971262E0A4E00F0F136 /* TinderSwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderSwipeViewController.swift; sourceTree = "<group>"; };
 		B62C82503D6F7085F55630AC /* Pods_RoomiesIntrpo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoomiesIntrpo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,7 +105,6 @@
 				3F7448F8260156800084189F /* SceneDelegate.swift */,
 				3F7448FA260156800084189F /* ViewController.swift */,
 				3F7448FC260156800084189F /* Main.storyboard */,
-				84DA6971262E0A4E00F0F136 /* TinderSwipeViewController.swift */,
 				3FB2618F262663DD004A1553 /* UserViewController.swift */,
 				3F6DF19D261CDE13003A6281 /* SecondQuestionaireViewController.swift */,
 				3F6DF1A0261CDE32003A6281 /* ThirdQuestionaireViewController.swift */,
@@ -122,15 +119,9 @@
 				3F64AD38260BC12100DA583A /* BioViewController.swift */,
 				3F64AD35260BC0FB00DA583A /* SignUpViewController.swift */,
 				3F74490F26016F600084189F /* LoginViewController.swift */,
-<<<<<<< HEAD
 				3F7448FF260156830084189F /* Assets.xcassets */,
-				848E42BF262E45B200F3218E /* GoogleService-Info.plist */,
-				3F744901260156830084189F /* LaunchScreen.storyboard */,
-=======
 				3F744901260156830084189F /* LaunchScreen.storyboard */,
 				3F6DF1B6262643A4003A6281 /* GoogleService-Info-2.plist */,
-				3FB0B565262E7A8300DBCFE5 /* Assets.xcassets */,
->>>>>>> a9659717752c466cc1e5b479099f4993845e159f
 				3F744904260156830084189F /* Info.plist */,
 			);
 			path = RoomiesIntrpo;
@@ -205,13 +196,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F744903260156830084189F /* LaunchScreen.storyboard in Resources */,
-<<<<<<< HEAD
-				848E42C0262E45B200F3218E /* GoogleService-Info.plist in Resources */,
 				3F744900260156830084189F /* Assets.xcassets in Resources */,
-=======
 				3F6DF1B7262643A4003A6281 /* GoogleService-Info-2.plist in Resources */,
-				3FB0B566262E7A8300DBCFE5 /* Assets.xcassets in Resources */,
->>>>>>> a9659717752c466cc1e5b479099f4993845e159f
 				3F7448FE260156800084189F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +268,6 @@
 				3F64AD47260D509800DA583A /* QuestionaireViewController.swift in Sources */,
 				3F64AD39260BC12100DA583A /* BioViewController.swift in Sources */,
 				3F6DF19E261CDE13003A6281 /* SecondQuestionaireViewController.swift in Sources */,
-				84DA6972262E0A4E00F0F136 /* TinderSwipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +422,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.EveryoneCanCodeChicago.RoomiesIntrpo;
+				PRODUCT_BUNDLE_IDENTIFIER = "Everyone-Can-Code-Chicago.RoomiesIntrpo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +442,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.EveryoneCanCodeChicago.RoomiesIntrpo;
+				PRODUCT_BUNDLE_IDENTIFIER = "Everyone-Can-Code-Chicago.RoomiesIntrpo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

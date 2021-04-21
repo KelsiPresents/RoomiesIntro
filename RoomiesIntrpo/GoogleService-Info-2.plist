@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>650311359033-cld87u69agg7rfo7kh338nsulvo3pbml.apps.googleusercontent.com</string>
+	<string>449481262129-f53fl3vm8nj3ch8hp94l4ue2behrfjnh.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.650311359033-cld87u69agg7rfo7kh338nsulvo3pbml</string>
+	<string>com.googleusercontent.apps.449481262129-f53fl3vm8nj3ch8hp94l4ue2behrfjnh</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDwPH48oTdUJE5gEDjEXYiC6oYgzmT9eh8</string>
+	<string>AIzaSyCLVzF-K1DPPwScFVv8P3uFvd823X_QvB4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>650311359033</string>
+	<string>449481262129</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.EveryoneCanCodeChicago.RoomiesIntrpo</string>
+	<string>Everyone-Can-Code-Chicago.RoomiesIntrpo</string>
 	<key>PROJECT_ID</key>
-	<string>lumi-lumi-4d562</string>
+	<string>lumi-lumi</string>
 	<key>STORAGE_BUCKET</key>
-	<string>lumi-lumi-4d562.appspot.com</string>
+	<string>lumi-lumi.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:650311359033:ios:43ebe4d3029e4f7c928be8</string>
+	<string>1:449481262129:ios:8b8724459f11c7b6d90110</string>
 </dict>
 </plist>

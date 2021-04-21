@@ -6,17 +6,8 @@
 //
 
 import UIKit
-import Firebase
 
 class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    
-    @IBOutlet weak var usernameTextField: UITextField!
-    
-    @IBOutlet weak var passwordTextField: UITextField!
-    
-    @IBOutlet weak var confirmPasswordTextField: UITextField!
-    
-    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -38,7 +29,6 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         // Do any additional setup after loading the view.
         self.genderPickerView.delegate = self
         self.genderPickerView.dataSource = self
@@ -46,20 +36,6 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         pickerData = ["Female","Male","Non-binary","other"]
     }
     
-    @IBAction func onSignUpButtonPressed(_ sender: UIButton) {
-        if passwordTextField.text == confirmPasswordTextField.text {
-         Auth.auth().createUser(withEmail: usernameTextField.text!, password: passwordTextField.text!) { authResult, error in
-                guard error == nil else { return  }
-                print(authResult)
-              }
-        } else {
-            let alertController = UIAlertController(title: "Password Does Not Match", message: "Please Try Again", preferredStyle:  .alert)
-            let alertAction =   UIAlertAction(title: "Okay", style: .default, handler: nil)
-            alertController.addAction(alertAction)
-            present(alertController, animated: true, completion: nil)
-            
-        }
-    }
     
   
     
