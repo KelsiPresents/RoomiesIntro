@@ -39,9 +39,44 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
         view.addSubview(myCarousel)
         myCarousel.dataSource = self
         myCarousel.frame = CGRect(x: 0, y: 200, width: view.frame.size.width, height: 400)
+        
        
         // Do any additional setup after loading the view.
     }
+   
     
+    @IBOutlet weak var giselleButton: UIButton!
     
+    @IBAction func giselleButton(_ sender: Any) {
+        giselleButton.isHidden = true
+        abrielButton.isHidden = false
+        dislikeClickedButton.isHidden = true
+        dislikeButton.isHidden = false
+    }
+    
+    @IBOutlet weak var abrielButton: UIButton!
+    
+    @IBAction func abrielButton(_ sender: Any) {
+        abrielButton.isHidden = true
+        amirahButton.isHidden = false
+        dislikeClickedButton.isHidden = true
+        dislikeButton.isHidden = false
+    }
+    
+    @IBOutlet weak var amirahButton: UIButton!
+    @IBAction func amirahButton(_ sender: Any) {
+        dislikeClickedButton.isHidden = true
+        dislikeButton.isHidden = false
+       
+    }
+    
+    @IBOutlet weak var dislikeButton: UIButton!
+    @IBOutlet weak var dislikeClickedButton: UIButton!
+    @IBAction func dislikeButton(_ sender: Any) {
+        amirahButton.isHidden = true
+        abrielButton.isHidden = true
+        giselleButton.isHidden = false
+        dislikeClickedButton.isHidden = false
+        dislikeButton.isHidden = true
+    }
 }

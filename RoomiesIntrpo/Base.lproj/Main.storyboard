@@ -769,7 +769,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qy5-M9-RHz">
-                                <rect key="frame" x="60" y="665" width="71" height="59"/>
+                                <rect key="frame" x="180" y="654" width="71" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="insta"/>
                                 <connections>
@@ -971,28 +971,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snA-ZJ-Gcu">
-                                <rect key="frame" x="62" y="578" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4R-B0-AgJ">
+                                <rect key="frame" x="212" y="538" width="138" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Giselle"/>
+                                <state key="normal" image="Screen_Shot_2021-04-08_at_6.30.42_PM-removebg-preview"/>
                                 <connections>
-                                    <segue destination="6co-SA-Sqz" kind="show" id="1M3-W9-bSY"/>
+                                    <action selector="giselleButton:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="v5L-6c-vyi"/>
+                                    <segue destination="6co-SA-Sqz" kind="show" id="B8y-Rz-dGe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfF-Go-bX8">
-                                <rect key="frame" x="187" y="578" width="40" height="30"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nnr-z0-2D0">
+                                <rect key="frame" x="222" y="555" width="118" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Abriel"/>
+                                <state key="normal" image="Screen_Shot_2021-04-08_at_6.29.10_PM-removebg-preview-4-removebg-preview"/>
                                 <connections>
-                                    <segue destination="KY7-ZO-lDT" kind="show" id="6yu-EH-1hW"/>
+                                    <action selector="abrielButton:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="NpU-6R-TMm"/>
+                                    <segue destination="KY7-ZO-lDT" kind="show" id="ZzG-o7-IOk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1z-aa-PRS">
-                                <rect key="frame" x="317" y="578" width="49" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ls2-br-QBK">
+                                <rect key="frame" x="65" y="546" width="149" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Amirah"/>
+                                <state key="normal" image="Screen_Shot_2021-04-08_at_6.29.33_PM-removebg-preview"/>
                                 <connections>
-                                    <segue destination="KOV-Ym-nKS" kind="show" id="872-Pp-cjZ"/>
+                                    <action selector="dislikeButton:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="dsZ-hz-8dF"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIt-mP-Xma">
+                                <rect key="frame" x="229" y="546" width="111" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Screen_Shot_2021-04-08_at_6.29.10_PM-removebg-preview-4-removebg-preview"/>
+                                <connections>
+                                    <action selector="amirahButton:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="u6x-bs-7Xd"/>
+                                    <segue destination="KOV-Ym-nKS" kind="show" id="4qK-kp-tW5"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAj-qj-QzM">
+                                <rect key="frame" x="65" y="556" width="126" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="final"/>
+                                <connections>
+                                    <action selector="dislikeButton:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="XPk-vy-svW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1000,15 +1019,22 @@
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="fm1-MP-TLw"/>
+                    <connections>
+                        <outlet property="abrielButton" destination="Nnr-z0-2D0" id="vYT-p8-wD9"/>
+                        <outlet property="amirahButton" destination="tIt-mP-Xma" id="GHm-IB-Tlf"/>
+                        <outlet property="dislikeButton" destination="ls2-br-QBK" id="SYZ-64-nyd"/>
+                        <outlet property="dislikeClickedButton" destination="EAj-qj-QzM" id="Xro-gi-TN5"/>
+                        <outlet property="giselleButton" destination="J4R-B0-AgJ" id="0Ii-Fs-6pJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REO-sc-Tfv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5821.739130434783" y="82.366071428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--User3 View Controller-->
         <scene sceneID="4dr-ja-ydn">
             <objects>
-                <viewController id="6co-SA-Sqz" sceneMemberID="viewController">
+                <viewController id="6co-SA-Sqz" customClass="User3ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBI-OK-nP4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1093,6 +1119,15 @@
                                 <color key="textColor" red="0.82483166460000001" green="0.5423052907" blue="0.48625630139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euv-WH-OgE">
+                                <rect key="frame" x="172" y="761" width="71" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="insta"/>
+                                <connections>
+                                    <action selector="GoogleButtonWithSender:" destination="6co-SA-Sqz" eventType="touchUpInside" id="jiK-BX-kHb"/>
+                                    <action selector="GoogleButtonWithSender:" destination="KOV-Ym-nKS" eventType="touchUpInside" id="yVI-ug-Z7Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5BG-km-eYH"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1484,17 +1519,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3c-x7-l0Y">
-                                <rect key="frame" x="93" y="781" width="71" height="59"/>
+                                <rect key="frame" x="178" y="773" width="71" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="insta"/>
                                 <connections>
                                     <action selector="GoogleButtonWithSender:" destination="KOV-Ym-nKS" eventType="touchUpInside" id="h8u-Ia-XLJ"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixo-8B-aa8">
-                                <rect key="frame" x="245" y="776" width="75" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="mail"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="63t-4v-uEN"/>
@@ -1506,10 +1536,10 @@
             </objects>
             <point key="canvasLocation" x="6734.7826086956529" y="775.44642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--User2 View Controller-->
         <scene sceneID="ePc-oM-EiD">
             <objects>
-                <viewController id="KY7-ZO-lDT" sceneMemberID="viewController">
+                <viewController id="KY7-ZO-lDT" customClass="User2ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KyA-L9-oPU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1594,6 +1624,14 @@
                                 <color key="textColor" red="0.82483166460000001" green="0.5423052907" blue="0.48625630139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yea-62-udN">
+                                <rect key="frame" x="178" y="758" width="71" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="insta"/>
+                                <connections>
+                                    <action selector="GoogleButtonWithSender:" destination="KOV-Ym-nKS" eventType="touchUpInside" id="KZn-59-Qe3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uCg-ga-3bj"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1635,11 +1673,14 @@
         <image name="Screen Shot 2021-03-25 at 7.44.36 PM 1" width="1199" height="1386"/>
         <image name="Screen Shot 2021-03-25 at 7.53.59 PM" width="1200" height="1455"/>
         <image name="Screen Shot 2021-03-25 at 8.20.07 PM" width="788" height="1446"/>
+        <image name="Screen_Shot_2021-04-08_at_6.29.10_PM-removebg-preview-4-removebg-preview" width="438" height="452"/>
+        <image name="Screen_Shot_2021-04-08_at_6.29.33_PM-removebg-preview" width="206" height="190"/>
+        <image name="Screen_Shot_2021-04-08_at_6.30.42_PM-removebg-preview" width="198" height="206"/>
+        <image name="final" width="467" height="449"/>
         <image name="full_blue-removebg-preview" width="577" height="433"/>
         <image name="full_pink-removebg-preview" width="577" height="433"/>
         <image name="icon" width="450" height="450"/>
         <image name="insta" width="1000" height="1000"/>
-        <image name="mail" width="1024" height="1024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
