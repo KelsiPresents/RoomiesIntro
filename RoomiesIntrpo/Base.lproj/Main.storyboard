@@ -1626,6 +1626,7 @@
                                 <state key="normal" title="Button" image="insta"/>
                                 <connections>
                                     <action selector="GoogleButtonWithSender:" destination="KOV-Ym-nKS" eventType="touchUpInside" id="KZn-59-Qe3"/>
+                                    <action selector="GoogleButtonWithSender:" destination="KY7-ZO-lDT" eventType="touchUpInside" id="ZVF-hQ-eKA"/>
                                 </connections>
                             </button>
                         </subviews>

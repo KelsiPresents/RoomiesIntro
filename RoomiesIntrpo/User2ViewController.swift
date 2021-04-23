@@ -16,7 +16,7 @@ class User2ViewController: UIViewController {
     }
     
     @IBAction func GoogleButton(sender: AnyObject) {
-        if let url = NSURL(string: "https://www.instagram.com/amirah_ib/"){
+        if let url = NSURL(string: "https://www.instagram.com/7olited1/"){
             UIApplication.shared.openURL(url as URL)
         }
     }
