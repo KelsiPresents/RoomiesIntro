@@ -11,9 +11,12 @@ class MiniQ1ViewController: UIViewController {
     
     var results:String = ""
     var name:String = ""
+    var time = "TRUE"
+    var money = "TRUE"
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -31,6 +34,7 @@ class MiniQ1ViewController: UIViewController {
     @IBAction func moneyButtonPressed(_ sender: Any) {
         results = "0"
         moneyButton.backgroundColor = UIColor.gray
+
     }
     
     

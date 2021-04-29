@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var usernameTextField: UITextField!
     
@@ -35,12 +35,15 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         self.genderPickerView.delegate = self
         self.genderPickerView.dataSource = self
         
         pickerData = ["Female","Male","Non-binary","other"]
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
+        confirmPasswordTextField.delegate = self
     }
     
     
@@ -58,8 +61,22 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                     
                 }
             }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           textField.resignFirstResponder() // dismiss keyboard
+           return true
+       }
 
     }
+
+
+//extension ViewController: UITextFieldDelegate {
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        textField.resignFirstResponder() // dismiss keyboard
+//        return true
+//    }
+//}
+
     
     
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICollectionViewDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICollectionViewDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -34,7 +34,10 @@ class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICo
         self.agePickerView.dataSource = self
         self.gradePickerView.delegate = self
         self.gradePickerView.dataSource = self
-        
+        majorTextField.delegate = self
+        bioTextField.delegate = self
+        instaTextField.delegate = self
+        nameTextField.delegate = self
         
         agePickerData = ["",
    "17", "18", "19", "20", "21"]
@@ -121,4 +124,9 @@ class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICo
     
     @IBOutlet weak var gradePickerView: UIPickerView!
     
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder() // dismiss keyboard
+        return true
+    }
 }
