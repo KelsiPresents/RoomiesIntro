@@ -79,4 +79,9 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
         dislikeClickedButton.isHidden = false
         dislikeButton.isHidden = true
     }
+    
+    
+    
+    
+    
 }
