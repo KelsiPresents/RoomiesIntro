@@ -12,8 +12,9 @@ class WelcomingViewController: UIViewController , iCarouselDataSource {
         return 3
     }
     
+    @IBOutlet weak var layoutView: UIView!
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width/1.4, height: 300))
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width/1.4, height: layoutView.frame.height))
 //        view.backgroundColor = .red
         
         let imageView = UIImageView(frame: view.bounds)
@@ -37,7 +38,7 @@ class WelcomingViewController: UIViewController , iCarouselDataSource {
         super.viewDidLoad()
         view.addSubview(myCarousel)
         myCarousel.dataSource = self
-        myCarousel.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 400)
+        myCarousel.frame = layoutView.frame
         myCarousel.autoscroll = -0.2
        
         // Do any additional setup after loading the view.
