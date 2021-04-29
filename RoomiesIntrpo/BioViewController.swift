@@ -34,10 +34,10 @@ class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICo
         self.agePickerView.dataSource = self
         self.gradePickerView.delegate = self
         self.gradePickerView.dataSource = self
-        gradeTextField.delegate = self
         majorTextField.delegate = self
         bioTextField.delegate = self
         instaTextField.delegate = self
+        nameTextField.delegate = self
         
         agePickerData = ["",
    "17", "18", "19", "20", "21"]
