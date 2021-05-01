@@ -1015,6 +1015,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="doneWithProfileClicked:" destination="GAq-hu-le6" eventType="touchUpInside" id="KxN-DC-CnK"/>
                                     <segue destination="91p-6S-oFV" kind="show" id="RSV-ek-ade"/>
                                 </connections>
                             </button>
@@ -1923,7 +1924,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="cZG-aA-ZrT"/>
-        <segue reference="Xpp-sd-MIi"/>
+        <segue reference="17f-kY-okO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="3rdprofile" width="960" height="720"/>

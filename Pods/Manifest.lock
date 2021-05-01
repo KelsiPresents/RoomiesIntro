@@ -226,6 +226,9 @@ PODS:
   - Firebase/Firestore (7.9.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 7.9.0)
+  - Firebase/Storage (7.9.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 7.9.0)
   - FirebaseAuth (7.9.0):
     - FirebaseCore (~> 7.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
@@ -252,6 +255,9 @@ PODS:
     - "gRPC-C++ (~> 1.28.0)"
     - leveldb-library (~> 1.22)
     - nanopb (~> 2.30907.0)
+  - FirebaseStorage (7.9.0):
+    - FirebaseCore (~> 7.0)
+    - GTMSessionFetcher/Core (~> 1.4)
   - GoogleDataTransport (8.3.1):
     - GoogleUtilities/Environment (~> 7.2)
     - nanopb (~> 2.30907.0)
@@ -304,13 +310,12 @@ PODS:
   - nanopb/decode (2.30907.0)
   - nanopb/encode (2.30907.0)
   - PromisesObjC (1.2.12)
-  - Shuffle-iOS (0.5.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
+  - Firebase/Storage
   - iCarousel
-  - Shuffle-iOS
 
 SPEC REPOS:
   trunk:
@@ -321,6 +326,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseFirestore
+    - FirebaseStorage
     - GoogleDataTransport
     - GoogleUtilities
     - "gRPC-C++"
@@ -330,7 +336,6 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
-    - Shuffle-iOS
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -340,6 +345,7 @@ SPEC CHECKSUMS:
   FirebaseCore: 0798738ad1ae0fda67e17c7b9081241c431c6859
   FirebaseCoreDiagnostics: 3d36e05da74cb8b7ce30e6594a8f201b982c725c
   FirebaseFirestore: a2de10a51530efd84f2309acbe774f498285e93a
+  FirebaseStorage: 0646be9a7552aac5703d095961081942e693967d
   GoogleDataTransport: 8b0e733ea77c9218778e5a9e34ba9508b8328939
   GoogleUtilities: e1d9ed4e544fc32a93e00e721400cbc3f377200d
   "gRPC-C++": 13d8ccef97d5c3c441b7e3c529ef28ebee86fad2
@@ -349,8 +355,7 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  Shuffle-iOS: ff33658fb1e5eebd6a4724c156473e63754be9cb
 
-PODFILE CHECKSUM: 4c12a12951aa268c5773f454231175c77ef28721
+PODFILE CHECKSUM: 01475530e4f5fe3e8380fd3f2bd7fe82016798fc
 
 COCOAPODS: 1.10.1

@@ -10,17 +10,17 @@ import UIKit
 
 class ScrollViewController: UIViewController, iCarouselDataSource {
     func numberOfItems(in carousel: iCarousel) -> Int {
-        return 3
+        return matches.count
     }
-    
+    var matches = [Match]()
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width/1.4, height: 300))
 //        view.backgroundColor = .red
-        
+        let match = matches[index]
         let imageView = UIImageView(frame: view.bounds)
         view.addSubview(imageView)
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage (named: "finishedProfile\(index + 1)")
+        imageView.image = UIImage (named: match.imageName)
         return view
     }
     
@@ -36,11 +36,15 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let match1 = Match(name: "Kelsi", imageName: "finishedProfile1", bio: "Hello")
+        
+        let match2 = Match(name: "Kelsi", imageName: "finishedProfile2", bio: "Hello")
+        let match3 = Match(name: "Kelsi", imageName: "finishedProfile3", bio: "Hello")
+        matches = [match1, match2, match3]
         view.addSubview(myCarousel)
         myCarousel.dataSource = self
         myCarousel.frame = CGRect(x: 0, y: 200, width: view.frame.size.width, height: 400)
         
-       
         // Do any additional setup after loading the view.
     }
    

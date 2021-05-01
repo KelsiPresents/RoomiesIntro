@@ -7,10 +7,12 @@
 
 import UIKit
 
+
 class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICollectionViewDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
+    
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView.tag == 1 {
@@ -24,6 +26,8 @@ class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICo
     var age:String = ""
     var grade:String = ""
     
+    
+ 
 
     var fullName:String = ""
     
