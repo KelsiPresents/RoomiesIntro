@@ -89,7 +89,7 @@
 		<key>Shuffle-iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>21</integer>
 		</dict>
 		<key>abseil.xcscheme</key>
 		<dict>
