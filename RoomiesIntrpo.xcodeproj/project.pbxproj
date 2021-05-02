@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F114889263DBABC0003DEB0 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F114888263DBABC0003DEB0 /* Match.swift */; };
 		3F12AA1B263308BB0060292E /* User2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12AA1A263308BB0060292E /* User2ViewController.swift */; };
 		3F12AA1E263309570060292E /* User3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12AA1D263309570060292E /* User3ViewController.swift */; };
 		3F64AD36260BC0FB00DA583A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD35260BC0FB00DA583A /* SignUpViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F114888263DBABC0003DEB0 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		3F12AA1A263308BB0060292E /* User2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User2ViewController.swift; sourceTree = "<group>"; };
 		3F12AA1D263309570060292E /* User3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User3ViewController.swift; sourceTree = "<group>"; };
 		3F64AD35260BC0FB00DA583A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				3F64AD702618C14D00DA583A /* MiniQ2ViewController.swift */,
 				3F64AD732618C15D00DA583A /* MiniQ3ViewController.swift */,
 				3F64AD49260D5B0900DA583A /* ScrollViewController.swift */,
+				3F114888263DBABC0003DEB0 /* Match.swift */,
 				3F64AD46260D509800DA583A /* QuestionaireViewController.swift */,
 				3F64AD3B260BC14100DA583A /* ProfileViewController.swift */,
 				3F64AD38260BC12100DA583A /* BioViewController.swift */,
@@ -260,6 +263,7 @@
 				3F74491026016F600084189F /* LoginViewController.swift in Sources */,
 				3F64AD6E2618C14000DA583A /* MiniQ1ViewController.swift in Sources */,
 				3F7448FB260156800084189F /* ViewController.swift in Sources */,
+				3F114889263DBABC0003DEB0 /* Match.swift in Sources */,
 				3F7448F7260156800084189F /* AppDelegate.swift in Sources */,
 				3F7448F9260156800084189F /* SceneDelegate.swift in Sources */,
 				3FB26190262663DD004A1553 /* UserViewController.swift in Sources */,
