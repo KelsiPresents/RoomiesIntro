@@ -11,7 +11,9 @@ target 'RoomiesIntrpo' do
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'iCarousel'
-pod 'Shuffle-iOS'
+pod 'Firebase/Storage'
+pod 'FirebaseFirestoreSwift', '~> 7.0-beta' 
+
 
 
 end

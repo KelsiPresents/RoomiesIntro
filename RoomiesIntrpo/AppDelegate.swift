@@ -6,19 +6,34 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseCore
+import FirebaseFirestore
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+//    let db = Firestore.firestore()
+//    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
+               let db = Firestore.firestore()
+               // [END default_firestore]
+               print(db) // silence warning
+//        let storage = Storage.storage()
+//        let storageRef = storage.reference()
+//        let profileRef = storageRef.child("\(ProfileViewController())")
+//        let data = Data()
 
         // Override point for customization after application launch.
         return true
     }
+    
+    override init() {
+        super .init()
+       FirebaseApp.configure()
+    }
+  
 
     // MARK: UISceneSession Lifecycle
 
