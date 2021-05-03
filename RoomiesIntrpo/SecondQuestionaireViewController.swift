@@ -9,6 +9,9 @@ import UIKit
 
 class SecondQuestionaireViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    var filling:String = ""
+    var filling2:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,7 +19,8 @@ class SecondQuestionaireViewController: UIViewController, UIPickerViewDelegate, 
         self.collegePickerView.delegate = self
         self.collegePickerView.dataSource = self
         
-        
+        testLabel.text = filling
+        testLabel2.text = filling2
         
          secondPickerData = ["Bradley University", "Iliinois Institute of Technology",
     "Northeastern University", "University of Michigan"]
@@ -51,6 +55,8 @@ class SecondQuestionaireViewController: UIViewController, UIPickerViewDelegate, 
     
     
     
+    @IBOutlet weak var testLabel2: UILabel!
+    @IBOutlet weak var testLabel: UILabel!
     
     @IBOutlet weak var collegePickerView: UIPickerView!
     
