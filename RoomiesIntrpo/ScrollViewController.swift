@@ -6,6 +6,10 @@
 //
 import iCarousel
 import UIKit
+import Firebase
+
+var db: Firestore!
+
 
 
 class ScrollViewController: UIViewController, iCarouselDataSource {
@@ -17,13 +21,28 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width/1.4, height: 300))
 //        view.backgroundColor = .red
         let match = matches[index]
-        let imageView = UIImageView(frame: view.bounds)
-        view.addSubview(imageView)
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage (named: match.imageName)
+        let matchView = MatchView(frame:view.bounds)
+        view.addSubview(matchView)
+        matchView.labelProfile.text = match.name
+//        let imageView = UIImageView(frame: view.bounds)
+//        view.addSubview(imageView)
+        matchView.imageProfile.contentMode = .scaleAspectFit
+        matchView.imageProfile.image = UIImage (named: match.imageName)
+        matchView.bioTextView.text = match.bio
         return view
     }
-    
+    func fetchData() {
+        let matchesRef = db.collection("users")
+        matchesRef.getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
+    }
      
     let myCarousel: iCarousel = {
         let view = iCarousel()
@@ -36,6 +55,8 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        db = Firestore.firestore()
+        fetchData()
         let match1 = Match(name: "Kelsi", imageName: "finishedProfile1", bio: "Hello")
         
         let match2 = Match(name: "Kelsi", imageName: "finishedProfile2", bio: "Hello")

@@ -6,7 +6,9 @@
 //
 
 import UIKit
-
+import FirebaseStorage
+import FirebaseAuth
+import FirebaseFirestore
 
 class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICollectionViewDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -26,7 +28,7 @@ class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICo
     var age:String = ""
     var grade:String = ""
     
-    
+    var db: Firestore!
  
 
     var fullName:String = ""
@@ -34,6 +36,7 @@ class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        db = Firestore.firestore()
         self.agePickerView.delegate = self
         self.agePickerView.dataSource = self
         self.gradePickerView.delegate = self
@@ -111,8 +114,46 @@ class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICo
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] as? UIImage else { return}
-        imageView.image = image
+        guard let data = image.jpegData(compressionQuality: 1.0) else {return}
+        guard let currentUser = Auth.auth().currentUser else {return}
         dismiss(animated: true)
+        imageView.image = image
+        // Create a root reference
+        let storage = Storage.storage()
+        let storageRef = storage.reference()
+
+        // Create a reference to "mountains.jpg"
+        let userRef = storageRef.child("\(currentUser.uid).jpg")
+
+        // Create a reference to 'images/mountains.jpg'
+        let userImagesRef = storageRef.child("images/\(currentUser.uid).jpg")
+
+        // While the file names are the same, the references point to different files
+        //userRef.name == userImagesRef.name;            // true
+        //userRef.fullPath == userImagesRef.fullPath;    // false
+            
+        // Upload the file to the path "images/rivers.jpg"
+        let uploadTask = userRef.putData(data, metadata: nil) { (metadata, error) in
+          guard let metadata = metadata else {
+            // Uh-oh, an error occurred!
+            return
+          }
+          // Metadata contains file metadata such as size, content-type.
+          let size = metadata.size
+          // You can also access to download URL after upload.
+          userRef.downloadURL { (url, error) in
+            guard let downloadURL = url else {
+              // Uh-oh, an error occurred!
+              return
+            }
+            print(downloadURL)
+          }
+        }
+        uploadTask.resume()
+        
+        
+        
+        
     }
     
     @IBAction func onProfileImageTapped(_ sender: UITapGestureRecognizer) {
