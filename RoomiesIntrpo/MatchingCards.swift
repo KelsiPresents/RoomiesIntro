@@ -18,8 +18,8 @@ struct MatchingCards {
     var bio: [String]
 }
 var new: MatchingCards?
-
-var db: Firestore?
+//
+private var db: Firestore?
 
 
 func profileInfo() {

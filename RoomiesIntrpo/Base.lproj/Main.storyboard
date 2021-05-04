@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SWX-Tf-sqP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SWX-Tf-sqP">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,7 +35,7 @@
                                     <segue destination="71L-bh-x0T" kind="show" id="ErD-yp-oez"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="lumi lumi logotype" highlightedImage="3rdprofile" translatesAutoresizingMaskIntoConstraints="NO" id="QHu-DB-4fF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="lumi lumi logotype" translatesAutoresizingMaskIntoConstraints="NO" id="QHu-DB-4fF">
                                 <rect key="frame" x="10" y="351.33333333333326" width="370" height="262.66666666666674"/>
                             </imageView>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7l-39-HFc">
@@ -99,7 +99,7 @@
             <objects>
                 <viewController id="71L-bh-x0T" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0sV-9h-pPa">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAW-Jb-Auu">
@@ -151,17 +151,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMI-k5-2yI">
-                                <rect key="frame" x="154" y="383" width="112" height="24"/>
+                                <rect key="frame" x="154" y="410" width="112" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNn-x9-JH6">
-                                <rect key="frame" x="45" y="632" width="300" height="36"/>
+                                <rect key="frame" x="45" y="686" width="300" height="36"/>
                                 <color key="backgroundColor" red="0.82483166460000001" green="0.5423052907" blue="0.48625630139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="M1e-Z9-DrX"/>
@@ -181,13 +181,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill out the following personality survey!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hW-xN-5bO">
-                                <rect key="frame" x="37" y="144" width="316" height="18"/>
+                                <rect key="frame" x="37" y="171" width="316" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-Bg-dH7">
-                                <rect key="frame" x="85" y="483" width="220" height="34"/>
+                                <rect key="frame" x="85" y="510" width="220" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
@@ -226,11 +226,11 @@
             <objects>
                 <viewController id="jkc-SM-MO4" customClass="MiniQ1ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ghq-dd-Ana">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="242" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkb-0o-Ks2">
-                                <rect key="frame" x="60" y="308" width="44" height="75"/>
+                                <rect key="frame" x="60" y="407" width="44" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Time"/>
                                 <connections>
@@ -239,7 +239,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="242" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H63-tJ-web">
-                                <rect key="frame" x="270" y="308" width="60" height="75"/>
+                                <rect key="frame" x="270" y="407" width="60" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Money"/>
                                 <connections>
@@ -247,14 +247,8 @@
                                     <action selector="nonBinaryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xn0-VB-zBn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you rather have unlimited time or money?" textAlignment="natural" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyP-c1-SDF">
-                                <rect key="frame" x="30.333333333333343" y="109" width="329.66666666666663" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHC-Fr-q2h">
-                                <rect key="frame" x="45" y="651" width="300" height="36"/>
+                                <rect key="frame" x="45" y="705" width="300" height="36"/>
                                 <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="qtP-Id-Wf4"/>
@@ -272,6 +266,12 @@
                                     <segue destination="CF7-cJ-YAk" kind="show" id="rfe-Zw-BEg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Would you rather have unlimited time or money?" textAlignment="natural" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyP-c1-SDF">
+                                <rect key="frame" x="31" y="254" width="329.66666666666663" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8CR-gq-8OK"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -309,7 +309,7 @@
             <objects>
                 <viewController id="CF7-cJ-YAk" customClass="MiniQ2ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HYi-Zv-fRR">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0Z-8V-I8f">
@@ -438,22 +438,6 @@
                                     <action selector="pinkButton:" destination="CF7-cJ-YAk" eventType="touchUpInside" id="aYs-cW-tvX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqE-vr-1Z2">
-                                <rect key="frame" x="45" y="705" width="300" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.82483166460000001" green="0.5423052907" blue="0.48625630139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="X39-6i-Dhs" kind="show" id="MlQ-R6-Chh"/>
-                                </connections>
-                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eu6-Bd-nzJ">
                                 <rect key="frame" x="185" y="534" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -474,6 +458,22 @@
                                 <rect key="frame" x="261" y="230" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqE-vr-1Z2">
+                                <rect key="frame" x="45" y="612" width="300" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82483166460000001" green="0.5423052907" blue="0.48625630139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="X39-6i-Dhs" kind="show" id="MlQ-R6-Chh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7VT-C9-lvh"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -499,11 +499,11 @@
             <objects>
                 <viewController id="X39-6i-Dhs" customClass="MiniQ3ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zNg-h0-rBK">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayp-MK-AMa">
-                                <rect key="frame" x="12" y="199" width="390" height="216"/>
+                                <rect key="frame" x="12" y="287" width="390" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="390" id="4rn-3v-jZA"/>
                                     <constraint firstAttribute="width" constant="390" id="85C-jK-Rd2"/>
@@ -512,7 +512,7 @@
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctm-66-rBY">
-                                <rect key="frame" x="45" y="617" width="300" height="36"/>
+                                <rect key="frame" x="45" y="705" width="300" height="36"/>
                                 <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="PBU-Ta-Jxz"/>
@@ -531,7 +531,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite spongebob charcater" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubD-gZ-MZV">
-                                <rect key="frame" x="81" y="154" width="228" height="21"/>
+                                <rect key="frame" x="81" y="242" width="228" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="GTt-jX-DjJ"/>
                                     <constraint firstAttribute="width" constant="228" id="NID-c4-vac"/>
@@ -579,7 +579,7 @@
             <objects>
                 <viewController id="N7p-1N-wum" customClass="LoginViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="GJ6-ec-MFG">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you sign up we can connect you with those people" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLg-af-wV2">
@@ -643,7 +643,7 @@
             <objects>
                 <viewController id="ZTz-2J-s7W" customClass="SignUpViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="722-ts-der">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gde-LW-Veh">
@@ -704,7 +704,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6p-pL-Thy">
-                                <rect key="frame" x="45" y="747" width="300" height="36"/>
+                                <rect key="frame" x="45" y="691" width="300" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.82483166460000001" green="0.5423052907" blue="0.48625630139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Create Bio">
@@ -741,7 +741,7 @@
             <objects>
                 <viewController id="Cny-eX-ozJ" customClass="BioViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w2y-AB-bBG">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQk-Ui-1oZ">
@@ -771,22 +771,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcZ-3m-pAj">
-                                <rect key="frame" x="45" y="747" width="300" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Build">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="GAq-hu-le6" kind="show" id="k7d-6V-Qv2"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0A-mh-IGb">
                                 <rect key="frame" x="30" y="231" width="78" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -848,6 +832,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcZ-3m-pAj">
+                                <rect key="frame" x="56" y="697" width="300" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Build">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="GAq-hu-le6" kind="show" id="k7d-6V-Qv2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UkW-7g-weq"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -877,7 +877,7 @@
             <objects>
                 <viewController id="GAq-hu-le6" customClass="ProfileViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ua4-F5-SKz">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtg-fM-QEv">
@@ -948,8 +948,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="DvN-yt-k4F">
+                                <rect key="frame" x="143" y="99" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="64"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qy5-M9-RHz">
+                                <rect key="frame" x="177" y="618" width="61" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="insta"/>
+                                <connections>
+                                    <action selector="instagramPressed:" destination="GAq-hu-le6" eventType="touchUpInside" id="xIe-PL-pUh"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="nXY-4y-Mky">
-                                <rect key="frame" x="45" y="747" width="300" height="36"/>
+                                <rect key="frame" x="45" y="685" width="300" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.82483166460000001" green="0.5423052907" blue="0.48625630139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -963,23 +980,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="91p-6S-oFV" kind="show" id="RSV-ek-ade"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="DvN-yt-k4F">
-                                <rect key="frame" x="143" y="99" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="64"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qy5-M9-RHz">
-                                <rect key="frame" x="164" y="671" width="61" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="insta"/>
-                                <connections>
-                                    <action selector="instagramPressed:" destination="GAq-hu-le6" eventType="touchUpInside" id="xIe-PL-pUh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1005,25 +1005,9 @@
             <objects>
                 <viewController id="YYF-YM-SOP" customClass="QuestionaireViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQ9-US-Qii">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uA7-c2-asJ">
-                                <rect key="frame" x="45" y="747" width="300" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.82483166460000001" green="0.5423052907" blue="0.48625630139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Find A Roomate">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="XeL-F5-Mpl" kind="show" id="17f-kY-okO"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How often do you like to have a clean room?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqh-wT-QtM">
                                 <rect key="frame" x="51" y="180" width="334" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1152,6 +1136,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="full_pink-removebg-preview"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uA7-c2-asJ">
+                                <rect key="frame" x="58" y="655" width="300" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82483166460000001" green="0.5423052907" blue="0.48625630139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Find A Roomate">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="XeL-F5-Mpl" kind="show" id="17f-kY-okO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t3b-zA-VNe"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1179,7 +1179,7 @@
             <objects>
                 <viewController id="XeL-F5-Mpl" customClass="ScrollViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sJH-ih-kuv">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4R-B0-AgJ">
@@ -1225,9 +1225,20 @@
                                     <action selector="dislikeButton:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="XPk-vy-svW"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Q8p-A4-017">
+                                <rect key="frame" x="185" y="412" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="2ZO-ts-7bN"/>
+                                    <constraint firstAttribute="height" constant="20" id="V4Q-Gw-WEJ"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QC7-yh-B7F"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Q8p-A4-017" firstAttribute="centerY" secondItem="sJH-ih-kuv" secondAttribute="centerY" id="Obd-Ny-fOY"/>
+                            <constraint firstItem="Q8p-A4-017" firstAttribute="centerX" secondItem="sJH-ih-kuv" secondAttribute="centerX" id="qH0-WV-ln4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fm1-MP-TLw">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" style="plain" id="7AJ-Og-aeT">
@@ -1242,6 +1253,7 @@
                         <outlet property="dislikeButton" destination="ls2-br-QBK" id="SYZ-64-nyd"/>
                         <outlet property="dislikeClickedButton" destination="EAj-qj-QzM" id="Xro-gi-TN5"/>
                         <outlet property="giselleButton" destination="J4R-B0-AgJ" id="0Ii-Fs-6pJ"/>
+                        <outlet property="spinner" destination="Q8p-A4-017" id="6ev-jm-zS8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REO-sc-Tfv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1253,7 +1265,7 @@
             <objects>
                 <viewController id="6co-SA-Sqz" customClass="User3ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBI-OK-nP4">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2021-03-25 at 7.44.36 PM 1" translatesAutoresizingMaskIntoConstraints="NO" id="sLG-os-nrS">
@@ -1375,7 +1387,7 @@
             <objects>
                 <viewController id="91p-6S-oFV" customClass="SecondQuestionaireViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Os-wf-Vhc">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What school do you go to?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbP-LC-qzT">
@@ -1385,22 +1397,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIW-vU-8bM">
-                                <rect key="frame" x="45" y="747" width="300" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="vuX-tG-DY9" kind="show" id="3kd-UE-xF9"/>
-                                </connections>
-                            </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D90-QE-dTl">
                                 <rect key="frame" x="0.0" y="341" width="390" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -1416,6 +1412,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIW-vU-8bM">
+                                <rect key="frame" x="45" y="623" width="300" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="vuX-tG-DY9" kind="show" id="3kd-UE-xF9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3KN-ly-oe5"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1434,7 +1446,7 @@
             <objects>
                 <viewController id="vuX-tG-DY9" customClass="ThirdQuestionaireViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Rg-wd-EgA">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMB-XI-GFS">
@@ -1483,25 +1495,9 @@
             <objects>
                 <viewController id="TU9-da-ufi" customClass="FourthQuestionaireViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kwK-fZ-cW6">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Py-Ug-x3a">
-                                <rect key="frame" x="45" y="747" width="300" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="YYF-YM-SOP" kind="show" id="qZd-4Q-oOQ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please fill out the following  roomate matching survey!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4n-eO-oCH">
                                 <rect key="frame" x="0.0" y="50" width="409" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1644,6 +1640,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="full_blue-removebg-preview"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Py-Ug-x3a">
+                                <rect key="frame" x="45" y="561" width="300" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="YYF-YM-SOP" kind="show" id="qZd-4Q-oOQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2KZ-Mk-w5J"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1671,7 +1683,7 @@
             <objects>
                 <viewController id="KOV-Ym-nKS" customClass="UserViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MuP-7X-AEi">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2021-03-25 at 7.53.59 PM" translatesAutoresizingMaskIntoConstraints="NO" id="NRM-V2-scu">
@@ -1777,7 +1789,7 @@
             <objects>
                 <viewController id="KY7-ZO-lDT" customClass="User2ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KyA-L9-oPU">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2021-03-25 at 8.20.07 PM" translatesAutoresizingMaskIntoConstraints="NO" id="uwy-yT-WG8">
@@ -1902,11 +1914,11 @@
             <objects>
                 <viewController id="S3i-yo-tjk" customClass="WelcomingViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N4d-i7-YNl">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIq-r4-HvM">
-                                <rect key="frame" x="45" y="645" width="300" height="36"/>
+                                <rect key="frame" x="45" y="699" width="300" height="36"/>
                                 <color key="backgroundColor" red="0.53200811150000005" green="0.77133041619999998" blue="0.84314972160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="9AM-H8-c9S"/>
@@ -1924,11 +1936,11 @@
                                     <segue destination="71L-bh-x0T" kind="show" id="rJv-fv-bzE"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="lumi lumi logotype" highlightedImage="3rdprofile" translatesAutoresizingMaskIntoConstraints="NO" id="bUZ-Ct-My6">
-                                <rect key="frame" x="10" y="247" width="370" height="313"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="lumi lumi logotype" translatesAutoresizingMaskIntoConstraints="NO" id="bUZ-Ct-My6">
+                                <rect key="frame" x="10" y="351.33333333333326" width="370" height="262.66666666666674"/>
                             </imageView>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mz-il-S03">
-                                <rect key="frame" x="45" y="570" width="300" height="36"/>
+                                <rect key="frame" x="45" y="624" width="300" height="36"/>
                                 <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="8Ny-gS-Odl"/>
@@ -1986,15 +1998,11 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="cZG-aA-ZrT"/>
-        <segue reference="Xpp-sd-MIi"/>
-<<<<<<< HEAD
-=======
-        <segue reference="bCv-pJ-g86"/>
-        <segue reference="rJv-fv-bzE"/>
->>>>>>> 4dbdd0e2bc7fe0368e1fd01c8a0def57ba517d56
+        <segue reference="17f-kY-okO"/>
+        <segue reference="Elz-ue-6NM"/>
+        <segue reference="ErD-yp-oez"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="3rdprofile" width="960" height="720"/>
         <image name="551749-200" width="200" height="200"/>
         <image name="Circle" width="600" height="596"/>
         <image name="Screen Shot 2021-03-25 at 7.44.36 PM 1" width="1199" height="1386"/>

@@ -19,8 +19,8 @@ class SecondQuestionaireViewController: UIViewController, UIPickerViewDelegate, 
         self.collegePickerView.delegate = self
         self.collegePickerView.dataSource = self
         
-        testLabel.text = filling
-        testLabel2.text = filling2
+//        testLabel.text = filling
+//        testLabel2.text = filling2
         
          secondPickerData = ["Bradley University", "Iliinois Institute of Technology",
     "Northeastern University", "University of Michigan"]

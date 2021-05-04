@@ -158,10 +158,7 @@ class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICo
     
     @IBAction func onProfileImageTapped(_ sender: UITapGestureRecognizer) {
         print("I was tapped")
-        let picker = UIImagePickerController()
-            picker.allowsEditing = true
-            picker.delegate = self
-            present(picker, animated: true)
+
     }
     
     @IBOutlet weak var agePickerView: UIPickerView!

@@ -255,8 +255,6 @@ PODS:
     - "gRPC-C++ (~> 1.28.0)"
     - leveldb-library (~> 1.22)
     - nanopb (~> 2.30907.0)
-  - FirebaseFirestoreSwift (7.11.0-beta):
-    - FirebaseFirestore (~> 7.0)
   - FirebaseStorage (7.9.0):
     - FirebaseCore (~> 7.0)
     - GTMSessionFetcher/Core (~> 1.4)
@@ -317,7 +315,6 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Storage
-  - FirebaseFirestoreSwift (~> 7.0-beta)
   - iCarousel
 
 SPEC REPOS:
@@ -329,7 +326,6 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseFirestore
-    - FirebaseFirestoreSwift
     - FirebaseStorage
     - GoogleDataTransport
     - GoogleUtilities
@@ -349,7 +345,6 @@ SPEC CHECKSUMS:
   FirebaseCore: 0798738ad1ae0fda67e17c7b9081241c431c6859
   FirebaseCoreDiagnostics: 3d36e05da74cb8b7ce30e6594a8f201b982c725c
   FirebaseFirestore: a2de10a51530efd84f2309acbe774f498285e93a
-  FirebaseFirestoreSwift: 1e3899e6430e77267cac7da81c555f7a7a49a549
   FirebaseStorage: 0646be9a7552aac5703d095961081942e693967d
   GoogleDataTransport: 8b0e733ea77c9218778e5a9e34ba9508b8328939
   GoogleUtilities: e1d9ed4e544fc32a93e00e721400cbc3f377200d
@@ -361,6 +356,6 @@ SPEC CHECKSUMS:
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 38a73a266dc7b038d5fe4600760ebe1641801073
+PODFILE CHECKSUM: aaa195645f8881daa51150a6cc6609971a387a5a
 
 COCOAPODS: 1.10.1

@@ -8,7 +8,7 @@ import iCarousel
 import UIKit
 import Firebase
 
-var db: Firestore!
+private var db: Firestore!
 
 
 
@@ -37,9 +37,23 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
+                self.matches.removeAll()
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
+                    let data = document.data()
+                    let name = data["Name"] as? String ?? "Something is not right"
+                    let age = data["age"] as? String ?? "Something is not right"
+                    let grade = data["grade"] as? String ?? "Something is not right"
+                    let major = data["major"] as? String ?? "Something is not right"
+                    let bio = data["bio"] as? String ?? "Something is not right"
+                    var match = Match(name: name, imageName: "lumi lumi logotype", bio: "Age: \(age) \nGrade: \(grade)\nMajor: \(major)\nBio: \(bio)")
+                    
+                    self.matches.append(match)
                 }
+                self.myCarousel.isHidden = false
+                self.spinner.stopAnimating()
+                self.spinner.removeFromSuperview()
+                self.myCarousel.reloadData()
             }
         }
     }
@@ -51,6 +65,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
         return view
     }()
     // Connect a UIImageView to the outlet below
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     
     override func viewDidLoad() {
@@ -65,7 +80,8 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
         view.addSubview(myCarousel)
         myCarousel.dataSource = self
         myCarousel.frame = CGRect(x: 0, y: 200, width: view.frame.size.width, height: 400)
-        
+        myCarousel.isHidden = true
+        spinner.startAnimating()
         // Do any additional setup after loading the view.
     }
    
