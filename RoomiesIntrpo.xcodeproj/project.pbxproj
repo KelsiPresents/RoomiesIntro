@@ -28,8 +28,10 @@
 		3F744900260156830084189F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7448FF260156830084189F /* Assets.xcassets */; };
 		3F744903260156830084189F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F744901260156830084189F /* LaunchScreen.storyboard */; };
 		3F74491026016F600084189F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74490F26016F600084189F /* LoginViewController.swift */; };
+		3F7889E8263F073F00EE7465 /* MatchingCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7889E7263F073F00EE7465 /* MatchingCards.swift */; };
 		3FB2618D26264765004A1553 /* WelcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2618C26264765004A1553 /* WelcomingViewController.swift */; };
 		3FB26190262663DD004A1553 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2618F262663DD004A1553 /* UserViewController.swift */; };
+		3FE0E10B263F1BBC003029F0 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE0E10A263F1BBC003029F0 /* Card.swift */; };
 		7D51A309397347128EF55BAF /* Pods_RoomiesIntrpo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62C82503D6F7085F55630AC /* Pods_RoomiesIntrpo.framework */; };
 		842003892640BE3200EAC722 /* MatchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842003882640BE3200EAC722 /* MatchView.xib */; };
 		8420038B2640BF7300EAC722 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420038A2640BF7300EAC722 /* MatchView.swift */; };
@@ -60,8 +62,10 @@
 		3F744902260156830084189F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F744904260156830084189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F74490F26016F600084189F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3F7889E7263F073F00EE7465 /* MatchingCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingCards.swift; sourceTree = "<group>"; };
 		3FB2618C26264765004A1553 /* WelcomingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomingViewController.swift; sourceTree = "<group>"; };
 		3FB2618F262663DD004A1553 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		3FE0E10A263F1BBC003029F0 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		443C36FFF5A2787E8AEF0CF7 /* Pods-RoomiesIntrpo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomiesIntrpo.debug.xcconfig"; path = "Target Support Files/Pods-RoomiesIntrpo/Pods-RoomiesIntrpo.debug.xcconfig"; sourceTree = "<group>"; };
 		554188E46DD5925EDF41D08D /* Pods-RoomiesIntrpo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomiesIntrpo.release.xcconfig"; path = "Target Support Files/Pods-RoomiesIntrpo/Pods-RoomiesIntrpo.release.xcconfig"; sourceTree = "<group>"; };
 		842003882640BE3200EAC722 /* MatchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchView.xib; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				842003882640BE3200EAC722 /* MatchView.xib */,
 				8420038A2640BF7300EAC722 /* MatchView.swift */,
 				3F114888263DBABC0003DEB0 /* Match.swift */,
+				3F7889E7263F073F00EE7465 /* MatchingCards.swift */,
+				3FE0E10A263F1BBC003029F0 /* Card.swift */,
 				3F64AD46260D509800DA583A /* QuestionaireViewController.swift */,
 				3F64AD3B260BC14100DA583A /* ProfileViewController.swift */,
 				3F64AD38260BC12100DA583A /* BioViewController.swift */,
@@ -281,6 +287,7 @@
 				3F64AD712618C14D00DA583A /* MiniQ2ViewController.swift in Sources */,
 				3F12AA1B263308BB0060292E /* User2ViewController.swift in Sources */,
 				3F6DF1A4261CDE46003A6281 /* FourthQuestionaireViewController.swift in Sources */,
+				3F7889E8263F073F00EE7465 /* MatchingCards.swift in Sources */,
 				3F6DF1A1261CDE32003A6281 /* ThirdQuestionaireViewController.swift in Sources */,
 				3F64AD742618C15D00DA583A /* MiniQ3ViewController.swift in Sources */,
 				3FB2618D26264765004A1553 /* WelcomingViewController.swift in Sources */,
@@ -288,6 +295,7 @@
 				3F64AD39260BC12100DA583A /* BioViewController.swift in Sources */,
 				3F12AA1E263309570060292E /* User3ViewController.swift in Sources */,
 				3F6DF19E261CDE13003A6281 /* SecondQuestionaireViewController.swift in Sources */,
+				3FE0E10B263F1BBC003029F0 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
