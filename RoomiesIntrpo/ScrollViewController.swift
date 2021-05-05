@@ -70,6 +70,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
+        
         dislikeButton.setImage(UIImage(named: "dislike"), for: .normal)
         likeButton.setImage(UIImage(named: "like"), for: .normal)
     }
@@ -96,15 +97,22 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
    
     @IBOutlet weak var likeButton: UIButton!
     
+
+    
+    
     @IBOutlet weak var dislikeButton: UIButton!
     @IBAction func likeButtonPressed(_ sender: UIButton) {
+//        self.matches.removeFirst()
         sender.setImage(UIImage(named: "blue like"), for: .normal)
         dislikeButton.setImage(UIImage(named: "dislike"), for: .normal)
+//        myCarousel.reloadData()
     }
     
     @IBAction func dislikeButtonPressed(_ sender: UIButton) {
+        self.matches.removeFirst()
         sender.setImage(UIImage(named: "final"), for: .normal)
         likeButton.setImage(UIImage(named: "like"), for: .normal)
+        myCarousel.reloadData()
     }
     
 }
