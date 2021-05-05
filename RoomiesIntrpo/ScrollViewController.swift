@@ -12,7 +12,7 @@ private var db: Firestore!
 
 
 
-class ScrollViewController: UIViewController, iCarouselDataSource {
+class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDelegate {
     func numberOfItems(in carousel: iCarousel) -> Int {
         return matches.count
     }
@@ -54,6 +54,8 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
                 self.spinner.stopAnimating()
                 self.spinner.removeFromSuperview()
                 self.myCarousel.reloadData()
+                self.likeButton.isHidden = false
+                self.dislikeButton.isHidden = false
             }
         }
     }
@@ -67,6 +69,10 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
     // Connect a UIImageView to the outlet below
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
+    func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
+        dislikeButton.setImage(UIImage(named: "dislike"), for: .normal)
+        likeButton.setImage(UIImage(named: "like"), for: .normal)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,47 +88,23 @@ class ScrollViewController: UIViewController, iCarouselDataSource {
         myCarousel.frame = CGRect(x: 0, y: 200, width: view.frame.size.width, height: 400)
         myCarousel.isHidden = true
         spinner.startAnimating()
+        likeButton.isHidden = true
+        dislikeButton.isHidden = true
+        myCarousel.delegate = self
         // Do any additional setup after loading the view.
     }
    
-    
-    @IBOutlet weak var giselleButton: UIButton!
-    
-    @IBAction func giselleButton(_ sender: Any) {
-        giselleButton.isHidden = true
-        abrielButton.isHidden = false
-        dislikeClickedButton.isHidden = true
-        dislikeButton.isHidden = false
-    }
-    
-    @IBOutlet weak var abrielButton: UIButton!
-    
-    @IBAction func abrielButton(_ sender: Any) {
-        abrielButton.isHidden = true
-        amirahButton.isHidden = false
-        dislikeClickedButton.isHidden = true
-        dislikeButton.isHidden = false
-    }
-    
-    @IBOutlet weak var amirahButton: UIButton!
-    @IBAction func amirahButton(_ sender: Any) {
-        dislikeClickedButton.isHidden = true
-        dislikeButton.isHidden = false
-       
-    }
+    @IBOutlet weak var likeButton: UIButton!
     
     @IBOutlet weak var dislikeButton: UIButton!
-    @IBOutlet weak var dislikeClickedButton: UIButton!
-    @IBAction func dislikeButton(_ sender: Any) {
-        amirahButton.isHidden = true
-        abrielButton.isHidden = true
-        giselleButton.isHidden = false
-        dislikeClickedButton.isHidden = false
-        dislikeButton.isHidden = true
+    @IBAction func likeButtonPressed(_ sender: UIButton) {
+        sender.setImage(UIImage(named: "blue like"), for: .normal)
+        dislikeButton.setImage(UIImage(named: "dislike"), for: .normal)
     }
     
-    
-    
-    
+    @IBAction func dislikeButtonPressed(_ sender: UIButton) {
+        sender.setImage(UIImage(named: "final"), for: .normal)
+        likeButton.setImage(UIImage(named: "like"), for: .normal)
+    }
     
 }

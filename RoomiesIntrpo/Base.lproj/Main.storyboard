@@ -1185,44 +1185,17 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4R-B0-AgJ">
                                 <rect key="frame" x="212" y="538" width="138" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Screen_Shot_2021-04-08_at_6.30.42_PM-removebg-preview"/>
+                                <state key="normal" image="like"/>
                                 <connections>
-                                    <action selector="giselleButton:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="v5L-6c-vyi"/>
-                                    <segue destination="6co-SA-Sqz" kind="show" id="B8y-Rz-dGe"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nnr-z0-2D0">
-                                <rect key="frame" x="222" y="555" width="118" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Screen_Shot_2021-04-08_at_6.29.10_PM-removebg-preview-4-removebg-preview"/>
-                                <connections>
-                                    <action selector="abrielButton:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="NpU-6R-TMm"/>
-                                    <segue destination="KY7-ZO-lDT" kind="show" id="ZzG-o7-IOk"/>
+                                    <action selector="likeButtonPressed:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="8Md-QB-YMM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ls2-br-QBK">
                                 <rect key="frame" x="65" y="546" width="149" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Screen_Shot_2021-04-08_at_6.29.33_PM-removebg-preview"/>
+                                <state key="normal" image="dislike"/>
                                 <connections>
-                                    <action selector="dislikeButton:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="dsZ-hz-8dF"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIt-mP-Xma">
-                                <rect key="frame" x="229" y="546" width="111" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Screen_Shot_2021-04-08_at_6.29.10_PM-removebg-preview-4-removebg-preview"/>
-                                <connections>
-                                    <action selector="amirahButton:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="u6x-bs-7Xd"/>
-                                    <segue destination="KOV-Ym-nKS" kind="show" id="4qK-kp-tW5"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAj-qj-QzM">
-                                <rect key="frame" x="65" y="556" width="126" height="101"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="final"/>
-                                <connections>
-                                    <action selector="dislikeButton:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="XPk-vy-svW"/>
+                                    <action selector="dislikeButtonPressed:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="Mb4-c6-hAw"/>
                                 </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Q8p-A4-017">
@@ -1248,11 +1221,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="abrielButton" destination="Nnr-z0-2D0" id="vYT-p8-wD9"/>
-                        <outlet property="amirahButton" destination="tIt-mP-Xma" id="GHm-IB-Tlf"/>
-                        <outlet property="dislikeButton" destination="ls2-br-QBK" id="SYZ-64-nyd"/>
-                        <outlet property="dislikeClickedButton" destination="EAj-qj-QzM" id="Xro-gi-TN5"/>
-                        <outlet property="giselleButton" destination="J4R-B0-AgJ" id="0Ii-Fs-6pJ"/>
+                        <outlet property="dislikeButton" destination="ls2-br-QBK" id="Uu6-LM-zh6"/>
+                        <outlet property="likeButton" destination="J4R-B0-AgJ" id="rkS-bm-DW1"/>
                         <outlet property="spinner" destination="Q8p-A4-017" id="6ev-jm-zS8"/>
                     </connections>
                 </viewController>
@@ -2008,14 +1978,12 @@
         <image name="Screen Shot 2021-03-25 at 7.44.36 PM 1" width="1199" height="1386"/>
         <image name="Screen Shot 2021-03-25 at 7.53.59 PM" width="1200" height="1455"/>
         <image name="Screen Shot 2021-03-25 at 8.20.07 PM" width="788" height="1446"/>
-        <image name="Screen_Shot_2021-04-08_at_6.29.10_PM-removebg-preview-4-removebg-preview" width="438" height="452"/>
-        <image name="Screen_Shot_2021-04-08_at_6.29.33_PM-removebg-preview" width="206" height="190"/>
-        <image name="Screen_Shot_2021-04-08_at_6.30.42_PM-removebg-preview" width="198" height="206"/>
-        <image name="final" width="467" height="449"/>
+        <image name="dislike" width="206" height="190"/>
         <image name="full_blue-removebg-preview" width="577" height="433"/>
         <image name="full_pink-removebg-preview" width="577" height="433"/>
         <image name="icon" width="450" height="450"/>
         <image name="insta" width="1000" height="1000"/>
+        <image name="like" width="198" height="206"/>
         <image name="lumi lumi logotype" width="1231" height="1197"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
