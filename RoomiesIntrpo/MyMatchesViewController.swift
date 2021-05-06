@@ -12,19 +12,19 @@ import FirebaseFirestore
 
 class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return value.count
+        return matches.count
     }
     
     private var db: Firestore!
     var matches = [Match]()
-    var value = ["Waiting For A Response..."]
+    var value = [""]
 //    let matched = matches[index]
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
-        cell.textLabel?.text = "\(value[indexPath.row])"
-        cell.backgroundColor = colors[indexPath.row]
+        cell.textLabel?.text = "\(matches[indexPath.row].name)"
+//        cell.backgroundColor = colors[indexPath.row]
         return cell
     }
     
@@ -35,11 +35,18 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
         super.viewDidLoad()
         db = Firestore.firestore()
         fetchData()
-        matchesTableView.reloadData()
-        
+        if matches.count == 0{
+            matchesTableView.isHidden = true
+            noMatchesLabel.isHidden = false
+        }
+        else{
+            matchesTableView.isHidden = false
+            noMatchesLabel.isHidden = true
+        }
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet weak var noMatchesLabel: UILabel!
     
     func fetchData() {
         let matchesRef = db.collection("users")
@@ -56,8 +63,8 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
                     let grade = data["grade"] as? String ?? "Something is not right"
                     let major = data["major"] as? String ?? "Something is not right"
                     let bio = data["bio"] as? String ?? "Something is not right"
-                    
-                    value.append(names)
+                    let match = Match(name: names, imageName: "", bio: bio)
+                    matches.append(match)
                     matchesTableView.reloadData()
                 }
             }
