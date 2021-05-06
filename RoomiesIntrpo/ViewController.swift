@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     var key = ""
     var answer:String = ""
     
- 
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue){}
     
     
     @IBOutlet weak var textField: UITextField!

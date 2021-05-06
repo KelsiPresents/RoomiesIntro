@@ -14,12 +14,16 @@ class User2ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    var advice = ""
+    @IBOutlet weak var adviceLabel: UILabel!
+    @IBOutlet weak var adviceTextField: UITextField!
     
-    @IBAction func GoogleButton(sender: AnyObject) {
-        if let url = NSURL(string: "https://www.instagram.com/7olited1/"){
-            UIApplication.shared.openURL(url as URL)
-        }
+    @IBAction func enterClicked(_ sender: Any) {
+        self.advice.append("\(adviceTextField.text!)\n")
+        adviceLabel.text! = advice
+        
     }
+    
     /*
     // MARK: - Navigation
 
