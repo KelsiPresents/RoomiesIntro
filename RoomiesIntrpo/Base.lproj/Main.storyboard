@@ -1,23 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SWX-Tf-sqP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SWX-Tf-sqP">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sign Out-->
+        <!--Roomate Resources-->
         <scene sceneID="U0e-2e-eKp">
             <objects>
-                <viewController id="igM-3s-XDb" sceneMemberID="viewController">
+                <viewController id="igM-3s-XDb" customClass="RoommateViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="76I-IU-YFr">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Roommate Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmw-n7-txS">
+                                <rect key="frame" x="112" y="128" width="167" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfW-sP-ZoN">
+                                <rect key="frame" x="131" y="191" width="148" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="CollegeBoard" symbolScale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="resourceOnePressed:" destination="igM-3s-XDb" eventType="touchUpInside" id="Nr8-PB-Ggg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb9-5w-FOF">
+                                <rect key="frame" x="120" y="358" width="170" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="Screen Shot 2021-05-07 at 10.08.42 PM" symbolScale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="resourceTwoPressed:" destination="igM-3s-XDb" eventType="touchUpInside" id="1jR-dp-BIe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRU-9A-317">
+                                <rect key="frame" x="120" y="523" width="170" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="347141deab286a5153ffe40b5c5e7ac9" symbolScale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="resourceThreePressed:" destination="igM-3s-XDb" eventType="touchUpInside" id="CAz-MX-VkN"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAi-1x-SaE">
-                                <rect key="frame" x="45" y="404" width="300" height="36"/>
+                                <rect key="frame" x="55" y="687" width="300" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.53200811150000005" green="0.77133041619999998" blue="0.84314972160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -35,14 +73,14 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uvP-HM-XWR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sign Out" image="person.crop.circle.fill" catalog="system" id="dpV-hE-bEn"/>
+                    <tabBarItem key="tabBarItem" title="Roomate Resources" image="person.crop.circle.fill" catalog="system" id="dpV-hE-bEn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNP-mC-vFD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Afu-ij-tp8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2232" y="1568"/>
+            <point key="canvasLocation" x="2229.2307692307691" y="1567.5355450236966"/>
         </scene>
         <!--Welcoming View Controller-->
         <scene sceneID="1cs-SP-JS0">
@@ -130,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="-739.13043478260875" y="77.678571428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Auth View Controller-->
         <scene sceneID="ewb-mJ-xJ7">
             <objects>
-                <viewController id="71L-bh-x0T" sceneMemberID="viewController">
+                <viewController id="71L-bh-x0T" customClass="AuthViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0sV-9h-pPa">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +207,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="UsO-QJ-rdl" kind="show" id="OdG-sZ-AEo"/>
+                                    <action selector="loginButtonPressed:" destination="71L-bh-x0T" eventType="touchUpInside" id="Ywo-7q-Jds"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -177,10 +215,15 @@
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="FKa-d4-uVb"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="ud8-7T-1bv" id="Iqy-yO-mma"/>
+                        <outlet property="usernameTextField" destination="pVX-ph-Vei" id="kQA-s8-wDd"/>
+                        <segue destination="UsO-QJ-rdl" kind="show" identifier="loginSegue" id="7Ee-eb-0Ec"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pId-KR-9KA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="650.72463768115949" y="802.90178571428567"/>
+            <point key="canvasLocation" x="649.23076923076917" y="802.60663507108995"/>
         </scene>
         <!--New User-->
         <scene sceneID="tne-QT-ifu">
@@ -1278,7 +1321,7 @@
                                 <color key="sectionIndexBackgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="ko6-ob-nFP">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ko6-ob-nFP" id="X0f-Jp-lGh">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
@@ -1658,12 +1701,15 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OdG-sZ-AEo"/>
+        <segue reference="RSV-ek-ade"/>
         <segue reference="cZG-aA-ZrT"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="347141deab286a5153ffe40b5c5e7ac9" width="180" height="180"/>
         <image name="551749-200" width="200" height="200"/>
         <image name="Circle" width="600" height="596"/>
+        <image name="CollegeBoard" width="224" height="225"/>
+        <image name="Screen Shot 2021-05-07 at 10.08.42 PM" width="152" height="186"/>
         <image name="checkmark.seal" catalog="system" width="128" height="128"/>
         <image name="checkmark.seal.fill" catalog="system" width="128" height="128"/>
         <image name="dislike" width="206" height="190"/>

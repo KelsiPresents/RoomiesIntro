@@ -92,6 +92,16 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         likeButton.isHidden = true
         dislikeButton.isHidden = true
         myCarousel.delegate = self
+        if Auth.auth().currentUser != nil {
+            print(Auth.auth().currentUser?.displayName)
+          // User is signed in.
+            
+          // ...
+        } else {
+            print("no user signed in")
+          // No user is signed in.
+          // ...
+        }
         // Do any additional setup after loading the view.
     }
    
@@ -113,6 +123,19 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         sender.setImage(UIImage(named: "final"), for: .normal)
         likeButton.setImage(UIImage(named: "like"), for: .normal)
         myCarousel.reloadData()
+    }
+    var handle: AuthStateDidChangeListenerHandle?
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            
+            print(user?.email)
+            
+          // ...
+        }
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
     }
     
 }

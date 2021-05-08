@@ -11,6 +11,8 @@
 		3F12AA1B263308BB0060292E /* User2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12AA1A263308BB0060292E /* User2ViewController.swift */; };
 		3F12AA1E263309570060292E /* User3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12AA1D263309570060292E /* User3ViewController.swift */; };
 		3F5B4F362643177D00A15244 /* MyMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B4F352643177D00A15244 /* MyMatchesViewController.swift */; };
+		3F5B4F392645E83D00A15244 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B4F382645E83D00A15244 /* AuthViewController.swift */; };
+		3F5B4F3C264639BF00A15244 /* RoommateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B4F3B264639BF00A15244 /* RoommateViewController.swift */; };
 		3F64AD36260BC0FB00DA583A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD35260BC0FB00DA583A /* SignUpViewController.swift */; };
 		3F64AD39260BC12100DA583A /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD38260BC12100DA583A /* BioViewController.swift */; };
 		3F64AD3C260BC14100DA583A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD3B260BC14100DA583A /* ProfileViewController.swift */; };
@@ -44,6 +46,8 @@
 		3F12AA1A263308BB0060292E /* User2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User2ViewController.swift; sourceTree = "<group>"; };
 		3F12AA1D263309570060292E /* User3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User3ViewController.swift; sourceTree = "<group>"; };
 		3F5B4F352643177D00A15244 /* MyMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchesViewController.swift; sourceTree = "<group>"; };
+		3F5B4F382645E83D00A15244 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		3F5B4F3B264639BF00A15244 /* RoommateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoommateViewController.swift; sourceTree = "<group>"; };
 		3F64AD35260BC0FB00DA583A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3F64AD38260BC12100DA583A /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		3F64AD3B260BC14100DA583A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 				3F7448F8260156800084189F /* SceneDelegate.swift */,
 				3F7448FA260156800084189F /* ViewController.swift */,
 				3F7448FC260156800084189F /* Main.storyboard */,
+				3F5B4F3B264639BF00A15244 /* RoommateViewController.swift */,
 				3F5B4F352643177D00A15244 /* MyMatchesViewController.swift */,
 				3F12AA1A263308BB0060292E /* User2ViewController.swift */,
 				3F12AA1D263309570060292E /* User3ViewController.swift */,
@@ -143,6 +148,7 @@
 				3F64AD38260BC12100DA583A /* BioViewController.swift */,
 				3F64AD35260BC0FB00DA583A /* SignUpViewController.swift */,
 				3F74490F26016F600084189F /* LoginViewController.swift */,
+				3F5B4F382645E83D00A15244 /* AuthViewController.swift */,
 				3F7448FF260156830084189F /* Assets.xcassets */,
 				84DA90DE2630ED7B00F8D0A0 /* GoogleService-Info.plist */,
 				3F744901260156830084189F /* LaunchScreen.storyboard */,
@@ -293,10 +299,12 @@
 				3F7889E8263F073F00EE7465 /* MatchingCards.swift in Sources */,
 				3F6DF1A1261CDE32003A6281 /* ThirdQuestionaireViewController.swift in Sources */,
 				3F64AD742618C15D00DA583A /* MiniQ3ViewController.swift in Sources */,
+				3F5B4F392645E83D00A15244 /* AuthViewController.swift in Sources */,
 				3FB2618D26264765004A1553 /* WelcomingViewController.swift in Sources */,
 				3F5B4F362643177D00A15244 /* MyMatchesViewController.swift in Sources */,
 				3F64AD47260D509800DA583A /* QuestionaireViewController.swift in Sources */,
 				3F64AD39260BC12100DA583A /* BioViewController.swift in Sources */,
+				3F5B4F3C264639BF00A15244 /* RoommateViewController.swift in Sources */,
 				3F12AA1E263309570060292E /* User3ViewController.swift in Sources */,
 				3F6DF19E261CDE13003A6281 /* SecondQuestionaireViewController.swift in Sources */,
 				3FE0E10B263F1BBC003029F0 /* Card.swift in Sources */,

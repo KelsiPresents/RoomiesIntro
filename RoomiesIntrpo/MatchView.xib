@@ -60,7 +60,7 @@
                 <constraint firstItem="Cco-FN-kks" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="r9i-yk-d0k"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="139" y="70"/>
+            <point key="canvasLocation" x="137.68115942028987" y="69.642857142857139"/>
         </view>
     </objects>
     <resources>
