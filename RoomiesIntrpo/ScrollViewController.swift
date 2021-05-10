@@ -93,7 +93,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         dislikeButton.isHidden = true
         myCarousel.delegate = self
         if Auth.auth().currentUser != nil {
-            print(Auth.auth().currentUser?.displayName)
+            print(Auth.auth().currentUser?.email)
           // User is signed in.
             
           // ...

@@ -92,35 +92,35 @@ class ProfileViewController: UIViewController {
         
         
         // Create a query against the collection.
-        let query = usersRef.whereField("age", isEqualTo: "17")
+       // let query = usersRef.whereField("age", isEqualTo: "17")
         
-        db.collection("users").getDocuments() { [self] (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                
-                for document in querySnapshot!.documents {
-//                    document.data()["Name"]
-                    first.append("\(document.data()["Name"])")
-                    second.append("\(document.data()["age"])")
-                    print("\(document.data()["grade"])")
-                    print("\(document.data()["major"])")
-                    print("\(document.data()["bio"])")
-                    print("\(document.data()["image"])")
-                    
-                    
-                    
-                    
-                }
-            }
-        }
+//        db.collection("users").getDocuments() { [self] (querySnapshot, err) in
+//            if let err = err {
+//                print("Error getting documents: \(err)")
+//            } else {
+//
+//                for document in querySnapshot!.documents {
+////                    document.data()["Name"]
+//                    first.append("\(document.data()["Name"])")
+//                    second.append("\(document.data()["age"])")
+//                    print("\(document.data()["grade"])")
+//                    print("\(document.data()["major"])")
+//                    print("\(document.data()["bio"])")
+//                    print("\(document.data()["image"])")
+//
+//
+//
+//
+//                }
+//            }
+//        }
     
-        print("------------------------------")
-        print(first)
-        print(second)
-        print("------------------------------")
-
-    
+//        print("------------------------------")
+//        print(first)
+//        print(second)
+//        print("------------------------------")
+//
+//
 //        docRef.getDocument { (document, error) in
 //            if let document = document, document.exists {
 //                let dataDescription = document.data().??; "nil"
