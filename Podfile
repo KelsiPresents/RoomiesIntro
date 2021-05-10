@@ -12,7 +12,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'iCarousel'
 pod 'Firebase/Storage'
-pod 'FirebaseFirestoreSwift', '~> 7.0-beta' 
+
 
 
 

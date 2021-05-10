@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     var key = ""
     var answer:String = ""
     
- 
+   
     
     
     @IBOutlet weak var textField: UITextField!

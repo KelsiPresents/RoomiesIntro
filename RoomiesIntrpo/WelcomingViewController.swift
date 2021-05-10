@@ -11,7 +11,9 @@ class WelcomingViewController: UIViewController , iCarouselDataSource {
     func numberOfItems(in carousel: iCarousel) -> Int {
         return 3
     }
-    
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue){
+        
+    }
     @IBOutlet weak var layoutView: UIView!
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width/1.4, height: layoutView.frame.height))

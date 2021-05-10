@@ -10,6 +10,9 @@
 		3F114889263DBABC0003DEB0 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F114888263DBABC0003DEB0 /* Match.swift */; };
 		3F12AA1B263308BB0060292E /* User2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12AA1A263308BB0060292E /* User2ViewController.swift */; };
 		3F12AA1E263309570060292E /* User3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12AA1D263309570060292E /* User3ViewController.swift */; };
+		3F5B4F362643177D00A15244 /* MyMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B4F352643177D00A15244 /* MyMatchesViewController.swift */; };
+		3F5B4F392645E83D00A15244 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B4F382645E83D00A15244 /* AuthViewController.swift */; };
+		3F5B4F3C264639BF00A15244 /* RoommateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B4F3B264639BF00A15244 /* RoommateViewController.swift */; };
 		3F64AD36260BC0FB00DA583A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD35260BC0FB00DA583A /* SignUpViewController.swift */; };
 		3F64AD39260BC12100DA583A /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD38260BC12100DA583A /* BioViewController.swift */; };
 		3F64AD3C260BC14100DA583A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64AD3B260BC14100DA583A /* ProfileViewController.swift */; };
@@ -33,6 +36,8 @@
 		3FB26190262663DD004A1553 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2618F262663DD004A1553 /* UserViewController.swift */; };
 		3FE0E10B263F1BBC003029F0 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE0E10A263F1BBC003029F0 /* Card.swift */; };
 		7D51A309397347128EF55BAF /* Pods_RoomiesIntrpo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62C82503D6F7085F55630AC /* Pods_RoomiesIntrpo.framework */; };
+		842003892640BE3200EAC722 /* MatchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842003882640BE3200EAC722 /* MatchView.xib */; };
+		8420038B2640BF7300EAC722 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420038A2640BF7300EAC722 /* MatchView.swift */; };
 		84DA90DF2630ED7B00F8D0A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84DA90DE2630ED7B00F8D0A0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +45,9 @@
 		3F114888263DBABC0003DEB0 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		3F12AA1A263308BB0060292E /* User2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User2ViewController.swift; sourceTree = "<group>"; };
 		3F12AA1D263309570060292E /* User3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User3ViewController.swift; sourceTree = "<group>"; };
+		3F5B4F352643177D00A15244 /* MyMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchesViewController.swift; sourceTree = "<group>"; };
+		3F5B4F382645E83D00A15244 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		3F5B4F3B264639BF00A15244 /* RoommateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoommateViewController.swift; sourceTree = "<group>"; };
 		3F64AD35260BC0FB00DA583A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3F64AD38260BC12100DA583A /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		3F64AD3B260BC14100DA583A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +74,8 @@
 		3FE0E10A263F1BBC003029F0 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		443C36FFF5A2787E8AEF0CF7 /* Pods-RoomiesIntrpo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomiesIntrpo.debug.xcconfig"; path = "Target Support Files/Pods-RoomiesIntrpo/Pods-RoomiesIntrpo.debug.xcconfig"; sourceTree = "<group>"; };
 		554188E46DD5925EDF41D08D /* Pods-RoomiesIntrpo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomiesIntrpo.release.xcconfig"; path = "Target Support Files/Pods-RoomiesIntrpo/Pods-RoomiesIntrpo.release.xcconfig"; sourceTree = "<group>"; };
+		842003882640BE3200EAC722 /* MatchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchView.xib; sourceTree = "<group>"; };
+		8420038A2640BF7300EAC722 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 		84DA90DE2630ED7B00F8D0A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B62C82503D6F7085F55630AC /* Pods_RoomiesIntrpo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoomiesIntrpo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,6 +125,8 @@
 				3F7448F8260156800084189F /* SceneDelegate.swift */,
 				3F7448FA260156800084189F /* ViewController.swift */,
 				3F7448FC260156800084189F /* Main.storyboard */,
+				3F5B4F3B264639BF00A15244 /* RoommateViewController.swift */,
+				3F5B4F352643177D00A15244 /* MyMatchesViewController.swift */,
 				3F12AA1A263308BB0060292E /* User2ViewController.swift */,
 				3F12AA1D263309570060292E /* User3ViewController.swift */,
 				3FB2618F262663DD004A1553 /* UserViewController.swift */,
@@ -126,6 +138,8 @@
 				3F64AD702618C14D00DA583A /* MiniQ2ViewController.swift */,
 				3F64AD732618C15D00DA583A /* MiniQ3ViewController.swift */,
 				3F64AD49260D5B0900DA583A /* ScrollViewController.swift */,
+				842003882640BE3200EAC722 /* MatchView.xib */,
+				8420038A2640BF7300EAC722 /* MatchView.swift */,
 				3F114888263DBABC0003DEB0 /* Match.swift */,
 				3F7889E7263F073F00EE7465 /* MatchingCards.swift */,
 				3FE0E10A263F1BBC003029F0 /* Card.swift */,
@@ -134,6 +148,7 @@
 				3F64AD38260BC12100DA583A /* BioViewController.swift */,
 				3F64AD35260BC0FB00DA583A /* SignUpViewController.swift */,
 				3F74490F26016F600084189F /* LoginViewController.swift */,
+				3F5B4F382645E83D00A15244 /* AuthViewController.swift */,
 				3F7448FF260156830084189F /* Assets.xcassets */,
 				84DA90DE2630ED7B00F8D0A0 /* GoogleService-Info.plist */,
 				3F744901260156830084189F /* LaunchScreen.storyboard */,
@@ -214,6 +229,7 @@
 				84DA90DF2630ED7B00F8D0A0 /* GoogleService-Info.plist in Resources */,
 				3F744900260156830084189F /* Assets.xcassets in Resources */,
 				3F7448FE260156800084189F /* Main.storyboard in Resources */,
+				842003892640BE3200EAC722 /* MatchView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +286,7 @@
 				3F64AD6E2618C14000DA583A /* MiniQ1ViewController.swift in Sources */,
 				3F7448FB260156800084189F /* ViewController.swift in Sources */,
 				3F114889263DBABC0003DEB0 /* Match.swift in Sources */,
+				8420038B2640BF7300EAC722 /* MatchView.swift in Sources */,
 				3F7448F7260156800084189F /* AppDelegate.swift in Sources */,
 				3F7448F9260156800084189F /* SceneDelegate.swift in Sources */,
 				3FB26190262663DD004A1553 /* UserViewController.swift in Sources */,
@@ -282,9 +299,12 @@
 				3F7889E8263F073F00EE7465 /* MatchingCards.swift in Sources */,
 				3F6DF1A1261CDE32003A6281 /* ThirdQuestionaireViewController.swift in Sources */,
 				3F64AD742618C15D00DA583A /* MiniQ3ViewController.swift in Sources */,
+				3F5B4F392645E83D00A15244 /* AuthViewController.swift in Sources */,
 				3FB2618D26264765004A1553 /* WelcomingViewController.swift in Sources */,
+				3F5B4F362643177D00A15244 /* MyMatchesViewController.swift in Sources */,
 				3F64AD47260D509800DA583A /* QuestionaireViewController.swift in Sources */,
 				3F64AD39260BC12100DA583A /* BioViewController.swift in Sources */,
+				3F5B4F3C264639BF00A15244 /* RoommateViewController.swift in Sources */,
 				3F12AA1E263309570060292E /* User3ViewController.swift in Sources */,
 				3F6DF19E261CDE13003A6281 /* SecondQuestionaireViewController.swift in Sources */,
 				3FE0E10B263F1BBC003029F0 /* Card.swift in Sources */,
@@ -436,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 3VB95B296J;
 				INFOPLIST_FILE = RoomiesIntrpo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -458,7 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 3VB95B296J;
 				INFOPLIST_FILE = RoomiesIntrpo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;

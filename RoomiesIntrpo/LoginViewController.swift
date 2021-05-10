@@ -40,7 +40,7 @@ class LoginViewController: UIViewController,  iCarouselDataSource {
     
     @IBOutlet weak var profileBrowseView: UIImageView!
     
-var imageNames = ["profile", "secondprofile", "3rdprofile"]
+//var imageNames = ["profile", "secondprofile", ""]
     
     
     
