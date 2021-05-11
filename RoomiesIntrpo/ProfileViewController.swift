@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseCore
 import FirebaseFirestore
+import FirebaseAuth
 
 class ProfileViewController: UIViewController {
     var fill:String = ""
@@ -79,7 +80,8 @@ class ProfileViewController: UIViewController {
             "grade": "\(gradeLabel.text!)",
             "major": "\(majorLabel.text!)",
             "bio": "\(bioLabel.text!)",
-            "image": "\(image!)"
+            "image": "\(image!)",
+            "UID": Auth.auth().currentUser!.uid
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")
@@ -144,7 +146,19 @@ class ProfileViewController: UIViewController {
         
         
     }
-    
+    var handle: AuthStateDidChangeListenerHandle?
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            
+            print(user?.email)
+            
+          // ...
+        }
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
+    }
     
    
     // MARK: - Navigation

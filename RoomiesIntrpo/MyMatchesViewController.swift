@@ -63,7 +63,7 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
                     let grade = data["grade"] as? String ?? "Something is not right"
                     let major = data["major"] as? String ?? "Something is not right"
                     let bio = data["bio"] as? String ?? "Something is not right"
-                    let match = Match(name: names, imageName: "", bio: bio)
+                    let match = Match(name: names, imageName: "", bio: bio, uid: document.documentID)
                     matches.append(match)
                     matchesTableView.reloadData()
                 }
