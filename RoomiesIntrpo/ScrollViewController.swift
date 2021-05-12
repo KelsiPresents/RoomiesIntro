@@ -124,9 +124,23 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
             guard error == nil else {return}
             if let documentID = snapshot?.documents.first?.documentID{
                 print(documentID)
-            let userDocRef = db.collection("users").document(documentID)
-                userDocRef.updateData(["likedUsers" : FieldValue.arrayUnion([self.displayedUserId])])
+                let documentReference = db.collection("users").document(documentID)
+                documentReference.getDocument { document, error in
+                    if let document = document, document.exists{
+                        let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+                    print("documentData:\(dataDescription)")
+                        let likedUsers = document.get("likedUsers") as! [DocumentReference]
+                        
+                        print(likedUsers.first?.documentID)
+                    }
+                    else{
+                        print("document does not exist")
+                    }
+                }
             }
+//            let userDocRef = db.collection("users").document(documentID)
+//                userDocRef.updateData(["likedUsers" : FieldValue.arrayUnion([self.displayedUserId])])
+//            }
                         }
      
         
