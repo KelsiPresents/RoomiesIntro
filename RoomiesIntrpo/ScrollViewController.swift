@@ -145,9 +145,6 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
 //            }
                         }
      
-        
-      
-       
     }
     
     @IBAction func dislikeButtonPressed(_ sender: UIButton) {
