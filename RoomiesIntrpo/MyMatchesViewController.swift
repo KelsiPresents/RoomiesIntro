@@ -29,12 +29,17 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
     }
     
    
-    var colors = [UIColor.red, UIColor.orange, UIColor.yellow, UIColor.green, UIColor.blue, UIColor.purple]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         db = Firestore.firestore()
         fetchData()
+       
+        // Do any additional setup after loading the view.
+    }
+
+    @IBOutlet weak var noMatchesLabel: UILabel!
+    
+    func showOrHideTableView() {
         if matches.count == 0{
             matchesTableView.isHidden = true
             noMatchesLabel.isHidden = false
@@ -43,11 +48,7 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
             matchesTableView.isHidden = false
             noMatchesLabel.isHidden = true
         }
-        // Do any additional setup after loading the view.
     }
-
-    @IBOutlet weak var noMatchesLabel: UILabel!
-    
     func fetchData() {
         let matchesRef = db.collection("users")
         matchesRef.getDocuments() { [self] (querySnapshot, err) in
@@ -68,6 +69,8 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
                     matchesTableView.reloadData()
                 }
             }
+            showOrHideTableView()
+            
         }
     }
     
