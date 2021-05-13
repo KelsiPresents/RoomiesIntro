@@ -130,6 +130,8 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
                         let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
                     print("documentData:\(dataDescription)")
                         let likedUsers = document.get("likedUsers") as! [DocumentReference]
+                        let likedUserDocRef = db.collection("users").document(self.displayedUserId)
+//                        let newLikedUserDocRef = documentReference.setData([FieldValue: likedUserDocRef], merge: true)
                         
                         print(likedUsers.first?.documentID)
                     }

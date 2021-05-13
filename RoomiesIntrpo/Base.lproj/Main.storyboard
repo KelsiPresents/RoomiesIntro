@@ -67,7 +67,7 @@
         <!--Sign Out-->
         <scene sceneID="xFt-Pe-Zw6">
             <objects>
-                <viewController id="Q8Z-Xo-iVq" sceneMemberID="viewController">
+                <viewController id="Q8Z-Xo-iVq" customClass="SignOutViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="65B-eg-4Eb">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,14 +86,17 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="dGu-JH-hBn" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="Oyw-AQ-4Fb"/>
+                                    <action selector="signOutButton:" destination="Q8Z-Xo-iVq" eventType="touchUpInside" id="gew-Xd-pI5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jKY-JY-0t5"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sign Out" selectedImage="person.crop.circle.fill" catalog="system" id="Lmr-ga-7UH"/>
+                    <tabBarItem key="tabBarItem" title="Sign Out" image="person.crop.circle.fill" catalog="system" id="Lmr-ga-7UH"/>
+                    <connections>
+                        <segue destination="dGu-JH-hBn" kind="unwind" identifier="unwindSegue" unwindAction="myUnwindActionWithUnwindSegue:" id="M5X-af-xaz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJf-SU-KxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="dGu-JH-hBn" userLabel="Exit" sceneMemberID="exit"/>
