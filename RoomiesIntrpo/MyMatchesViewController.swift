@@ -94,27 +94,12 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
             guard error == nil else {return}
             if let documentID = snapshot?.documents.first?.documentID{
                 print(documentID)
-                let documentReference = db.collection("likedusers").document(documentID).collection("likedUsers")
+                let documentReference = db.collection("users").document(documentID).collection("likedUsers")
 //                documentReference.getDocuments() { [self] (querySnapshot, err) in
 //                    if let err = err {
 //                        print("Error getting documents: \(err)")
 //                    } else {
-//                        self.matches.removeAll()
-//                        for document in querySnapshot!.documents {
-//                            print("\(document.documentID) => \(document.data())")
-//                            let data = document.data()
-//                            let names = data["Name"] as? String ?? "Something is not right"
-//                            let age = data["age"] as? String ?? "Something is not right"
-//                            let grade = data["grade"] as? String ?? "Something is not right"
-//                            let major = data["major"] as? String ?? "Something is not right"
-//                            let bio = data["bio"] as? String ?? "Something is not right"
-//                            let match = Match(name: names, imageName: "", bio: bio, uid: document.documentID)
-//                            matches.append(match)
-//                            matchesTableView.reloadData()
-//                        }
 //
-//                    }
-//                    showOrHideTableView()
 //
 //                }
                 documentReference.getDocuments { querySnapshot, error in
@@ -122,6 +107,22 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
                         print("Error getting documents: \(error)")
                     } else{
                         print(querySnapshot?.documents.count)
+                        self.matches.removeAll()
+                                               for document in querySnapshot!.documents {
+                                                   print("\(document.documentID) => \(document.data())")
+                                                   let data = document.data()
+                                                   let names = data["Name"] as? String ?? "Something is not right"
+                                                   let age = data["age"] as? String ?? "Something is not right"
+                                                   let grade = data["grade"] as? String ?? "Something is not right"
+                                                   let major = data["major"] as? String ?? "Something is not right"
+                                                   let bio = data["bio"] as? String ?? "Something is not right"
+                                                   let match = Match(name: names, imageName: "", bio: bio, uid: document.documentID)
+                                                   matches.append(match)
+                                                   matchesTableView.reloadData()
+                                               }
+                       
+                                        
+                                           showOrHideTableView()
                     }
                 }
                 
