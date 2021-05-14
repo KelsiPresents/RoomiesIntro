@@ -138,6 +138,12 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
                             if let document = document, document.exists{
                                 let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
                                 print("documentData:\(dataDescription)")
+                                let likedUsersCollectionReference = documentReference.collection("likedUsers")
+                                likedUsersCollectionReference.addDocument(data: document.data()!) { error in
+                                    if let error = error{
+                                        print(error.localizedDescription)
+                                    }
+                                }
                                 
                             }
                         }
