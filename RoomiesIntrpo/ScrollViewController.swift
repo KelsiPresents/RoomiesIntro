@@ -39,6 +39,9 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
             } else {
                 self.matches.removeAll()
                 for document in querySnapshot!.documents {
+                    if self.matches.count == 0 {
+                        self.displayedUserId = document.documentID
+                    }
                     print("\(document.documentID) => \(document.data())")
                     let data = document.data()
                     let name = data["Name"] as? String ?? "Something is not right"
@@ -46,7 +49,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
                     let grade = data["grade"] as? String ?? "Something is not right"
                     let major = data["major"] as? String ?? "Something is not right"
                     let bio = data["bio"] as? String ?? "Something is not right"
-                    var match = Match(name: name, imageName: "lumi lumi logotype", bio: "Age: \(age) \nGrade: \(grade)\nMajor: \(major)\nBio: \(bio)")
+                    var match = Match(name: name, imageName: "lumi lumi logotype", bio: "Age: \(age) \nGrade: \(grade)\nMajor: \(major)\nBio: \(bio)", uid: document.documentID)
                     
                     self.matches.append(match)
                 }
@@ -70,7 +73,9 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
-        
+        let index = carousel.currentItemIndex
+        let match = matches[index]
+        displayedUserId = match.uid
         dislikeButton.setImage(UIImage(named: "dislike"), for: .normal)
         likeButton.setImage(UIImage(named: "like"), for: .normal)
     }
@@ -79,10 +84,10 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         super.viewDidLoad()
         db = Firestore.firestore()
         fetchData()
-        let match1 = Match(name: "Kelsi", imageName: "finishedProfile1", bio: "Hello")
+        let match1 = Match(name: "Kelsi", imageName: "finishedProfile1", bio: "Hello", uid: "0")
         
-        let match2 = Match(name: "Kelsi", imageName: "finishedProfile2", bio: "Hello")
-        let match3 = Match(name: "Kelsi", imageName: "finishedProfile3", bio: "Hello")
+        let match2 = Match(name: "Kelsi", imageName: "finishedProfile2", bio: "Hello", uid: "0")
+        let match3 = Match(name: "Kelsi", imageName: "finishedProfile3", bio: "Hello", uid: "0")
         matches = [match1, match2, match3]
         view.addSubview(myCarousel)
         myCarousel.dataSource = self
@@ -93,7 +98,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         dislikeButton.isHidden = true
         myCarousel.delegate = self
         if Auth.auth().currentUser != nil {
-            print(Auth.auth().currentUser?.displayName)
+            print(Auth.auth().currentUser?.email)
           // User is signed in.
             
           // ...
@@ -107,7 +112,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
    
     @IBOutlet weak var likeButton: UIButton!
     
-
+    var displayedUserId = ""
     
     
     @IBOutlet weak var dislikeButton: UIButton!
@@ -116,6 +121,47 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         sender.setImage(UIImage(named: "blue like"), for: .normal)
         dislikeButton.setImage(UIImage(named: "dislike"), for: .normal)
 //        myCarousel.reloadData()
+        // Create an initial document to update.
+        let currentUserId = db.collection("users").whereField("UID", isEqualTo: Auth.auth().currentUser!.uid)
+        currentUserId.getDocuments { (snapshot, error) in
+            guard error == nil else {return}
+            if let documentID = snapshot?.documents.first?.documentID{
+                print(documentID)
+                let documentReference = db.collection("users").document(documentID)
+                documentReference.getDocument { document, error in
+                    if let document = document, document.exists{
+                        let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+                    print("documentData:\(dataDescription)")
+                        let likedUserDocRef = db.collection("users").document(self.displayedUserId)
+            //                        let newLikedUserDocRef = documentReference.setData([FieldValue: likedUserDocRef], merge: true)
+                        likedUserDocRef.getDocument { document, error in
+                            if let document = document, document.exists{
+                                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+                                print("documentData:\(dataDescription)")
+                                let likedUsersCollectionReference = documentReference.collection("likedUsers")
+                                likedUsersCollectionReference.addDocument(data: document.data()!) { error in
+                                    if let error = error{
+                                        print(error.localizedDescription)
+                                    }
+                                }
+                                
+                            }
+                        }
+//                        let likedUsers = document.get("likedUsers") as! [DocumentReference]
+                        
+//                        print(likedUsers.first?.documentID)
+                    }
+                    else{
+                        print("document does not exist")
+                    }
+                }
+            }
+           
+//            let userDocRef = db.collection("users").document(documentID)
+//                userDocRef.updateData(["likedUsers" : FieldValue.arrayUnion([self.displayedUserId])])
+//            }
+                        }
+     
     }
     
     @IBAction func dislikeButtonPressed(_ sender: UIButton) {

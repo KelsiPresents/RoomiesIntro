@@ -38,6 +38,7 @@
 		7D51A309397347128EF55BAF /* Pods_RoomiesIntrpo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62C82503D6F7085F55630AC /* Pods_RoomiesIntrpo.framework */; };
 		842003892640BE3200EAC722 /* MatchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842003882640BE3200EAC722 /* MatchView.xib */; };
 		8420038B2640BF7300EAC722 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420038A2640BF7300EAC722 /* MatchView.swift */; };
+		8498C324264C921B002979A7 /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498C323264C921B002979A7 /* SignOutViewController.swift */; };
 		84DA90DF2630ED7B00F8D0A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84DA90DE2630ED7B00F8D0A0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		554188E46DD5925EDF41D08D /* Pods-RoomiesIntrpo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomiesIntrpo.release.xcconfig"; path = "Target Support Files/Pods-RoomiesIntrpo/Pods-RoomiesIntrpo.release.xcconfig"; sourceTree = "<group>"; };
 		842003882640BE3200EAC722 /* MatchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchView.xib; sourceTree = "<group>"; };
 		8420038A2640BF7300EAC722 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		8498C323264C921B002979A7 /* SignOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
 		84DA90DE2630ED7B00F8D0A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B62C82503D6F7085F55630AC /* Pods_RoomiesIntrpo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoomiesIntrpo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 				3F64AD702618C14D00DA583A /* MiniQ2ViewController.swift */,
 				3F64AD732618C15D00DA583A /* MiniQ3ViewController.swift */,
 				3F64AD49260D5B0900DA583A /* ScrollViewController.swift */,
+				8498C323264C921B002979A7 /* SignOutViewController.swift */,
 				842003882640BE3200EAC722 /* MatchView.xib */,
 				8420038A2640BF7300EAC722 /* MatchView.swift */,
 				3F114888263DBABC0003DEB0 /* Match.swift */,
@@ -286,6 +289,7 @@
 				3F64AD6E2618C14000DA583A /* MiniQ1ViewController.swift in Sources */,
 				3F7448FB260156800084189F /* ViewController.swift in Sources */,
 				3F114889263DBABC0003DEB0 /* Match.swift in Sources */,
+				8498C324264C921B002979A7 /* SignOutViewController.swift in Sources */,
 				8420038B2640BF7300EAC722 /* MatchView.swift in Sources */,
 				3F7448F7260156800084189F /* AppDelegate.swift in Sources */,
 				3F7448F9260156800084189F /* SceneDelegate.swift in Sources */,
@@ -456,7 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3VB95B296J;
 				INFOPLIST_FILE = RoomiesIntrpo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -464,6 +468,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.EveryoneCanCodeChicago.RoomiesIntrpo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -478,7 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3VB95B296J;
 				INFOPLIST_FILE = RoomiesIntrpo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -486,6 +491,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.EveryoneCanCodeChicago.RoomiesIntrpo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

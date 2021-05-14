@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseCore
 import FirebaseFirestore
+import FirebaseAuth
 
 class ProfileViewController: UIViewController {
     var fill:String = ""
@@ -79,7 +80,8 @@ class ProfileViewController: UIViewController {
             "grade": "\(gradeLabel.text!)",
             "major": "\(majorLabel.text!)",
             "bio": "\(bioLabel.text!)",
-            "image": "\(image!)"
+            "image": "\(image!)",
+            "UID": Auth.auth().currentUser!.uid
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")
@@ -92,35 +94,35 @@ class ProfileViewController: UIViewController {
         
         
         // Create a query against the collection.
-        let query = usersRef.whereField("age", isEqualTo: "17")
+       // let query = usersRef.whereField("age", isEqualTo: "17")
         
-        db.collection("users").getDocuments() { [self] (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                
-                for document in querySnapshot!.documents {
-//                    document.data()["Name"]
-                    first.append("\(document.data()["Name"])")
-                    second.append("\(document.data()["age"])")
-                    print("\(document.data()["grade"])")
-                    print("\(document.data()["major"])")
-                    print("\(document.data()["bio"])")
-                    print("\(document.data()["image"])")
-                    
-                    
-                    
-                    
-                }
-            }
-        }
+//        db.collection("users").getDocuments() { [self] (querySnapshot, err) in
+//            if let err = err {
+//                print("Error getting documents: \(err)")
+//            } else {
+//
+//                for document in querySnapshot!.documents {
+////                    document.data()["Name"]
+//                    first.append("\(document.data()["Name"])")
+//                    second.append("\(document.data()["age"])")
+//                    print("\(document.data()["grade"])")
+//                    print("\(document.data()["major"])")
+//                    print("\(document.data()["bio"])")
+//                    print("\(document.data()["image"])")
+//
+//
+//
+//
+//                }
+//            }
+//        }
     
-        print("------------------------------")
-        print(first)
-        print(second)
-        print("------------------------------")
-
-    
+//        print("------------------------------")
+//        print(first)
+//        print(second)
+//        print("------------------------------")
+//
+//
 //        docRef.getDocument { (document, error) in
 //            if let document = document, document.exists {
 //                let dataDescription = document.data().??; "nil"
@@ -144,7 +146,19 @@ class ProfileViewController: UIViewController {
         
         
     }
-    
+    var handle: AuthStateDidChangeListenerHandle?
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            
+            print(user?.email)
+            
+          // ...
+        }
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
+    }
     
    
     // MARK: - Navigation

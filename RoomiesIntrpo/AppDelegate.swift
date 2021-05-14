@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     override init() {
-        super .init()
+        super.init()
        FirebaseApp.configure()
     }
   

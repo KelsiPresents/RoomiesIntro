@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SWX-Tf-sqP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SWX-Tf-sqP">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -54,8 +54,26 @@
                                     <action selector="resourceThreePressed:" destination="igM-3s-XDb" eventType="touchUpInside" id="CAz-MX-VkN"/>
                                 </connections>
                             </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uvP-HM-XWR"/>
+                        <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Roomate Resources" image="link" catalog="system" id="dpV-hE-bEn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNP-mC-vFD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2229.2307692307691" y="1567.5355450236966"/>
+        </scene>
+        <!--Sign Out-->
+        <scene sceneID="xFt-Pe-Zw6">
+            <objects>
+                <viewController id="Q8Z-Xo-iVq" customClass="SignOutViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="65B-eg-4Eb">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAi-1x-SaE">
-                                <rect key="frame" x="55" y="687" width="300" height="36"/>
+                                <rect key="frame" x="45" y="404" width="300" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.53200811150000005" green="0.77133041619999998" blue="0.84314972160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -68,19 +86,22 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Afu-ij-tp8" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="GGx-5V-dMC"/>
+                                    <action selector="signOutButton:" destination="Q8Z-Xo-iVq" eventType="touchUpInside" id="gew-Xd-pI5"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="uvP-HM-XWR"/>
+                        <viewLayoutGuide key="safeArea" id="jKY-JY-0t5"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Roomate Resources" image="person.crop.circle.fill" catalog="system" id="dpV-hE-bEn"/>
+                    <tabBarItem key="tabBarItem" title="Sign Out" image="person.crop.circle.fill" catalog="system" id="Lmr-ga-7UH"/>
+                    <connections>
+                        <segue destination="dGu-JH-hBn" kind="unwind" identifier="unwindSegue" unwindAction="myUnwindActionWithUnwindSegue:" id="M5X-af-xaz"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nNP-mC-vFD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Afu-ij-tp8" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uJf-SU-KxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="dGu-JH-hBn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2229.2307692307691" y="1567.5355450236966"/>
+            <point key="canvasLocation" x="3599" y="1551"/>
         </scene>
         <!--Welcoming View Controller-->
         <scene sceneID="1cs-SP-JS0">
@@ -176,8 +197,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAW-Jb-Auu">
-                                <rect key="frame" x="168" y="149" width="91" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAW-Jb-Auu">
+                                <rect key="frame" x="168" y="149" width="47" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -1321,7 +1342,7 @@
                                 <color key="sectionIndexBackgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="ko6-ob-nFP">
-                                        <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ko6-ob-nFP" id="X0f-Jp-lGh">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
@@ -1693,6 +1714,7 @@
                         <segue destination="XeL-F5-Mpl" kind="relationship" relationship="viewControllers" id="nA1-cq-NAn"/>
                         <segue destination="t7j-di-K0y" kind="relationship" relationship="viewControllers" id="QaZ-WN-M2K"/>
                         <segue destination="igM-3s-XDb" kind="relationship" relationship="viewControllers" id="HSt-VE-npC"/>
+                        <segue destination="Q8Z-Xo-iVq" kind="relationship" relationship="viewControllers" id="0a6-hG-2lA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJR-Qp-raD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1701,7 +1723,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RSV-ek-ade"/>
+        <segue reference="7Ee-eb-0Ec"/>
         <segue reference="cZG-aA-ZrT"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1718,6 +1740,7 @@
         <image name="icon" width="450" height="450"/>
         <image name="insta" width="1000" height="1000"/>
         <image name="like" width="198" height="206"/>
+        <image name="link" catalog="system" width="128" height="122"/>
         <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="lumi lumi logotype" width="1231" height="1197"/>
         <image name="pencil.circle" catalog="system" width="128" height="121"/>
