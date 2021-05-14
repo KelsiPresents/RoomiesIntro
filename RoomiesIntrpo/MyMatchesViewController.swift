@@ -19,7 +19,9 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
     var matches = [Match]()
     var value = [""]
     //    let matched = matches[index]
-    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
@@ -27,7 +29,9 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
         //        cell.backgroundColor = colors[indexPath.row]
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "matchDetailSegue", sender: self)
+    }
     var handle: AuthStateDidChangeListenerHandle?
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -134,7 +138,14 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
         
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! MatchDetailViewController
+        if let indexPath = matchesTableView.indexPathForSelectedRow{
+            let match = matches[indexPath.row]
+            dvc.match = match
+        }
+        
+    }
 
 
 @IBOutlet weak var matchesTableView: UITableView!

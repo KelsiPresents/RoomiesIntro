@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FAE2B74264F208900FFC46B /* MatchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE2B73264F208900FFC46B /* MatchDetailViewController.swift */; };
 		3F114889263DBABC0003DEB0 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F114888263DBABC0003DEB0 /* Match.swift */; };
 		3F12AA1B263308BB0060292E /* User2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12AA1A263308BB0060292E /* User2ViewController.swift */; };
 		3F12AA1E263309570060292E /* User3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12AA1D263309570060292E /* User3ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FAE2B73264F208900FFC46B /* MatchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailViewController.swift; sourceTree = "<group>"; };
 		3F114888263DBABC0003DEB0 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		3F12AA1A263308BB0060292E /* User2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User2ViewController.swift; sourceTree = "<group>"; };
 		3F12AA1D263309570060292E /* User3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User3ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				3F7448F8260156800084189F /* SceneDelegate.swift */,
 				3F7448FA260156800084189F /* ViewController.swift */,
 				3F7448FC260156800084189F /* Main.storyboard */,
+				2FAE2B73264F208900FFC46B /* MatchDetailViewController.swift */,
 				3F5B4F3B264639BF00A15244 /* RoommateViewController.swift */,
 				3F5B4F352643177D00A15244 /* MyMatchesViewController.swift */,
 				3F12AA1A263308BB0060292E /* User2ViewController.swift */,
@@ -298,6 +301,7 @@
 				3F64AD3C260BC14100DA583A /* ProfileViewController.swift in Sources */,
 				3F64AD36260BC0FB00DA583A /* SignUpViewController.swift in Sources */,
 				3F64AD712618C14D00DA583A /* MiniQ2ViewController.swift in Sources */,
+				2FAE2B74264F208900FFC46B /* MatchDetailViewController.swift in Sources */,
 				3F12AA1B263308BB0060292E /* User2ViewController.swift in Sources */,
 				3F6DF1A4261CDE46003A6281 /* FourthQuestionaireViewController.swift in Sources */,
 				3F7889E8263F073F00EE7465 /* MatchingCards.swift in Sources */,
