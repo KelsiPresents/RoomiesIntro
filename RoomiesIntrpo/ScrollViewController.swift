@@ -39,6 +39,9 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
             } else {
                 self.matches.removeAll()
                 for document in querySnapshot!.documents {
+                    if self.matches.count == 0 {
+                        self.displayedUserId = document.documentID
+                    }
                     print("\(document.documentID) => \(document.data())")
                     let data = document.data()
                     let name = data["Name"] as? String ?? "Something is not right"
@@ -129,17 +132,25 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
                     if let document = document, document.exists{
                         let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
                     print("documentData:\(dataDescription)")
-                        let likedUsers = document.get("likedUsers") as! [DocumentReference]
                         let likedUserDocRef = db.collection("users").document(self.displayedUserId)
-//                        let newLikedUserDocRef = documentReference.setData([FieldValue: likedUserDocRef], merge: true)
+            //                        let newLikedUserDocRef = documentReference.setData([FieldValue: likedUserDocRef], merge: true)
+                        likedUserDocRef.getDocument { document, error in
+                            if let document = document, document.exists{
+                                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+                                print("documentData:\(dataDescription)")
+                                
+                            }
+                        }
+//                        let likedUsers = document.get("likedUsers") as! [DocumentReference]
                         
-                        print(likedUsers.first?.documentID)
+//                        print(likedUsers.first?.documentID)
                     }
                     else{
                         print("document does not exist")
                     }
                 }
             }
+           
 //            let userDocRef = db.collection("users").document(documentID)
 //                userDocRef.updateData(["likedUsers" : FieldValue.arrayUnion([self.displayedUserId])])
 //            }

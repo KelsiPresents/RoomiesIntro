@@ -94,7 +94,7 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
             guard error == nil else {return}
             if let documentID = snapshot?.documents.first?.documentID{
                 print(documentID)
-                let documentReference = db.collection("users").document(documentID).collection("likedUsers")
+                let documentReference = db.collection("likedusers").document(documentID).collection("likedUsers")
 //                documentReference.getDocuments() { [self] (querySnapshot, err) in
 //                    if let err = err {
 //                        print("Error getting documents: \(err)")
