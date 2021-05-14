@@ -44,6 +44,7 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         db = Firestore.firestore()
+        showOrHideTableView()
         //        fetchData()
         fetchMatches()
         
