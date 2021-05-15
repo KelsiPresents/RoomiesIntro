@@ -84,6 +84,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         super.viewDidLoad()
         db = Firestore.firestore()
         fetchData()
+       
         let match1 = Match(name: "Kelsi", imageName: "finishedProfile1", bio: "Hello", uid: "0")
         
         let match2 = Match(name: "Kelsi", imageName: "finishedProfile2", bio: "Hello", uid: "0")
@@ -173,6 +174,8 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
     var handle: AuthStateDidChangeListenerHandle?
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.parent?.title = "Find Users"
+        self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
          handle = Auth.auth().addStateDidChangeListener { (auth, user) in
             
             print(user?.email)

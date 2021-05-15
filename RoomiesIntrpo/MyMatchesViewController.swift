@@ -35,8 +35,10 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
     var handle: AuthStateDidChangeListenerHandle?
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.parent?.title = "Liked Users"
+        self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            
+             
             print(user?.email)
             
             // ...
@@ -51,6 +53,7 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
         showOrHideTableView()
         //        fetchData()
         fetchMatches()
+        
         
         // Do any additional setup after loading the view.
     }
@@ -82,6 +85,8 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
                     let grade = data["grade"] as? String ?? "Something is not right"
                     let major = data["major"] as? String ?? "Something is not right"
                     let bio = data["bio"] as? String ?? "Something is not right"
+                    let instagram = data["instagram"] as? String ?? ""
+                    
                     let match = Match(name: names, imageName: "", bio: bio, uid: document.documentID)
                     matches.append(match)
                     matchesTableView.reloadData()

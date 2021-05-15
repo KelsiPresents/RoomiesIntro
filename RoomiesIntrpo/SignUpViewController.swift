@@ -51,7 +51,7 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         if passwordTextField.text == confirmPasswordTextField.text {
                  Auth.auth().createUser(withEmail: usernameTextField.text!, password: passwordTextField.text!) { authResult, error in
                         guard error == nil else { return  }
-                        print(authResult)
+                    print(authResult.debugDescription)
                       }
                 } else {
                     let alertController = UIAlertController(title: "Password Does Not Match", message: "Please Try Again", preferredStyle:  .alert)

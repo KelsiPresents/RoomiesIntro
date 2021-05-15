@@ -16,7 +16,10 @@ class SignOutViewController: UIViewController, UIApplicationDelegate {
 
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        self.parent?.title = "Sign Out"
+        self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
+    }
 
     @IBAction func signOutButton(_ sender: Any) {
         let auth = Auth.auth()

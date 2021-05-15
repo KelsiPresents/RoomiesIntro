@@ -43,7 +43,10 @@ class RoommateViewController: UIViewController {
     }
     }
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.parent?.title = "Roommate Resources"
+        self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
+    }
 
     
 

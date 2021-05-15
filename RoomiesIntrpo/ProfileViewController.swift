@@ -81,6 +81,7 @@ class ProfileViewController: UIViewController {
             "major": "\(majorLabel.text!)",
             "bio": "\(bioLabel.text!)",
             "image": "\(image!)",
+            "instagram": insta,
             "UID": Auth.auth().currentUser!.uid
         ]) { err in
             if let err = err {

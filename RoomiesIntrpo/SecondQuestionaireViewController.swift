@@ -15,12 +15,26 @@ class SecondQuestionaireViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collegeTextField.delegate = self
+        
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.parent?.title = "Survey"
+        self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
+    }
     @IBOutlet weak var collegeTextField: UITextField!
     
-       
-        
+    @IBOutlet weak var nextButton: UIButton!
+    
+    @IBOutlet var instructionsLabel: UILabel!
+    
+
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBAction func unwindToQuestionnaire(unwindSegue: UIStoryboardSegue){
+        questionLabel.text = "Survey Complete!"
+        nextButton.isHidden = true
+        instructionsLabel.isHidden = true
+        collegeTextField.isHidden = true
+    }
 //        self.collegePickerView.delegate = self
 //        self.collegePickerView.dataSource = self
         
