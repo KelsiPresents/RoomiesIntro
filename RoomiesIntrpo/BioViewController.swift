@@ -93,20 +93,21 @@ class BioViewController: UIViewController, UIImagePickerControllerDelegate, UICo
     
     @IBOutlet weak var instaTextField: UITextField!
     
+    @IBOutlet weak var collegeTextField: UITextField!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         
         if segue.destination is ProfileViewController {
             
-            let pc = segue.destination as? ProfileViewController
-            pc?.fill = (nameTextField.text!)
-            pc?.fill2 = (age)
-            pc?.fill3 = (grade)
-            pc?.fill4 = (majorTextField.text!)
-            pc?.fill5 = (bioTextField.text!)
-            pc?.insta = (instaTextField.text!)
-            pc?.image = imageView.image
-            
+            let pc = segue.destination as! ProfileViewController
+            pc.fill = nameTextField.text!
+            pc.fill2 = age
+            pc.fill3 = grade
+            pc.fill4 = majorTextField.text!
+            pc.fill5 = bioTextField.text!
+            pc.insta = instaTextField.text!
+            pc.image = imageView.image
+            pc.college = collegeTextField.text!
             
         }
         

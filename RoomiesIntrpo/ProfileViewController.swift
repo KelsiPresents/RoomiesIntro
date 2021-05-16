@@ -11,12 +11,13 @@ import FirebaseFirestore
 import FirebaseAuth
 
 class ProfileViewController: UIViewController {
-    var fill:String = ""
-    var fill2:String = ""
-    var fill3:String = ""
-    var fill4:String = ""
-    var fill5:String = ""
-    var insta:String = ""
+    var fill = ""
+    var fill2 = ""
+    var fill3 = ""
+    var fill4 = ""
+    var fill5 = ""
+    var college = ""
+    var insta = ""
     var first = [""]
     var second = [""]
     var image:UIImage?
@@ -25,7 +26,8 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = "\(fill)"
+        title = fill
+        collegeLabel.text = college
         ageLabel.text = "\(fill2)"
         gradeLabel.text = "\(fill3)"
         majorLabel.text = "\(fill4)"
@@ -50,8 +52,8 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var collegeLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     
     @IBOutlet weak var gradeLabel: UILabel!
@@ -75,13 +77,14 @@ class ProfileViewController: UIViewController {
     @IBAction func doneWithProfileClicked(_ sender: Any) {
         var ref: DocumentReference? = nil
         ref = db.collection("users").addDocument(data: [
-            "Name": "\(nameLabel.text!)",
+            "Name": fill,
             "age": "\(ageLabel.text!)",
             "grade": "\(gradeLabel.text!)",
             "major": "\(majorLabel.text!)",
             "bio": "\(bioLabel.text!)",
             "image": "\(image!)",
             "instagram": insta,
+            "college": college,
             "UID": Auth.auth().currentUser!.uid
         ]) { err in
             if let err = err {

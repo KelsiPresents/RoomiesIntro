@@ -38,7 +38,7 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
         self.parent?.title = "Liked Users"
         self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-             
+            
             print(user?.email)
             
             // ...
@@ -70,32 +70,7 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
             noMatchesLabel.isHidden = true
         }
     }
-    func fetchData() {
-        let matchesRef = db.collection("users")
-        matchesRef.getDocuments() { [self] (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                self.matches.removeAll()
-                for document in querySnapshot!.documents {
-                    print("\(document.documentID) => \(document.data())")
-                    let data = document.data()
-                    let names = data["Name"] as? String ?? "Something is not right"
-                    let age = data["age"] as? String ?? "Something is not right"
-                    let grade = data["grade"] as? String ?? "Something is not right"
-                    let major = data["major"] as? String ?? "Something is not right"
-                    let bio = data["bio"] as? String ?? "Something is not right"
-                    let instagram = data["instagram"] as? String ?? ""
-                    
-                    let match = Match(name: names, imageName: "", bio: bio, uid: document.documentID)
-                    matches.append(match)
-                    matchesTableView.reloadData()
-                }
-            }
-            showOrHideTableView()
-            
-        }
-    }
+    
     
     func fetchMatches() {
         let currentUserId = db.collection("users").whereField("UID", isEqualTo: Auth.auth().currentUser!.uid)
@@ -104,34 +79,37 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
             if let documentID = snapshot?.documents.first?.documentID{
                 print(documentID)
                 let documentReference = db.collection("users").document(documentID).collection("likedUsers")
-//                documentReference.getDocuments() { [self] (querySnapshot, err) in
-//                    if let err = err {
-//                        print("Error getting documents: \(err)")
-//                    } else {
-//
-//
-//                }
+                
                 documentReference.getDocuments { querySnapshot, error in
                     if let error = error{
                         print("Error getting documents: \(error)")
                     } else{
                         print(querySnapshot?.documents.count)
                         self.matches.removeAll()
-                                               for document in querySnapshot!.documents {
-                                                   print("\(document.documentID) => \(document.data())")
-                                                   let data = document.data()
-                                                   let names = data["Name"] as? String ?? "Something is not right"
-                                                   let age = data["age"] as? String ?? "Something is not right"
-                                                   let grade = data["grade"] as? String ?? "Something is not right"
-                                                   let major = data["major"] as? String ?? "Something is not right"
-                                                   let bio = data["bio"] as? String ?? "Something is not right"
-                                                   let match = Match(name: names, imageName: "", bio: bio, uid: document.documentID)
-                                                   matches.append(match)
-                                                   matchesTableView.reloadData()
-                                               }
-                       
-                                        
-                                           showOrHideTableView()
+                        for document in querySnapshot!.documents {
+                            print("\(document.documentID) => \(document.data())")
+                            let data = document.data()
+                            let names = data["Name"] as? String ?? ""
+                            let age = data["age"] as? String ?? ""
+                            let grade = data["grade"] as? String ?? ""
+                            let major = data["major"] as? String ?? ""
+                            let bio = data["bio"] as? String ?? ""
+                            let college = data["college"] as? String ?? ""
+                            let instagram = data["instagram"] as? String ?? ""
+                            if instagram == "" {
+                                let match = Match(name: names, imageName: "", bio: bio, uid: document.documentID, age: age, grade: grade, major: major, college: college)
+                                matches.append(match)
+                                
+                            }
+                            else{
+                                let match = Match(name: names, imageName: "", bio: bio, uid: document.documentID, age: age, grade: grade, major: major, college: college, instagram: instagram)
+                                matches.append(match)
+                            }
+                            matchesTableView.reloadData()
+                        }
+                        
+                        
+                        showOrHideTableView()
                     }
                 }
                 
@@ -151,19 +129,11 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
         }
         
     }
-
-
-@IBOutlet weak var matchesTableView: UITableView!
-
-
-//    @IBAction func onAddColorButtonPressed(_ sender: UIBarButtonItem) {
-//        let red = CGFloat.random(in: 0...1)
-//        let green = CGFloat.random(in: 0...1)
-//        let blue = CGFloat.random(in: 0...1)
-//        let color = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
-//        colors.append(color)
-//        rainbowTableView.reloadData()
-//}
-
-
+    
+    
+    @IBOutlet weak var matchesTableView: UITableView!
+    
+    
+    
+    
 }
