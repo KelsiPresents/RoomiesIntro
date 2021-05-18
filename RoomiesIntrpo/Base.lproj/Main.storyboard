@@ -223,7 +223,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Jq5-Pw-7eW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Get Started">
+                                <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -232,7 +232,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Elz-ue-6NM"/>
+                                    <segue destination="ZTz-2J-s7W" kind="show" id="t6e-1V-djg"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5B-KG-5ZX">
@@ -409,11 +409,11 @@
             <objects>
                 <viewController id="jkc-SM-MO4" customClass="MiniQ1ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ghq-dd-Ana">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="242" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkb-0o-Ks2">
-                                <rect key="frame" x="60" y="407" width="44" height="30"/>
+                                <rect key="frame" x="60" y="308" width="44" height="75"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Time"/>
                                 <connections>
@@ -422,7 +422,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="242" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H63-tJ-web">
-                                <rect key="frame" x="270" y="407" width="60" height="30"/>
+                                <rect key="frame" x="270" y="308" width="60" height="75"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Money"/>
                                 <connections>
@@ -431,7 +431,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHC-Fr-q2h">
-                                <rect key="frame" x="45" y="705" width="300" height="36"/>
+                                <rect key="frame" x="45" y="651" width="300" height="36"/>
                                 <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="qtP-Id-Wf4"/>
@@ -492,7 +492,7 @@
             <objects>
                 <viewController id="CF7-cJ-YAk" customClass="MiniQ2ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HYi-Zv-fRR">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0Z-8V-I8f">
@@ -682,11 +682,11 @@
             <objects>
                 <viewController id="X39-6i-Dhs" customClass="MiniQ3ViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zNg-h0-rBK">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayp-MK-AMa">
-                                <rect key="frame" x="12" y="287" width="390" height="216"/>
+                                <rect key="frame" x="12" y="199" width="390" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="390" id="4rn-3v-jZA"/>
                                     <constraint firstAttribute="width" constant="390" id="85C-jK-Rd2"/>
@@ -695,7 +695,7 @@
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctm-66-rBY">
-                                <rect key="frame" x="45" y="705" width="300" height="36"/>
+                                <rect key="frame" x="45" y="617" width="300" height="36"/>
                                 <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="PBU-Ta-Jxz"/>
@@ -714,7 +714,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite spongebob charcater" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubD-gZ-MZV">
-                                <rect key="frame" x="81" y="242" width="228" height="21"/>
+                                <rect key="frame" x="81" y="154" width="228" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="GTt-jX-DjJ"/>
                                     <constraint firstAttribute="width" constant="228" id="NID-c4-vac"/>
@@ -762,7 +762,7 @@
             <objects>
                 <viewController id="N7p-1N-wum" customClass="LoginViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="GJ6-ec-MFG">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you sign up we can connect you with those people" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLg-af-wV2">
@@ -1928,6 +1928,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="RSV-ek-ade"/>
         <segue reference="cZG-aA-ZrT"/>
+        <segue reference="t6e-1V-djg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="347141deab286a5153ffe40b5c5e7ac9" width="180" height="180"/>
