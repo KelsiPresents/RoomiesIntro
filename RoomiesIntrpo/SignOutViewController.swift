@@ -125,7 +125,6 @@ override func viewWillAppear(_ animated: Bool) {
     handle = Auth.auth().addStateDidChangeListener { (auth, user) in
         
         print(user?.email)
-        self.parent?.title = "Find Users"
         // ...
     }
 }
