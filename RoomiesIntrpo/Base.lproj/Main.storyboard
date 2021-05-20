@@ -1430,14 +1430,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4R-B0-AgJ">
-                                <rect key="frame" x="231" y="526" width="138" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="like"/>
-                                <connections>
-                                    <action selector="likeButtonPressed:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="8Md-QB-YMM"/>
-                                </connections>
-                            </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Q8p-A4-017">
                                 <rect key="frame" x="197" y="358" width="20" height="20"/>
                                 <constraints>
@@ -1445,18 +1437,45 @@
                                     <constraint firstAttribute="height" constant="20" id="V4Q-Gw-WEJ"/>
                                 </constraints>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ls2-br-QBK">
-                                <rect key="frame" x="74" y="526" width="149" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="dislike"/>
-                                <connections>
-                                    <action selector="dislikeButtonPressed:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="Mb4-c6-hAw"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0hQ-J6-86q">
+                                <rect key="frame" x="83" y="547" width="248" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ls2-br-QBK">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="65W-Sf-KC1"/>
+                                            <constraint firstAttribute="width" secondItem="ls2-br-QBK" secondAttribute="height" multiplier="1:1" id="7mP-iA-FGj"/>
+                                            <constraint firstAttribute="width" constant="120" id="Oxm-Pm-PKy"/>
+                                        </constraints>
+                                        <state key="normal" image="dislike"/>
+                                        <connections>
+                                            <action selector="dislikeButtonPressed:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="Mb4-c6-hAw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4R-B0-AgJ">
+                                        <rect key="frame" x="128" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="J4R-B0-AgJ" secondAttribute="height" multiplier="1:1" id="0hy-Jl-QQJ"/>
+                                            <constraint firstAttribute="height" constant="120" id="Db7-95-F30"/>
+                                            <constraint firstAttribute="width" constant="120" id="V70-Fh-dzI"/>
+                                        </constraints>
+                                        <state key="normal" image="like"/>
+                                        <connections>
+                                            <action selector="likeButtonPressed:" destination="XeL-F5-Mpl" eventType="touchUpInside" id="8Md-QB-YMM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="J4R-B0-AgJ" firstAttribute="width" secondItem="ls2-br-QBK" secondAttribute="width" id="rle-YM-hu6"/>
+                                    <constraint firstItem="J4R-B0-AgJ" firstAttribute="height" secondItem="ls2-br-QBK" secondAttribute="height" id="xZe-Q2-pRC"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QC7-yh-B7F"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="0hQ-J6-86q" secondAttribute="bottom" constant="20" id="BQk-yq-59h"/>
+                            <constraint firstItem="0hQ-J6-86q" firstAttribute="centerX" secondItem="sJH-ih-kuv" secondAttribute="centerX" id="NNt-TS-Vr1"/>
                             <constraint firstItem="Q8p-A4-017" firstAttribute="centerY" secondItem="sJH-ih-kuv" secondAttribute="centerY" id="Obd-Ny-fOY"/>
                             <constraint firstItem="Q8p-A4-017" firstAttribute="centerX" secondItem="sJH-ih-kuv" secondAttribute="centerX" id="qH0-WV-ln4"/>
                         </constraints>
@@ -1974,12 +1993,12 @@
         <image name="Screen Shot 2021-05-07 at 10.08.42 PM" width="152" height="186"/>
         <image name="checkmark.seal" catalog="system" width="128" height="128"/>
         <image name="checkmark.seal.fill" catalog="system" width="128" height="128"/>
-        <image name="dislike" width="206" height="190"/>
+        <image name="dislike" width="165" height="155"/>
         <image name="full_blue-removebg-preview" width="577" height="433"/>
         <image name="full_pink-removebg-preview" width="577" height="433"/>
         <image name="icon" width="450" height="450"/>
         <image name="insta" width="1000" height="1000"/>
-        <image name="like" width="198" height="206"/>
+        <image name="like" width="157" height="147"/>
         <image name="link" catalog="system" width="128" height="122"/>
         <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="lumi lumi logotype" width="1231" height="1197"/>

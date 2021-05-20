@@ -104,7 +104,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         matches = [match1, match2, match3]
         view.addSubview(myCarousel)
         myCarousel.dataSource = self
-        myCarousel.frame = CGRect(x: 0, y: 200, width: view.frame.size.width, height: 400)
+        myCarousel.frame = CGRect(x: 0, y: view.frame.size.height/10, width: view.frame.size.width, height: view.frame.size.height/2)
         myCarousel.isHidden = true
         spinner.startAnimating()
         likeButton.isHidden = true
