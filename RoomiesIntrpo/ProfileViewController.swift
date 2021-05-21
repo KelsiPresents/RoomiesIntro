@@ -32,10 +32,10 @@ class ProfileViewController: UIViewController {
         gradeLabel.text = "\(fill3)"
         majorLabel.text = "\(fill4)"
         bioLabel.text = "\(fill5)"
-        if let image = image {
-            imageView.image = image
-        }
-        
+//        if let image = image {
+//            imageView.image = image
+//        }
+//        
         let settings = FirestoreSettings()
 
                 Firestore.firestore().settings = settings
