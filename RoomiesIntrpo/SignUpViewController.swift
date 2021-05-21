@@ -62,6 +62,17 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                 }
             }
     
+    @IBAction func eulaPressed(_ sender: Any) {
+        
+        if let url = NSURL(string: "https://www.eccchicago.org/eula.html"){
+            UIApplication.shared.openURL(url as URL)
+            
+            
+    }
+    }
+
+    
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
            textField.resignFirstResponder() // dismiss keyboard
            return true
