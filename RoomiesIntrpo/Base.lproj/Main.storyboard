@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SWX-Tf-sqP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SWX-Tf-sqP">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -988,12 +988,6 @@
         <!--Bio View Controller-->
         <scene sceneID="wwf-Wi-7df">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L4o-sJ-V4h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="kEz-md-Asw">
-                    <connections>
-                        <action selector="onProfileImageTapped:" destination="Cny-eX-ozJ" id="6wt-L7-VaM"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <viewController id="Cny-eX-ozJ" customClass="BioViewController" customModule="RoomiesIntrpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w2y-AB-bBG">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
@@ -1139,6 +1133,12 @@
                         <outlet property="nameTextField" destination="tgi-xt-Jnv" id="hn9-4L-jST"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4o-sJ-V4h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kEz-md-Asw">
+                    <connections>
+                        <action selector="onProfileImageTapped:" destination="Cny-eX-ozJ" id="6wt-L7-VaM"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3307.6923076923076" y="77.488151658767762"/>
         </scene>
@@ -1525,7 +1525,7 @@
                                 <color key="sectionIndexBackgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="ko6-ob-nFP">
-                                        <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ko6-ob-nFP" id="X0f-Jp-lGh">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
@@ -1629,16 +1629,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWI-YJ-sIg">
-                                <rect key="frame" x="100" y="637" width="190" height="105"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="190" id="Mup-CY-af9"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="insta"/>
-                                <connections>
-                                    <action selector="onInstagramButtonPressed:" destination="Xqz-p3-Hd3" eventType="touchUpInside" id="v7e-Bp-tgF"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bw-NS-pyc">
                                 <rect key="frame" x="0.0" y="98" width="390" height="30"/>
                                 <color key="backgroundColor" red="0.58378702400000004" green="0.76725488900000005" blue="0.83530706170000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1652,6 +1642,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWI-YJ-sIg">
+                                <rect key="frame" x="153" y="559" width="95" height="77"/>
+                                <state key="normal" title="Button" image="insta"/>
+                                <connections>
+                                    <action selector="onInstagramButtonPressed:" destination="Xqz-p3-Hd3" eventType="touchUpInside" id="v7e-Bp-tgF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Svj-eb-i2d"/>
                         <color key="backgroundColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1673,6 +1670,8 @@
                             <constraint firstItem="Rfd-gI-GXH" firstAttribute="top" secondItem="k7J-GK-XRv" secondAttribute="bottom" constant="8" id="Xr0-ED-QA1"/>
                             <constraint firstItem="swr-zn-uzh" firstAttribute="top" secondItem="O01-e5-X22" secondAttribute="bottom" constant="8" id="dLe-kq-tgu"/>
                             <constraint firstItem="3l1-IK-knU" firstAttribute="top" secondItem="Mnb-lL-JGX" secondAttribute="bottom" constant="8" id="eQM-PM-Yw4"/>
+                            <constraint firstItem="Svj-eb-i2d" firstAttribute="bottom" secondItem="UWI-YJ-sIg" secondAttribute="bottom" constant="80" id="fba-DZ-anX"/>
+                            <constraint firstItem="UWI-YJ-sIg" firstAttribute="top" secondItem="Rfd-gI-GXH" secondAttribute="bottom" constant="79" id="gm2-ag-4v7"/>
                             <constraint firstAttribute="trailing" secondItem="uIg-9R-Ves" secondAttribute="trailing" id="ldV-gp-JAa"/>
                             <constraint firstAttribute="trailing" secondItem="swr-zn-uzh" secondAttribute="trailing" id="rn4-3d-g9k"/>
                             <constraint firstItem="Mnb-lL-JGX" firstAttribute="top" secondItem="5Bw-NS-pyc" secondAttribute="bottom" constant="20" id="tSQ-Cz-pIR"/>
@@ -1692,7 +1691,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHd-p5-F9y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8280" y="110.90047393364928"/>
+            <point key="canvasLocation" x="8278.2608695652179" y="110.86956521739131"/>
         </scene>
         <!--Survey-->
         <scene sceneID="ekk-K8-WHD">
