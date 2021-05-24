@@ -32,6 +32,8 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         return view
     }
     func fetchData() {
+        spinner.isHidden = false
+        spinner.startAnimating()
         let matchesRef = db.collection("users")
         matchesRef.getDocuments() { (querySnapshot, err) in
             if let err = err {
@@ -44,6 +46,8 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
                     }
                     print("\(document.documentID) => \(document.data())")
                     let data = document.data()
+                    let blocked = data["blocked"] as? Bool ?? false
+                    
                     let names = data["Name"] as? String ?? ""
                     let age = data["age"] as? String ?? ""
                     let grade = data["grade"] as? String ?? ""
@@ -53,18 +57,25 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
                     let instagram = data["instagram"] as? String ?? ""
                     if instagram == "" {
                         let match = Match(name: names, imageName: "lumi lumi logotype", bio: bio, uid: document.documentID, age: age, grade: grade, major:major, college: college)
-                        self.matches.append(match)
+                        if blocked == false{
+                            self.matches.append(match)
+                        }
+                        
+                        
                         
                     }
                     else{
                         let match = Match(name: names, imageName: "lumi lumi logotype", bio: bio, uid: document.documentID, age: age, grade: grade, major:major, college: college, instagram: instagram)
-                        self.matches.append(match)
+                        if blocked == false{
+                            self.matches.append(match)
+                        }
+                        
                     }
                     
                 }
                 self.myCarousel.isHidden = false
                 self.spinner.stopAnimating()
-                self.spinner.removeFromSuperview()
+                self.spinner.isHidden = true
                 self.myCarousel.reloadData()
                 self.likeButton.isHidden = false
                 self.dislikeButton.isHidden = false
@@ -127,6 +138,36 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
     
     var displayedUserId = ""
     
+    @IBAction func onFlagButtonPressed(_ sender: Any) {
+        let alertController = UIAlertController(title: "Block User", message: "Are you sure you want to block this user and flag this content as objectionable?", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let confirmAction = UIAlertAction(title: "Confirm", style: .default) { action in
+            print("Block User")
+            let likedUserDocRef = db.collection("users").document(self.displayedUserId)
+            //                        let newLikedUserDocRef = documentReference.setData([FieldValue: likedUserDocRef], merge: true)
+//            likedUserDocRef.getDocument { document, error in
+//                if let document = document, document.exists{
+//                    let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+//                    print("documentData:\(dataDescription)")
+//                    document.set
+//
+//                }
+//            }
+            likedUserDocRef.setData(["blocked" : true], merge: true) { error in
+                if let error = error {
+                    print(error.localizedDescription)
+                } else {
+                    self.fetchData()
+                }
+            }
+            
+        }
+        alertController.addAction(cancelAction)
+        alertController.addAction(confirmAction)
+        present(alertController, animated: true, completion: nil)
+        
+        
+    }
     
     @IBOutlet weak var dislikeButton: UIButton!
     @IBAction func likeButtonPressed(_ sender: UIButton) {

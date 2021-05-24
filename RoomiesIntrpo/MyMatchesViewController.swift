@@ -38,11 +38,13 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
         self.parent?.title = "Liked Users"
         self.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+        
             
             print(user?.email)
             
             // ...
         }
+        fetchMatches()
     }
     override func viewWillDisappear(_ animated: Bool) {
         Auth.auth().removeStateDidChangeListener(handle!)
@@ -89,6 +91,8 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
                         for document in querySnapshot!.documents {
                             print("\(document.documentID) => \(document.data())")
                             let data = document.data()
+                            let blocked = data["blocked"] as? Bool ?? false
+                            
                             let names = data["Name"] as? String ?? ""
                             let age = data["age"] as? String ?? ""
                             let grade = data["grade"] as? String ?? ""
@@ -98,12 +102,17 @@ class MyMatchesViewController: UIViewController,UITableViewDelegate, UITableView
                             let instagram = data["instagram"] as? String ?? ""
                             if instagram == "" {
                                 let match = Match(name: names, imageName: "", bio: bio, uid: document.documentID, age: age, grade: grade, major: major, college: college)
-                                matches.append(match)
+                                if blocked == false {
+                                    matches.append(match)
+                                }
+                                
                                 
                             }
                             else{
                                 let match = Match(name: names, imageName: "", bio: bio, uid: document.documentID, age: age, grade: grade, major: major, college: college, instagram: instagram)
-                                matches.append(match)
+                                if blocked == false {
+                                    matches.append(match)
+                                }
                             }
                             matchesTableView.reloadData()
                         }
