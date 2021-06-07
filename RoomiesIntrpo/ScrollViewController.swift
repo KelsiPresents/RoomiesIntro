@@ -40,7 +40,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         spinner.isHidden = false
         spinner.startAnimating()
         let matchesRef = db.collection("users")
-        matchesRef.getDocuments() { (querySnapshot, err) in
+        matchesRef.getDocuments() { [self] (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
@@ -84,6 +84,10 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
                 self.myCarousel.reloadData()
                 self.likeButton.isHidden = false
                 self.dislikeButton.isHidden = false
+                if testing == "true"{
+                    likeButton.isHidden = true
+                    dislikeButton.isHidden = true
+                }
             }
         }
     }
@@ -110,8 +114,10 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         db = Firestore.firestore()
         fetchData()
         var result:String = ""
+        var timer : Timer?
         
-        timing()
+        timer = Timer.scheduledTimer(timeInterval:20, target:self, selector:#selector(timing), userInfo: nil, repeats: true)
+       
         print(testing)
         
         let match1 = Match(name: "Kelsi", imageName: "finishedProfile1", bio: "Hello", uid: "0", age: "17", grade: "freshman", major: "computer science", college: "University Of Michigan")
@@ -261,13 +267,16 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
     
     
     
-    func timing(){
+    @objc func timing(){
         if testing == "true"{
+            
             let alertController = UIAlertController(title: "Do You Want To Continue?", message: "Please sign up to continue using the app", preferredStyle: .alert)
 //            let cancelAction = UIAlertAction(title: "Sign Up", style: .cancel, handler: nil)
-//            self.testing = Timer.scheduledTimerWithTimeInterval(50.0, target: self, selector: <#Selector#>, userInfo: nil, repeats: false)
+//            self.timer = Timer.scheduledTimerWithTimeInterval(50.0, target: self, selector: <#Selector#>, userInfo: nil, repeats: false)
             let signUpButton = UIAlertAction(title: "Sign Up", style: .cancel, handler: { action in self.performSegue(withIdentifier: "signUpButtonPressed", sender: self)})
             alertController.addAction(signUpButton)
+//            Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(timing), userInfo: nil, repeats: true)
+//            self.perform(selector(UIAlertController()), with: nil, afterDelay: 300)
             present(alertController, animated: true, completion: nil)
 //            if buttonTitle == "Sign Up" {             self.performSegue(withIdentifier: ":)", sender: self)
         
