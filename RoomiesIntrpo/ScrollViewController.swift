@@ -266,11 +266,13 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
             let alertController = UIAlertController(title: "Do You Want To Continue?", message: "Please sign up to continue using the app", preferredStyle: .alert)
 //            let cancelAction = UIAlertAction(title: "Sign Up", style: .cancel, handler: nil)
 //            self.testing = Timer.scheduledTimerWithTimeInterval(50.0, target: self, selector: <#Selector#>, userInfo: nil, repeats: false)
-            let signUpButton = UIAlertAction(title: "Sign Up", style: .cancel, handler: { action in self.performSegue(withIdentifier: "signUpButton", sender: self)})
+            let signUpButton = UIAlertAction(title: "Sign Up", style: .cancel, handler: { action in self.performSegue(withIdentifier: "signUpButtonPressed", sender: self)})
             alertController.addAction(signUpButton)
             present(alertController, animated: true, completion: nil)
+//            if buttonTitle == "Sign Up" {             self.performSegue(withIdentifier: ":)", sender: self)
         
     }
     
 }
 }
+

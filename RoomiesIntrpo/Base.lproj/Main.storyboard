@@ -1545,16 +1545,16 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Find Users" image="checkmark.seal" catalog="system" selectedImage="checkmark.seal.fill" id="oUh-SY-XyM"/>
-                    <navigationItem key="navigationItem" id="fm1-MP-TLw">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" style="plain" id="7AJ-Og-aeT"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="fm1-MP-TLw"/>
                     <connections>
                         <outlet property="dislikeButton" destination="ls2-br-QBK" id="Uu6-LM-zh6"/>
                         <outlet property="likeButton" destination="J4R-B0-AgJ" id="rkS-bm-DW1"/>
                         <outlet property="spinner" destination="Q8p-A4-017" id="6ev-jm-zS8"/>
+                        <segue destination="t3K-n3-nS2" kind="unwind" identifier="signUpButtonPressed" unwindAction="myUnwindActionWithUnwindSegue:" id="hjd-jS-baE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REO-sc-Tfv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="t3K-n3-nS2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5806" y="77"/>
         </scene>
