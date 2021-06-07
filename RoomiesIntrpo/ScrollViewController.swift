@@ -28,7 +28,12 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         //        view.addSubview(imageView)
         matchView.imageProfile.contentMode = .scaleAspectFit
         matchView.imageProfile.image = UIImage (named: match.imageName)
-        matchView.bioTextView.text = "Age: " + match.age + "\n" + match.bio + "\n" + match.college + "\n" + match.major 
+        matchView.bioTextView.text = "Age: " + match.age + "\n" + match.bio + "\n" + match.college + "\n" + match.major
+        
+        
+        
+        
+        
         return view
     }
     func fetchData() {
@@ -106,6 +111,9 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         fetchData()
         var result:String = ""
         
+        timing()
+        print(testing)
+        
         let match1 = Match(name: "Kelsi", imageName: "finishedProfile1", bio: "Hello", uid: "0", age: "17", grade: "freshman", major: "computer science", college: "University Of Michigan")
         
         let match2 = Match(name: "Kelsi", imageName: "finishedProfile1", bio: "Hello", uid: "0", age: "17", grade: "freshman", major: "computer science", college: "University Of Michigan")
@@ -133,12 +141,17 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
             // ...
         }
         // Do any additional setup after loading the view.
+        
+        
     }
+    
+    var testing:String = ""
+   
     
     @IBOutlet weak var likeButton: UIButton!
     
     var displayedUserId = ""
-    var testing = ""
+   
     
     @IBAction func onFlagButtonPressed(_ sender: Any) {
         let alertController = UIAlertController(title: "Block User", message: "Are you sure you want to block this user and flag this content as objectionable?", preferredStyle: .alert)
@@ -155,6 +168,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
 //
 //                }
 //            }
+            
             likedUserDocRef.setData(["blocked" : true], merge: true) { error in
                 if let error = error {
                     print(error.localizedDescription)
@@ -170,6 +184,8 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         
         
     }
+    
+//    func displayAlert()     {         let alert = UIAlertController(title: "My Title", message: "This is my message.", preferredStyle: UIAlertController.Style.alert)                   alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))                   self.present(alert, animated: true, completion: nil)         self.timer = Timer.scheduledTimerWithTimeInterval(50.0, target: self, selector: <#Selector#>, userInfo: nil, repeats: false)          timer.invalidate() }
     
     @IBOutlet weak var dislikeButton: UIButton!
     @IBAction func likeButtonPressed(_ sender: UIButton) {
@@ -241,5 +257,20 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
     override func viewWillDisappear(_ animated: Bool) {
         Auth.auth().removeStateDidChangeListener(handle!)
     }
+   
     
+    
+    
+    func timing(){
+        if testing == "true"{
+            let alertController = UIAlertController(title: "Do You Want To Continue?", message: "Please sign up to continue using the app", preferredStyle: .alert)
+//            let cancelAction = UIAlertAction(title: "Sign Up", style: .cancel, handler: nil)
+//            self.testing = Timer.scheduledTimerWithTimeInterval(50.0, target: self, selector: <#Selector#>, userInfo: nil, repeats: false)
+            let signUpButton = UIAlertAction(title: "Sign Up", style: .cancel, handler: { action in self.performSegue(withIdentifier: "signUpButton", sender: self)})
+            alertController.addAction(signUpButton)
+            present(alertController, animated: true, completion: nil)
+        
+    }
+    
+}
 }

@@ -279,13 +279,12 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="Y30-sj-tLk"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCy-bc-GsD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCy-bc-GsD">
                                 <rect key="frame" x="133" y="745" width="124" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Continue as guest"/>
                                 <connections>
-                                    <action selector="continueButtonPressed:" destination="0qn-cf-r7Q" eventType="touchUpInside" id="6jI-Xb-sBJ"/>
                                     <action selector="onButtonPressed:" destination="0qn-cf-r7Q" eventType="touchUpInside" id="n8H-LC-s8u"/>
+                                    <segue destination="XeL-F5-Mpl" kind="show" id="hOv-6Z-L6z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -294,8 +293,10 @@
                         <constraints>
                             <constraint firstItem="ex7-MB-vsl" firstAttribute="top" secondItem="I7l-39-HFc" secondAttribute="bottom" constant="30" id="5GC-QX-eIH"/>
                             <constraint firstItem="QHu-DB-4fF" firstAttribute="centerY" secondItem="Whw-Yn-SEj" secondAttribute="centerY" id="JRa-Ep-dZa"/>
+                            <constraint firstItem="XCy-bc-GsD" firstAttribute="leading" secondItem="Whw-Yn-SEj" secondAttribute="leadingMargin" constant="117" id="KmD-dH-DcY"/>
                             <constraint firstAttribute="bottomMargin" secondItem="ex7-MB-vsl" secondAttribute="bottom" constant="72.329999999999998" id="SJq-zH-r9O"/>
                             <constraint firstItem="D1l-gb-RQ7" firstAttribute="trailing" secondItem="I7l-39-HFc" secondAttribute="trailing" constant="30" id="SdD-tt-dLa"/>
+                            <constraint firstItem="XCy-bc-GsD" firstAttribute="top" secondItem="ex7-MB-vsl" secondAttribute="bottom" constant="7.3300000000000001" id="cuq-WF-PII"/>
                             <constraint firstItem="QHu-DB-4fF" firstAttribute="leading" secondItem="D1l-gb-RQ7" secondAttribute="leading" constant="20" id="mj9-uj-DiW"/>
                             <constraint firstItem="I7l-39-HFc" firstAttribute="leading" secondItem="D1l-gb-RQ7" secondAttribute="leading" constant="30" id="pM9-nD-E9I"/>
                             <constraint firstItem="QHu-DB-4fF" firstAttribute="trailing" secondItem="D1l-gb-RQ7" secondAttribute="trailing" constant="-20" id="uF8-bA-ATc"/>
@@ -1486,7 +1487,7 @@
                                 </constraints>
                             </activityIndicatorView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0hQ-J6-86q">
-                                <rect key="frame" x="71" y="621" width="248" height="120"/>
+                                <rect key="frame" x="71" y="670" width="248" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ls2-br-QBK">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
@@ -1519,7 +1520,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNy-5k-tfT">
-                                <rect key="frame" x="335" y="578" width="30" height="30"/>
+                                <rect key="frame" x="335" y="627" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="D5p-Td-KRq"/>
                                     <constraint firstAttribute="height" constant="30" id="dSB-GV-s8g"/>
@@ -1555,7 +1556,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REO-sc-Tfv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6346" y="80"/>
+            <point key="canvasLocation" x="5806" y="77"/>
         </scene>
         <!--Liked Users-->
         <scene sceneID="7zm-hJ-i9u">
@@ -2061,6 +2062,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="RSV-ek-ade"/>
         <segue reference="cZG-aA-ZrT"/>
+        <segue reference="hOv-6Z-L6z"/>
         <segue reference="t6e-1V-djg"/>
     </inferredMetricsTieBreakers>
     <resources>
