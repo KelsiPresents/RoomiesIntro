@@ -104,6 +104,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
         super.viewDidLoad()
         db = Firestore.firestore()
         fetchData()
+        var result:String = ""
         
         let match1 = Match(name: "Kelsi", imageName: "finishedProfile1", bio: "Hello", uid: "0", age: "17", grade: "freshman", major: "computer science", college: "University Of Michigan")
         
@@ -137,6 +138,7 @@ class ScrollViewController: UIViewController, iCarouselDataSource, iCarouselDele
     @IBOutlet weak var likeButton: UIButton!
     
     var displayedUserId = ""
+    var testing = ""
     
     @IBAction func onFlagButtonPressed(_ sender: Any) {
         let alertController = UIAlertController(title: "Block User", message: "Are you sure you want to block this user and flag this content as objectionable?", preferredStyle: .alert)

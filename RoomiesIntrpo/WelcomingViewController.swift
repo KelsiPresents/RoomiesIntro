@@ -6,6 +6,7 @@
 //
 import iCarousel
 import UIKit
+var start:String = ""
 
 class WelcomingViewController: UIViewController  {
    
@@ -13,7 +14,10 @@ class WelcomingViewController: UIViewController  {
         
     }
    
-  
+ 
+    @IBAction func onButtonPressed(_ sender: Any) {
+        start = "true"
+    }
     
      
   
@@ -23,7 +27,17 @@ class WelcomingViewController: UIViewController  {
        
         // Do any additional setup after loading the view.
     }
+     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        if segue.destination is ScrollViewController{
+            
+            let vc = segue.destination as? ScrollViewController
+            vc?.work = (start)
+        
+        }
     
   
 }
 
+}
