@@ -33,7 +33,7 @@ class WelcomingViewController: UIViewController  {
         if segue.destination is ScrollViewController{
             
             let vc = segue.destination as? ScrollViewController
-            vc?.work = (start)
+            vc?.testing = (start)
         
         }
     
